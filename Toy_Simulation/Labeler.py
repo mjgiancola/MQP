@@ -13,16 +13,23 @@ class Labeler:
       # but for several reasons this interval is easier for now
       self.accuracy = accuracy # Float between 0 and 1; 1 = perfect accuracy, 0 = always incorrect
       self.style = style # Bistochastic matrix which represents the style transfer from the norm
+ 
+  # Given a character, returns the character that this "labeler" would respond with
+  # based on their accuracy and style matrix
+  def getCharacter(self, c):
     
-  # Transforms answer by the labeler's style matrix
-  # Matrix assumed to be doubly-stochastic with values 1 and 0 only
-  def transformByStyle(self, answer):
-    new_answer = ""
-    for c in answer:
-      one_hot = charToOneHot(c).reshape((NUM_LETTERS,1))
-      converted_one_hot = self.style * one_hot  
-      new_answer += oneHotToChar(converted_one_hot)
-    return new_answer
+    # Correct character gets "accuracy" percent chance of being selected
+    weights = charToOneHot(c) * self.accuracy
+
+    # Every other character has equal "low" chance of being selected
+    weights[np.where(weights == 0)] = (1 - self.accuracy) / (NUM_LETTERS - 1)
+
+    # Get the likelihood of outputting each letter considering style
+    weights = self.style * weights
+
+    weights *= 100 # So that randint will work
+
+    return chr( getWeightedRand(weights) + 97 )
 
   # Returns this labeler's answer to the given question
   # In this toy simulation, the correct response to a question
@@ -32,6 +39,6 @@ class Labeler:
     answer = ""
 
     for c in question:
-      answer += getCharacter(c, self.accuracy)
+      answer += self.getCharacter(c)
 
-    return self.transformByStyle(answer)
+    return answer
