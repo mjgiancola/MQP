@@ -11,17 +11,14 @@ def sumofsquares(m):
 
 #############################################
 
-##### GRADIENTS FOR SUM OF SQUARES ##########
-
-def grad_elt(m, i, j):
-  return 2 * m.item((i,j))
+###### GRADIENT FOR SUM OF SQUARES ##########
 
 def gradSOS(m):
   grad = np.empty(m.shape)
-  for i in range(m.shape[0]):
-    for j in range(m.shape[1]):
-      grad[i][j] = grad_elt(m, i, j)
-  return grad
+  np.copyto(grad, m)
+  grad *= 2
+  assert m.shape[0] == m.shape[1] # Input should be square
+  return np.reshape(grad, (1, 2*m.shape[0])) # TODO Not sure if this is right, or reverse
 
 #############################################
 
@@ -49,69 +46,93 @@ def sink_norm(m, num_iter=NUM_ITERATIONS):
 
 ######## GRADIENTS FOR NORMALIZATION ########
 
-# Compute the partial derivative for a row normalization for matrix m at index p,q
-# Defined based on derivation in DeepPermNet (similar to SinkProp paper, easier notation)
-def row_grad(m, p, q):
-  grad = 0
-  l = m.shape[0]
+def row_grad(m, i, j, x, y):
+  # Gradient is zero if the rows are different
+  if i != x:
+    return 0
 
-  for j in range(l):
-    # Using float casts to ensure floating-pt division
-    row_sum = float(np.sum(m, axis=1)[p])
-    #print("values", m)
-    #print("row sum", row_sum)
-    term1 = int(j==q) / row_sum # Is it possible to only sum over one row?
-    #print("term1", term1)
-    term2 = m[p][j] / np.power(row_sum, 2)
-    grad += ( term1 - term2 )
-  return grad
+  row_sum = float(np.sum(m, axis=1)[x])
+  term1 = int(j==y) / row_sum
+  term2 = m[x][y] / np.power(row_sum, 2)
 
-# Compute the partial derivative for a col normalization for matrix m at index p,q
-def col_grad(m, p, q):
-  grad = 0
-  l = m.shape[0]
+  return term1 - term2
 
-  for i in range(l):
-    col_sum = float(np.sum(m, axis=0)[q])
-    term1 = int(i==p) / col_sum
-    #print("term1", term1)
-    term2 = m[i][q] / np.power(col_sum, 2)
-    grad += ( term1 - term2 )
+def col_grad(m, i, j, x, y):
+  # Gradient is zero if the columns are different
+  if j != y:
+    return 0
+
+  col_sum = float(np.sum(m, axis=0)[y])
+  term1 = int(i==x) / col_sum
+  term2 = m[x][y] / np.power(col_sum, 2)
+
+  return term1 - term2
+
+
+def gradient_step(m, idx):
+  n = m.shape[0]
+  grad = np.empty((n**2, n**2))
+
+  i = j = x = y = 0
+
+  for grad_row in range(n**2):
+    for grad_col in range(n**2):
+
+      if idx % 2 == 1:
+        grad[grad_row][grad_col] = col_grad(m, i, j, x, y)
+      else:
+        grad[grad_row][grad_col] = row_grad(m, i, j, x, y)
+
+      # Update matrix indices
+      if j == (n-1):
+        if i == (n-1):
+
+          # Finished a row of the gradient, update x,y
+          i = 0
+          j = 0
+
+          if y == (n-1):
+            if x == (n-1):
+              # Should be finished - if not, this will alert the presence of a bug
+              i = j = x = y = -1
+            else:
+              x += 1
+              y = 0
+          else:
+            y += 1
+        else:
+          i += 1
+          j = 0
+      else:
+        j += 1
   return grad
 
 # iterations is a list of numpy matrices
 # where iterations[0] = original matrix
 #       iterations[1] = row_norm(original matrix)
 #       ...
-#       iterations[n] = BSM
+#       iterations[n-1] = BSM
 def compute_gradient(iterations):
   # Want to ensure we finished with a column normalization
   # That way, we can assume so later when performing SinkProp
   assert(len(iterations) % 2 == 1)
 
   BSM = iterations[ len(iterations) - 1 ]
-  sos_grad = gradSOS(BSM)
+  df_dA = gradSOS(BSM)
+
+  n = BSM.shape[0]
 
   # Iterate back through the row and column normalizations
-  for idx in range(len(iterations)-1, 0, -1):
+  for idx in range(len(iterations)-2, -1, -1):
     mat = iterations[idx]
-    assert mat.shape[0] == mat.shape[1] # Each matrix should be square (this check prob isn't necessary)
 
-    for i in range(BSM.shape[0]):
-      for j in range(BSM.shape[1]):
-        if idx % 2 == 0:
-          sos_grad[i][j] *= col_grad(mat, i, j)
-        else:
-          sos_grad[i][j] *= row_grad(mat, i, j)
-  return sos_grad
+    partial = gradient_step(mat, idx)
+
+    df_dA = np.dot(df_dA, partial)
+
+  return np.reshape(df_dA, (n,n))
 
 #############################################
-
-def _printlist(name, var):
-  print(name)
-  for x in var:
-    print(x)
-  print("")
 
 def manual_check():
   x = np.array( [ [2., 5.], [3., 4.] ] )
@@ -121,16 +142,17 @@ def manual_check():
   #print row_norm(x)
 
   # Should be [ 2/5 5/9 ]
-  #           [ 3/5 4/9 ]
+  #           [ 3/5 4/9 ]f
   #print col_norm(row_norm(x))
 
   # Should be 1.026
-  #print sumofsquares(col_norm(row_norm(x)))
+  print "Initial function value: " + str(sumofsquares(col_norm(row_norm(x))))
 
   iterations = sink_norm(x, 1)
-
   grad = compute_gradient(iterations)
-  print grad
+  x += grad
+
+  print "Function value after one Sinkhorn iteration: " + str(sumofsquares(col_norm(row_norm(x))))
 
 # Max value of sum of squares for nxn matrix is n for identity matrix (or any permutation)
 if __name__=='__main__':
