@@ -1,6 +1,6 @@
 import numpy as np
 
-NUM_ITERATIONS = 10
+NUM_ITERATIONS = 30
 THRESHOLD = 10**(-2)
 REG = 10**(-3)
 
@@ -68,8 +68,9 @@ def col_grad(m, i, j, x, y):
 
   return term1 - term2
 
-
-def gradient_step(m, idx):
+# Computes the gradient with respect to m, a matrix
+# grad_func is either "row_grad" or "col_grad", which compute the gradient of the row norm or column norm respectively
+def gradient_step(m, grad_func):
   n = m.shape[0]
   grad = np.empty((n**2, n**2))
 
@@ -78,10 +79,8 @@ def gradient_step(m, idx):
   for grad_row in range(n**2):
     for grad_col in range(n**2):
 
-      if idx % 2 == 1:
-        grad[grad_row][grad_col] = col_grad(m, i, j, x, y)
-      else:
-        grad[grad_row][grad_col] = row_grad(m, i, j, x, y)
+      # Take gradient (either row or col)
+      grad[grad_row][grad_col] = grad_func(m, i, j, x, y)
 
       # Update matrix indices
       if j == (n-1):
@@ -126,7 +125,13 @@ def compute_gradient(iterations):
   for idx in range(len(iterations)-2, -1, -1):
     mat = iterations[idx]
 
-    partial = gradient_step(mat, idx)
+    # Determine type of gradient (row or col)
+    if idx % 2 == 1:
+      grad_func = col_grad
+    else:
+      grad_func = row_grad
+
+    partial = gradient_step(mat, grad_func)
 
     df_dA = np.dot(df_dA, partial)
 
@@ -134,6 +139,8 @@ def compute_gradient(iterations):
 
 #############################################
 
+# A simple example to verify correctness
+# (Hand written solution in Appendix A of report)
 def manual_check():
   x = np.array( [ [2., 5.], [3., 4.] ] )
 
@@ -157,18 +164,19 @@ def manual_check():
 # Max value of sum of squares for nxn matrix is n for identity matrix (or any permutation)
 if __name__=='__main__':
 
-  manual_check()
-  exit()
+  x = np.array( [ [2., 5.], [3., 4.] ] )
 
-  x = np.array( [ [8., 3., 2.], [4., 3., 3.], [9., 1., 7.] ] )
-
-  last_sum = np.inf
   iterations = sink_norm(x)
 
+  lr = 15 # Learning rate
+  last_sum = np.inf
   curr_sum = sumofsquares(iterations[len(iterations)-1])
+  print "Original sum: " + str(curr_sum)
+
   i=0
-  while (last_sum - curr_sum) > THRESHOLD:
-    x += compute_gradient(iterations)
+  while i < 1000:
+  #while (last_sum - curr_sum) > THRESHOLD: # Sums are too close together for this to be reasonable
+    x += lr * compute_gradient(iterations)
 
     iterations = sink_norm(x)
 
@@ -179,4 +187,6 @@ if __name__=='__main__':
 
   print "Resulting Matrix:"
   print iterations[len(iterations)-1]
+  print "Parameterizing Matrix:"
+  print iterations[0]
   print "Sum of Squares: " + str(sumofsquares(iterations[len(iterations)-1]))
