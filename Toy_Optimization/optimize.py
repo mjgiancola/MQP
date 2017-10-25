@@ -18,7 +18,7 @@ def gradSOS(m):
   np.copyto(grad, m)
   grad *= 2
   assert m.shape[0] == m.shape[1] # Input should be square
-  return np.reshape(grad, (1, 2*m.shape[0])) # TODO Not sure if this is right, or reverse
+  return np.reshape(grad, (1, m.shape[0]**2))
 
 #############################################
 
@@ -171,7 +171,7 @@ if __name__=='__main__':
   lr = 15 # Learning rate
   last_sum = np.inf
   curr_sum = sumofsquares(iterations[len(iterations)-1])
-  print "Original sum: " + str(curr_sum)
+  print "Original Sum: " + str(curr_sum)
 
   i=0
   while i < 1000:
@@ -185,8 +185,8 @@ if __name__=='__main__':
 
     i+=1
 
-  print "Resulting Matrix:"
+  print "Resulting Sum: " + str(sumofsquares(iterations[len(iterations)-1]))
+  print "Resulting DSM:"
   print iterations[len(iterations)-1]
   print "Parameterizing Matrix:"
   print iterations[0]
-  print "Sum of Squares: " + str(sumofsquares(iterations[len(iterations)-1]))
