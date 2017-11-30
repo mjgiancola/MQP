@@ -32,3 +32,19 @@ def getWeightedRand(weights):
     rnd -= weights[i]
 
   assert 1 != 1 # Shouldn't get here
+
+# Pack style matrices into a vector for CGS
+def packX(data):
+  x = np.empty(0)
+  for i in range(data.numLabelers):
+    x = np.append(x, data.style[i].flatten())
+  return x
+
+# Unpack style matrices from x
+def unpackX(x, data):
+  for i in range(data.numLabelers):
+    c = data.numCharacters
+    mat_size = c ** 2
+    style = np.matrix([x[y] for y in range(i*mat_size, (i*mat_size)+mat_size)])
+    data.style[i] = style.reshape((c,c))
+    

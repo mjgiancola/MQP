@@ -1,3 +1,5 @@
+import numpy as np
+from Label import *
 
 # DATA FILE FORMAT #
 
@@ -21,15 +23,15 @@ class Dataset():
     self.numCharacters = int(line[3]) # The number of characters in the alphabet
 
     # TODO Identity is maybe a good prior?
-    self.priorStyle = [np.identity(self.numCharacters) for x in range(self.numLabelers)]
+    self.priorStyle = [np.identity(self.numCharacters) for i in range(self.numLabelers)]
 
     # Read Z priors
     line = fp.readline().strip().split()
 
     self.priorZ = []
-    # Assuming prior is the same for all images
     for x in range(self.numCharacters):
-      self.priorZ.append([ int(line[x]) for y in range(self.numImages) ])
+      # Assuming prior is the same for all images
+      self.priorZ.append([ float(line[x]) for y in range(self.numImages) ])
 
     self.labels = []
     # Read in labels
@@ -61,6 +63,5 @@ class Dataset():
     for y in range(self.numCharacters): 
       x = 0
       for z in self.probZ[y]:
-        print "P(Z(%d)=%d) = %f" % (x, y, z[x]) # TODO Verify that this is what you mean to say
-        print ""
+        print "P(Z(%d)=%d) = %f" % (x, y, z)
         x += 1

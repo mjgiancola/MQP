@@ -10,3 +10,4 @@ if __name__=='__main__':
   data = Dataset(sys.argv[1])
   #EM(data)
   data.outputResults()
+  
