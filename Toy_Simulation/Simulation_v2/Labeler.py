@@ -26,7 +26,7 @@ class Labeler:
 
     # Get the likelihood of outputting each letter considering style
     weights = self.style * weights
-ffff
+
     weights *= 100 # So that randint will work
 
     return chr( getWeightedRand(weights) + 97 )
@@ -35,10 +35,10 @@ ffff
   # In this toy simulation, the correct response to a question
   # is the question repeated. This greatly simplifies the generation
   # of correct and incorrect answers
-  def answerQuestion(self, question):
-    answer = ""
+  def getLabel(self, gt):
+    label = ""
 
-    for c in question:
-      answer += self.getCharacter(c)
+    for c in gt:
+      label += self.getCharacter(c)
 
-    return answer
+    return label

@@ -29,6 +29,7 @@ class Dataset():
     line = fp.readline()
     while line != "":
       line = line.strip().split()
+      # Image ID, Labeler ID, Label
       lbl = Label(int(line[0]), int(line[1]), int(line[2]))
       self.labels.append(lbl)
 
