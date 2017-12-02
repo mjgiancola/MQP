@@ -1,4 +1,6 @@
 import sys
+
+from EM import *
 from Dataset import *
 
 if __name__=='__main__':
@@ -8,6 +10,6 @@ if __name__=='__main__':
     exit()
 
   data = Dataset(sys.argv[1])
-  #EM(data)
+  EM(data)
   data.outputResults()
   

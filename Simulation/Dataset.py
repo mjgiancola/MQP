@@ -1,6 +1,8 @@
 import numpy as np
 from Label import *
 
+EPSILON = 0.001
+
 # DATA FILE FORMAT #
 
 # numLabels numLabelers numImages numCharacters
@@ -22,8 +24,11 @@ class Dataset():
     self.numImages = int(line[2])
     self.numCharacters = int(line[3]) # The number of characters in the alphabet
 
-    # TODO Identity is maybe a good prior?
-    self.priorStyle = [np.identity(self.numCharacters) for i in range(self.numLabelers)]
+    # TODO Identity is maybe a good prior? (need to add small epsilon for total support)
+    tmpPrior = np.identity(self.numCharacters)
+    tmpPrior[np.nonzero(tmpPrior)] -= EPSILON
+    tmpPrior += EPSILON
+    self.priorStyle = [tmpPrior for i in range(self.numLabelers)]
 
     # Read Z priors
     line = fp.readline().strip().split()
@@ -65,3 +70,4 @@ class Dataset():
       for z in self.probZ[y]:
         print "P(Z(%d)=%d) = %f" % (x, y, z)
         x += 1
+      print ""
