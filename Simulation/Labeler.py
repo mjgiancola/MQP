@@ -1,44 +1,28 @@
 import numpy as np
-import random
 
-from util import *
+from sinkhorn import *
 
 class Labeler:
 
-  # For now, style is limit ed to a doubly-stochastic matrix of the following form:
-  # [ a,   1-a ]
-  # [ 1-a, a   ]
-  def __init__(self, accuracy, style):
-      # For now I'm using [0,1] accuracy. (-inf, inf) would be possible if necessary
-      # but for several reasons this interval is easier for now
-      self.accuracy = accuracy # Float between 0 and 1; 1 = perfect accuracy, 0 = always incorrect
-      self.style = style # Bistochastic matrix which represents the style transfer from the norm
- 
-  # Given a character, returns the character that this "labeler" would respond with
-  # based on their accuracy and style matrix
-  def getCharacter(self, c):
-    
-    # Correct character gets "accuracy" percent chance of being selected
-    weights = charToOneHot(c) * self.accuracy
+  # A is the parameterizing matrix of S (style)
+  # iterations is a list of numpy matrices
+  # where iterations[0] = exp(A)
+  #       iterations[1] = row_norm(exp(A))
+  #       iterations[2] = col_norm(row_norm(exp(A)))
+  #       ...
+  #       iterations[n-1] = DSM
+  # as constructed by sink_norm
+  def __init__(self, A):
+    self.A = A
+    self.iterations = sink_norm(np.exp(A))
+    self.style = self.iterations[len(self.iterations)-1]
 
-    # Every other character has equal "low" chance of being selected
-    weights[np.where(weights == 0)] = (1 - self.accuracy) / (NUM_LETTERS - 1)
+# For each labeler, compute style matrix S given parameterizing matrix A
+def computeStyle(data):
+  for i in range(data.numLabelers):
 
-    # Get the likelihood of outputting each letter considering style
-    weights = self.style * weights
+    A = data.Labelers[i].A # Current parameterizing matrix
+    data.Labelers[i].iterations = sink_norm( np.exp(A) )
 
-    weights *= 100 # So that randint will work
-
-    return chr( getWeightedRand(weights) + 97 )
-
-  # Returns this labeler's answer to the given question
-  # In this toy simulation, the correct response to a question
-  # is the question repeated. This greatly simplifies the generation
-  # of correct and incorrect answers
-  def getLabel(self, gt):
-    label = ""
-
-    for c in gt:
-      label += self.getCharacter(c)
-
-    return label
+    I = data.Labelers[i].iterations
+    data.Labelers[i].style = I[len(I)-1] # Set style matrix

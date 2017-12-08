@@ -1,7 +1,14 @@
+from scipy.optimize import check_grad
 import sys
 
 from EM import *
 from Dataset import *
+
+def check_gradient(data):
+  EStep(data)
+
+  x0 = packX(data)
+  print check_grad(f, df, x0, data)
 
 if __name__=='__main__':
   if len(sys.argv) < 2:
@@ -10,6 +17,7 @@ if __name__=='__main__':
     exit()
 
   data = Dataset(sys.argv[1])
+  #check_gradient(data)
   EM(data)
   data.outputResults()
   

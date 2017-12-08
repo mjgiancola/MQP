@@ -1,5 +1,6 @@
 import numpy as np
 from Label import *
+from Labeler import *
 
 EPSILON = 0.001
 
@@ -24,11 +25,8 @@ class Dataset():
     self.numImages = int(line[2])
     self.numCharacters = int(line[3]) # The number of characters in the alphabet
 
-    # TODO Identity is maybe a good prior? (need to add small epsilon for total support)
-    tmpPrior = np.identity(self.numCharacters)
-    tmpPrior[np.nonzero(tmpPrior)] -= EPSILON
-    tmpPrior += EPSILON
-    self.priorStyle = [tmpPrior for i in range(self.numLabelers)]
+    priorA = np.identity(self.numCharacters)
+    self.Labelers = [ Labeler(priorA) for i in range(self.numLabelers) ]
 
     # Read Z priors
     line = fp.readline().strip().split()
@@ -54,16 +52,16 @@ class Dataset():
     self.probZ = []
     for x in range(self.numCharacters):
       self.probZ.append([])
-    self.style = []
 
   # For a large alphabet this will print a lot - consider piping to a file
   def outputResults(self):
-    x = 0
-    for s in self.style:
-      print "Style[%d]:" % x
-      print s
+    
+    computeStyle(self)
+
+    for i in range(self.numLabelers): 
+      print "Style[%d]:" % i
+      print self.Labelers[i].style
       print ""
-      x += 1
 
     for y in range(self.numCharacters): 
       x = 0
