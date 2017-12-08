@@ -4,6 +4,7 @@ import sys
 from EM import *
 from Dataset import *
 
+# Verifies the correctness of Q and gradQ
 def check_gradient(data):
   EStep(data)
 

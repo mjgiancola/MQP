@@ -26,7 +26,7 @@ class Labeler:
 
     # Get the likelihood of outputting each letter considering style
     weights = self.style * weights
-ffff
+
     weights *= 100 # So that randint will work
 
     return chr( getWeightedRand(weights) + 97 )

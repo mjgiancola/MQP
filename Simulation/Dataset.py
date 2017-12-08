@@ -7,6 +7,7 @@ EPSILON = 0.001
 # DATA FILE FORMAT #
 
 # numLabels numLabelers numImages numCharacters
+# c1 c2 .. cZ (characters in alphabet)
 # priorZ1 priorZ2 ... priorZ<numCharacters>
 # Image_i Labeler_j Label_ij
 # ...
@@ -27,6 +28,9 @@ class Dataset():
 
     priorA = np.identity(self.numCharacters)
     self.Labelers = [ Labeler(priorA) for i in range(self.numLabelers) ]
+
+    # Read alphabet
+    self.alphabet = fp.readline().strip().split()
 
     # Read Z priors
     line = fp.readline().strip().split()
@@ -66,6 +70,7 @@ class Dataset():
     for y in range(self.numCharacters): 
       x = 0
       for z in self.probZ[y]:
-        print "P(Z(%d)=%d) = %f" % (x, y, z)
+        #print "P(Z(%d)=%d) = %f" % (x, y, z)
+        print "P(Z(%d)=%c = %f" % (x, chr(y + 97), z) # Should convert back to label
         x += 1
       print ""

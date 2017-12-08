@@ -5,7 +5,7 @@ import math
 from sinkhorn import *
 from Labeler import *
 
-THRESHOLD = 1e-5
+THRESHOLD = 1e-3
 
 def EM(data):
 

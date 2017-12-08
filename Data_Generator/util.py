@@ -1,7 +1,7 @@
 import numpy as np
 from numpy.random import randint
 
-NUM_LETTERS = 3 # Size of alphabet
+NUM_LETTERS = 4 # Size of alphabet
 
 # Given an alphabetic LOWER-CASE character c, returns
 # the equivalent one-hot column vector
