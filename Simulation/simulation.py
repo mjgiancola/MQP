@@ -1,4 +1,5 @@
 from scipy.optimize import check_grad
+from time import time
 import sys
 
 from EM import *
@@ -19,6 +20,9 @@ if __name__=='__main__':
 
   data = Dataset(sys.argv[1])
   #check_gradient(data)
+
+  start = time()
   EM(data)
+  elapsed = time() - start
   data.outputResults()
-  
+  print "Completed in %d minutes and %d seconds\n" % (elapsed / 60, elapsed % 60)

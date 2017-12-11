@@ -37,7 +37,6 @@ def EStep(data):
   # NOTE: For numerical stability, instead of computing the product in the paper,
   #       we compute the sum of the logs and exponentiate the sum
 
-
   # Add log priors
   for x in range(data.numCharacters):
     data.probZ[x] = [np.log(data.priorZ[x][y]) for y in range(data.numImages)]
@@ -75,7 +74,6 @@ def computeQ(data):
 
     for z in range(data.numCharacters):
       S_zl = np.log(data.Labelers[i].style[z][lij])
-      #S_zl = np.log(data.Labelers[i].A[z][lij])
       p_z = data.probZ[z][j]
       result += S_zl * p_z
 
@@ -87,17 +85,17 @@ def compute_gradient(data):
 
   gradients = np.empty(0) # Array of i entries, 1xn^2 matrices, dQdA_i
   dQ_dS = dQdS(data)      # Array of i entries, 1xn^2 matrices, dQdS_i
+  n = data.Labelers[0].style.shape[0] # Dimension of matrices
 
+  # Only for when running without SP
   # for i in range(data.numLabelers):
-  #  gradients = np.append(gradients, dQ_dS[i])
-  # return gradients + 0.01
+  #   dQ_dA = dQ_dS[i]
+  #   gradients = np.append(gradients, dQ_dA)
+  # return gradients
 
   for i in range(data.numLabelers):
     iterations = data.Labelers[i].iterations
-    dQ_dA = dQ_dS[i] # May need to reshape to (1, n*n), might be 0D
-
-    DSM = data.Labelers[i].style
-    n = DSM.shape[0] # Dimension of matrices
+    dQ_dA = dQ_dS[i]
 
     # "Back propagate" gradient through the row and column normalizations
     for idx in range(len(iterations)-2, -1, -1):
@@ -121,18 +119,13 @@ def compute_gradient(data):
 
     gradients = np.append(gradients, dQ_dA)
 
-  return gradients + 0.01
+  return gradients
 
 # The gradient of Q in terms of S, the style matrix
 def dQdS(data):
   dQdS = np.empty(0)
   n = data.numCharacters
 
-  # TODO This shaping isn't working correctly
-  # it's making it a 0D array instead of a matrix
-  # but that's okay - that's how we want it in the end anyway
-  # so i would just figure out how to index into this. shouldn't be that hard
-  # something like (x*lij + lij) i think
   dQdS = np.zeros((data.numLabelers,n*n))
 
   for idx in range(data.numLabels):
@@ -142,10 +135,6 @@ def dQdS(data):
 
     for x in range(n):
       dQdS[i][x*n + lij] += data.probZ[x][j] / data.Labelers[i].style[x][lij]
-
-  # # Reshape gradients for multiplication in SinkProp
-  # for i in range(data.numLabelers):
-  #   dQdS[i] = np.reshape(dQdS[i], (1, n*n))
 
   return dQdS
 
