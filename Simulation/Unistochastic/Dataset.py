@@ -1,8 +1,9 @@
 import numpy as np
-from Label import *
+
+from util.Label import *
 from Labeler import *
 
-EPSILON = 0.001
+EPSILON = 0.01
 
 # DATA FILE FORMAT #
 
@@ -25,8 +26,9 @@ class Dataset():
     self.numLabelers = int(line[1])
     self.numImages = int(line[2])
     self.numCharacters = int(line[3]) # The number of characters in the alphabet
+    self.gamma = 0
 
-    priorA = np.identity(self.numCharacters)
+    priorA = np.identity(self.numCharacters) + EPSILON
     self.Labelers = [ Labeler(priorA) for i in range(self.numLabelers) ]
 
     # Read alphabet
@@ -71,6 +73,6 @@ class Dataset():
       x = 0
       for z in self.probZ[y]:
         #print "P(Z(%d)=%d) = %f" % (x, y, z)
-        print "P(Z(%d)=%c = %f" % (x, chr(y + 97), z) # Should convert back to label
+        print "P(Z(%d)=%c) = %f" % (x, chr(y + 97), z) # Should convert back to label
         x += 1
       print ""

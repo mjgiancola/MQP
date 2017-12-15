@@ -1,6 +1,6 @@
 import numpy as np
 
-from sinkhorn import *
+from util.sinkhorn import *
 
 class Labeler:
 

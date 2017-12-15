@@ -1,11 +1,13 @@
 from scipy.optimize import minimize
+from numpy.linalg import norm as frobenius
 import numpy as np
 import math
 
-from sinkhorn import *
+from util.sinkhorn import *
 from Labeler import *
 
 THRESHOLD = 1e-3
+EPSILON = 0.01
 
 def EM(data):
 
@@ -22,7 +24,7 @@ def EM(data):
 
     diff = math.fabs((Q - lastQ) / lastQ)
     if (diff < THRESHOLD):
-      break
+     break
 
     lastQ = Q
     print "Iteration " + str(i) + ": " + str(diff)
@@ -66,6 +68,9 @@ def computeQ(data):
 
   computeStyle(data)
 
+  n = data.Labelers[0].style.shape[0]
+  I = np.identity(n)
+
   result = 0
   for idx in range(data.numLabels):
     i = data.labels[idx].labelerId
@@ -76,6 +81,11 @@ def computeQ(data):
       S_zl = np.log(data.Labelers[i].style[z][lij])
       p_z = data.probZ[z][j]
       result += S_zl * p_z
+      
+    # Add the prior on S
+    for i in range(data.numLabelers):
+      # result -= (float(data.gamma) / n**2) * ( np.sum( (data.Labelers[i].style - I) ** 2 ) )
+      result -= (float(data.gamma) / n**2) * ( frobenius(data.Labelers[i].style - I) ** 2 )
 
   return result
 
@@ -87,35 +97,20 @@ def compute_gradient(data):
   dQ_dS = dQdS(data)      # Array of i entries, 1xn^2 matrices, dQdS_i
   n = data.Labelers[0].style.shape[0] # Dimension of matrices
 
-  # Only for when running without SP
-  # for i in range(data.numLabelers):
-  #   dQ_dA = dQ_dS[i]
-  #   gradients = np.append(gradients, dQ_dA)
-  # return gradients
-
   for i in range(data.numLabelers):
-    iterations = data.Labelers[i].iterations
     dQ_dA = dQ_dS[i]
+    
+    # mat is input to row_norm
+    mat = data.Labelers[i].iterations[1]
+    partial = gradient_step(mat, row_grad)
+    dQ_dA = np.dot(dQ_dA, partial)
 
-    # "Back propagate" gradient through the row and column normalizations
-    for idx in range(len(iterations)-2, -1, -1):
-      mat = iterations[idx]
-
-      # Determine type of gradient (row or col)
-      if idx % 2 == 1:
-        grad_func = col_grad
-      else:
-        grad_func = row_grad
-
-      # Compute the partial derivative at this step
-      partial = gradient_step(mat, grad_func)
-      # Add partial to the product
-      dQ_dA = np.dot(dQ_dA, partial)
-
-    # Multiply by gradient of expA
-    expA = np.reshape(iterations[0], (n**2,))
-    d_expA_dA = np.diag(expA)
-    dQ_dA = np.dot(dQ_dA, d_expA_dA)
+    # mat is input to my_relu
+    mat = data.Labelers[i].iterations[0]
+    partial = np.zeros(mat.shape) + EPSILON
+    partial[np.where(mat>0)] = 1 # Derivative of ReLU
+    partial = np.diag(np.ravel(partial)) # Derivative needs to be n^2 by n^2 (and will be 0 when indices don't align)
+    dQ_dA = np.dot(dQ_dA, partial)    
 
     gradients = np.append(gradients, dQ_dA)
 
@@ -135,6 +130,12 @@ def dQdS(data):
 
     for x in range(n):
       dQdS[i][x*n + lij] += data.probZ[x][j] / data.Labelers[i].style[x][lij]
+
+  I = np.identity(n)
+  for i in range(data.numLabelers):
+    for x in range(n):
+      for y in range(n):
+        dQdS[i][x*n + y] -= ( 2.*float(data.gamma) / (n**2) ) * (data.Labelers[i].style[x][y] - I[x][y])
 
   return dQdS
 
