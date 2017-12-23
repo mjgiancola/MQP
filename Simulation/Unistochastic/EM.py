@@ -4,6 +4,7 @@ import numpy as np
 import math
 
 from util.sinkhorn import *
+from util.softmax import *
 from Labeler import *
 
 THRESHOLD = 1e-3
@@ -34,7 +35,7 @@ def EM(data):
 # Compute P(Z_j | L, S) given S computed in the last MStep
 def EStep(data):
 
-  computeStyle(data)
+  data.computeStyle()
 
   # NOTE: For numerical stability, instead of computing the product in the paper,
   #       we compute the sum of the logs and exponentiate the sum
@@ -66,7 +67,7 @@ def EStep(data):
 
 def computeQ(data):
 
-  computeStyle(data)
+  data.computeStyle()
 
   n = data.Labelers[0].style.shape[0]
   I = np.identity(n)
@@ -91,27 +92,17 @@ def computeQ(data):
 
 def compute_gradient(data):
 
-  computeStyle(data)
+  data.computeStyle()
 
   gradients = np.empty(0) # Array of i entries, 1xn^2 matrices, dQdA_i
   dQ_dS = dQdS(data)      # Array of i entries, 1xn^2 matrices, dQdS_i
   n = data.Labelers[0].style.shape[0] # Dimension of matrices
 
   for i in range(data.numLabelers):
-    dQ_dA = dQ_dS[i]
-    
-    # mat is input to row_norm
-    mat = data.Labelers[i].iterations[1]
-    partial = gradient_step(mat, row_grad)
+    dQ_dA = dQ_dS[i] 
+    mat = data.Labelers[i].A
+    partial = gradient_step(mat, softmax_gradient)
     dQ_dA = np.dot(dQ_dA, partial)
-
-    # mat is input to my_relu
-    mat = data.Labelers[i].iterations[0]
-    partial = np.zeros(mat.shape) + EPSILON
-    partial[np.where(mat>0)] = 1 # Derivative of ReLU
-    partial = np.diag(np.ravel(partial)) # Derivative needs to be n^2 by n^2 (and will be 0 when indices don't align)
-    dQ_dA = np.dot(dQ_dA, partial)    
-
     gradients = np.append(gradients, dQ_dA)
 
   return gradients
@@ -172,7 +163,6 @@ def unpackX(x, data):
     data.Labelers[i].A = A.reshape((c,c))
 
 # Computes the gradient with respect to m, a matrix
-# grad_func is either "row_grad" or "col_grad", which compute the gradient of the row norm or column norm respectively
 # TODO This may be vectorizable; it is a non-trivial change as the indices need to be set correctly
 def gradient_step(m, grad_func):
   n = m.shape[0]

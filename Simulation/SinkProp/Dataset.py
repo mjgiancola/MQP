@@ -59,10 +59,19 @@ class Dataset():
     for x in range(self.numCharacters):
       self.probZ.append([])
 
+  # For each labeler, compute style matrix S given parameterizing matrix A
+  def computeStyle(data):
+    for i in range(data.numLabelers):
+      A = data.Labelers[i].A # Current parameterizing matrix
+      data.Labelers[i].iterations = sink_norm( np.exp(A) )
+
+      I = data.Labelers[i].iterations
+      data.Labelers[i].style = I[len(I)-1] # Set style matrix
+
   # For a large alphabet this will print a lot - consider piping to a file
   def outputResults(self):
     
-    computeStyle(self)
+    self.computeStyle()
 
     for i in range(self.numLabelers): 
       print "Style[%d]:" % i

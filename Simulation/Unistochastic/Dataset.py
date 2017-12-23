@@ -1,6 +1,7 @@
 import numpy as np
 
 from util.Label import *
+from util.softmax import *
 from Labeler import *
 
 EPSILON = 0.01
@@ -59,10 +60,16 @@ class Dataset():
     for x in range(self.numCharacters):
       self.probZ.append([])
 
+  # For each labeler, compute style matrix S given parameterizing matrix A
+  def computeStyle(self):
+    for i in range(self.numLabelers):
+      A = self.Labelers[i].A
+      self.Labelers[i].style = softmax(A)
+
   # For a large alphabet this will print a lot - consider piping to a file
   def outputResults(self):
     
-    computeStyle(self)
+    self.computeStyle()
 
     for i in range(self.numLabelers): 
       print "Style[%d]:" % i

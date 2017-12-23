@@ -33,7 +33,7 @@ def EM(data):
 # Compute P(Z_j | L, S) given S computed in the last MStep
 def EStep(data):
 
-  computeStyle(data)
+  data.computeStyle()
 
   # NOTE: For numerical stability, instead of computing the product in the paper,
   #       we compute the sum of the logs and exponentiate the sum
@@ -65,7 +65,7 @@ def EStep(data):
 
 def computeQ(data):
 
-  computeStyle(data)
+  data.computeStyle()
 
   n = data.Labelers[0].style.shape[0]
   I = np.identity(n)
@@ -90,7 +90,7 @@ def computeQ(data):
 
 def compute_gradient(data):
 
-  computeStyle(data)
+  data.computeStyle()
 
   gradients = np.empty(0) # Array of i entries, 1xn^2 matrices, dQdA_i
   dQ_dS = dQdS(data)      # Array of i entries, 1xn^2 matrices, dQdS_i
