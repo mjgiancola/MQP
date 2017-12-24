@@ -14,7 +14,7 @@ EPSILON = 0.001
 # ...
 
 class Dataset():
-  def __init__(self, filename):
+  def __init__(self, filename, gamma):
 
     fp = open(filename, 'r')
 
@@ -26,7 +26,7 @@ class Dataset():
     self.numLabelers = int(line[1])
     self.numImages = int(line[2])
     self.numCharacters = int(line[3]) # The number of characters in the alphabet
-    self.gamma = 0
+    self.gamma = gamma
 
     priorA = np.identity(self.numCharacters)
     self.Labelers = [ Labeler(priorA) for i in range(self.numLabelers) ]

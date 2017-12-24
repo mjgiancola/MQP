@@ -26,7 +26,7 @@ if __name__=='__main__':
     from SinkProp.Dataset import *
     from SinkProp.EM import *
 
-  data = Dataset(args.data)
+  data = Dataset(args.data, 1)
   check_gradient(data)
 
   # start = time()

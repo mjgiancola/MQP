@@ -5,6 +5,7 @@ import math
 
 from util.sinkhorn import *
 from util.softmax import *
+from util.gradient import *
 from Labeler import *
 
 THRESHOLD = 1e-3
@@ -83,10 +84,9 @@ def computeQ(data):
       p_z = data.probZ[z][j]
       result += S_zl * p_z
       
-    # Add the prior on S
-    for i in range(data.numLabelers):
-      # result -= (float(data.gamma) / n**2) * ( np.sum( (data.Labelers[i].style - I) ** 2 ) )
-      result -= (float(data.gamma) / n**2) * ( frobenius(data.Labelers[i].style - I) ** 2 )
+  # Add the prior on S using squared Frobenius norm
+  for i in range(data.numLabelers):
+    result -= (float(data.gamma) / n**2) * ( np.sum( (data.Labelers[i].style - I) ** 2 ) )
 
   return result
 
@@ -126,7 +126,9 @@ def dQdS(data):
   for i in range(data.numLabelers):
     for x in range(n):
       for y in range(n):
-        dQdS[i][x*n + y] -= ( 2.*float(data.gamma) / (n**2) ) * (data.Labelers[i].style[x][y] - I[x][y])
+        Sxy = data.Labelers[i].style[x][y]
+        Ixy = I[x][y]
+        dQdS[i][x*n + y] -= ( 2.*float(data.gamma) / (n**2) ) * (Sxy - Ixy)
 
   return dQdS
 
@@ -161,43 +163,3 @@ def unpackX(x, data):
     mat_size = c ** 2
     A = np.array([x[y] for y in range(i*mat_size, (i*mat_size)+mat_size)])
     data.Labelers[i].A = A.reshape((c,c))
-
-# Computes the gradient with respect to m, a matrix
-# TODO This may be vectorizable; it is a non-trivial change as the indices need to be set correctly
-def gradient_step(m, grad_func):
-  n = m.shape[0]
-  grad = np.empty((n**2, n**2))
-
-  # Indices of matrices that affect gradient computation
-  i = j = x = y = 0
-
-  # Compute each element of the gradient
-  for grad_row in range(n**2):
-    for grad_col in range(n**2):
-
-      # Take gradient (either row or col)
-      grad[grad_row][grad_col] = grad_func(m, i, j, x, y)
-
-      # Update matrix indices
-      if j == (n-1):
-        if i == (n-1):
-
-          # Finished a row of the gradient, update x,y
-          i = 0
-          j = 0
-
-          if y == (n-1):
-            if x == (n-1):
-              # Should be finished - if not, this will alert the presence of a bug
-              i = j = x = y = -1
-            else:
-              x += 1
-              y = 0
-          else:
-            y += 1
-        else:
-          i += 1
-          j = 0
-      else:
-        j += 1
-  return grad
