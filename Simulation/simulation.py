@@ -23,7 +23,7 @@ if __name__=='__main__':
 
   args = parser.parse_args()
   
-  data = TrainDataset(args.train_data, 1, args.r)
+  data = TrainDataset(args.train_data, 1, not args.r)
   
   # Uncomment to confirm correctness of Q and gradQ
   # check_gradient(data)
@@ -37,7 +37,7 @@ if __name__=='__main__':
   if args.v: data.outputResults()
 
   if args.t != None:
-  	test_data = TestDataset(args.t, data, args.r)
+  	test_data = TestDataset(args.t, data, not args.r)
 
   	EStep(test_data)
 

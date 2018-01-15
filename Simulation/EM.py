@@ -2,6 +2,7 @@ from scipy.optimize import minimize
 import numpy as np
 import math
 
+from util.sinkhorn import *
 from util.softmax import *
 from util.gradient import *
 
