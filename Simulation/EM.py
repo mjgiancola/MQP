@@ -2,9 +2,8 @@ from scipy.optimize import minimize
 import numpy as np
 import math
 
-from util.sinkhorn import *
+from util.softmax import *
 from util.gradient import *
-from Labeler import *
 
 THRESHOLD = 1e-3
 
@@ -40,7 +39,7 @@ def EStep(data):
 
   # Add log priors
   for x in range(data.numCharacters):
-    data.probZ[x] = [np.log(data.priorZ[x][y]) for y in range(data.numImages)]
+    data.probZ[x][:] = np.log(data.priorZ[x][:])
 
   for idx in range(data.numLabels):
     i = data.labels[idx].labelerId
@@ -87,19 +86,18 @@ def computeQ(data):
 
   return result
 
+# Computes the gradient dQ/dA
 def compute_gradient(data):
+  if data.isDSM: return compute_gradient_DSM(data)
+  else:          return compute_gradient_RSM(data)
+
+def compute_gradient_DSM(data):
 
   data.computeStyle()
 
   gradients = np.empty(0) # Array of i entries, 1xn^2 matrices, dQdA_i
   dQ_dS = dQdS(data)      # Array of i entries, 1xn^2 matrices, dQdS_i
   n = data.Labelers[0].style.shape[0] # Dimension of matrices
-
-  # Only for when running without SP
-  # for i in range(data.numLabelers):
-  #   dQ_dA = dQ_dS[i]
-  #   gradients = np.append(gradients, dQ_dA)
-  # return gradients
 
   for i in range(data.numLabelers):
     iterations = data.Labelers[i].iterations
@@ -129,6 +127,24 @@ def compute_gradient(data):
 
   return gradients
 
+def compute_gradient_RSM(data):
+
+  data.computeStyle()
+
+  gradients = np.empty(0) # Array of i entries, 1xn^2 matrices, dQdA_i
+  dQ_dS = dQdS(data)      # Array of i entries, 1xn^2 matrices, dQdS_i
+  n = data.Labelers[0].style.shape[0] # Dimension of matrices
+
+  for i in range(data.numLabelers):
+    dQ_dA = dQ_dS[i] 
+    mat = data.Labelers[i].A
+    partial = gradient_step(mat, softmax_gradient)
+    dQ_dA = np.dot(dQ_dA, partial)
+    gradients = np.append(gradients, dQ_dA)
+
+  return gradients
+
+
 # The gradient of Q in terms of S, the style matrix
 def dQdS(data):
   dQdS = np.empty(0)
@@ -151,7 +167,6 @@ def dQdS(data):
         Sxy = data.Labelers[i].style[x][y]
         Ixy = I[x][y]
         dQdS[i][x*n + y] -= ( 2.*float(data.gamma) / (n**2) ) * (Sxy - Ixy)
-        #dQdS[i][x*n + y] -= ( 2.*float(data.gamma) / (n**2) ) * (data.Labelers[i].style[x][y] - I[x][y])
 
   return dQdS
 

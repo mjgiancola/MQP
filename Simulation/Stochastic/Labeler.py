@@ -1,7 +1,6 @@
 import numpy as np
 
-from util.sinkhorn import *
-from Dataset import *
+from util.softmax import *
 
 class Labeler:
 
