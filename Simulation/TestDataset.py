@@ -30,8 +30,10 @@ class TestDataset(Dataset):
     numCharacters = train_data.numCharacters
     gamma = train_data.gamma
     alphabet = train_data.alphabet
-    priorZ = train_data.priorZ
     Labelers = train_data.Labelers
+    priorZ = np.empty((numCharacters, numImages))
+    for x in range(numCharacters):
+      priorZ[x][:] = train_data.priorLine[x]
 
     # Read in labels
     labels = []

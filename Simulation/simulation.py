@@ -19,7 +19,7 @@ if __name__=='__main__':
   parser.add_argument('-r', action='store_true', help='Runs in right stochastic mode (SinkProp disabled)')
   parser.add_argument('train_data', help='Filename of dataset file (formatting information in README)')
   parser.add_argument('-t', help='Filename of test dataset')
-  parser.add_argument('-v', help='Verbose mode')
+  parser.add_argument('-v', action='store_true', help='Verbose mode')
 
   args = parser.parse_args()
   
@@ -40,6 +40,8 @@ if __name__=='__main__':
   	test_data = TestDataset(args.t, data, not args.r)
 
   	EStep(test_data)
+
+  	if args.v: test_data.outputResults()
 
   	acc = test_data.percent_correct()
   	print "Percent Correct on Test Data: " + str(acc * 100) + "%"

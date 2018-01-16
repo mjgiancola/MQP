@@ -30,10 +30,10 @@ class TrainDataset(Dataset):
     alphabet = fp.readline().strip().split()
 
     # Read Z priors
-    line = fp.readline().strip().split()
+    self.priorLine = fp.readline().strip().split() # Stored to pass to TestDataset later
     priorZ = np.empty((numCharacters, numImages))
     for x in range(numCharacters):
-      priorZ[x][:] = line[x]
+      priorZ[x][:] = self.priorLine[x]
 
     # Read in labels
     labels = []
