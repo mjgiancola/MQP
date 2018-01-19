@@ -47,16 +47,16 @@ if __name__ == '__main__':
   # Labeler7 = Labeler(0.8, np.matrix([ [.3,.1,.1,.5], [.1,.3,.5,.1], [.5,.1,.3,.1], [.1,.5,.1,.3] ]))
   # Labeler8 = Labeler(0.8, np.matrix([ [.2,0,.2,.6], [0,.2,.6,.2], [2,.6,0,.2], [.6,.2,.2,0] ]))
 
-  Labeler1 = Labeler(0.8, np.matrix([ [1.,0.,0.], [0.,1.,0.], [0.,0.,1.] ]))
-  Labeler2 = Labeler(0.8, np.matrix([ [1.,0.,0.], [0.,1.,0.], [0.,0.,1.] ]))
-  Labeler3 = Labeler(0.8, np.matrix([ [1.,0.,0.], [0.,1.,0.], [0.,0.,1.] ]))
-  Labeler4 = Labeler(0.8, np.matrix([ [1.,0.,0.], [0.,1.,0.], [0.,0.,1.] ]))
-  Labeler5 = Labeler(0.8, np.matrix([ [1.,0.,0.], [0.,1.,0.], [0.,0.,1.] ]))
-  Labeler6 = Labeler(0.8, np.matrix([ [1.,0.,0.], [0.,1.,0.], [0.,0.,1.] ]))
-  Labeler7 = Labeler(0.8, np.matrix([ [1.,0.,0.], [0.,1.,0.], [0.,0.,1.] ]))
-  Labeler8 = Labeler(0.8, np.matrix([ [1.,0.,0.], [0.,1.,0.], [0.,0.,1.] ]))
-  Labeler9 = Labeler(0.8, np.matrix([ [1.,0.,0.], [0.,1.,0.], [0.,0.,1.] ]))
-  Labeler10 = Labeler(0.8, np.matrix([ [1.,0.,0.], [0.,0.,1.], [0.,1.,0.] ]))
+  Labeler1 = Labeler(1, np.matrix([ [1.,0.,0.], [0.,1.,0.], [0.,0.,1.] ]))
+  Labeler2 = Labeler(1, np.matrix([ [1.,0.,0.], [0.,1.,0.], [0.,0.,1.] ]))
+  Labeler3 = Labeler(1, np.matrix([ [1.,0.,0.], [0.,1.,0.], [0.,0.,1.] ]))
+  Labeler4 = Labeler(1, np.matrix([ [1.,0.,0.], [0.,1.,0.], [0.,0.,1.] ]))
+  Labeler5 = Labeler(1, np.matrix([ [1.,0.,0.], [0.,1.,0.], [0.,0.,1.] ]))
+  Labeler6 = Labeler(1, np.matrix([ [1.,0.,0.], [0.,1.,0.], [0.,0.,1.] ]))
+  Labeler7 = Labeler(1, np.matrix([ [1.,0.,0.], [0.,1.,0.], [0.,0.,1.] ]))
+  Labeler8 = Labeler(1, np.matrix([ [1.,0.,0.], [0.,1.,0.], [0.,0.,1.] ]))
+  Labeler9 = Labeler(1, np.matrix([ [1.,0.,0.], [0.,1.,0.], [0.,0.,1.] ]))
+  Labeler10 = Labeler(1, np.matrix([ [1.,0.,0.], [0.,0.,1.], [0.,1.,0.] ]))
 
   Labelers = [Labeler1, Labeler2, Labeler3, Labeler4, Labeler5, Labeler6, Labeler7, Labeler8, Labeler9, Labeler10]
   # Labelers = [ Labeler10 ]
@@ -73,7 +73,7 @@ if __name__ == '__main__':
   # TODO Set these before generating
   if not args.t: # Only for training
     fp.write("a b c\n")            # Character set
-    fp.write("0.25 0.25 0.25\n")# Equal prior for all letters in character set
+    fp.write("0.33 0.33 0.33\n")# Equal prior for all letters in character set
 
   for i in range(len(ground_truths)):
     gt = ground_truths[i]

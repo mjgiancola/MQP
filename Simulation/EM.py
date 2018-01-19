@@ -14,7 +14,7 @@ def EM(data):
   MStep(data) # Maximize Q to find optimal values of S
   lastQ = computeQ(data) # Compute initial Q value
 
-  initialQ = lastQ
+  # initialQ = lastQ
 
   # Iterate until the threshold is reached
   i = 0
@@ -23,11 +23,11 @@ def EM(data):
     MStep(data)
     Q = computeQ(data)
 
-    # diff = math.fabs((Q - lastQ) / lastQ)
-    diff = math.fabs(Q / initialQ)
+    diff = math.fabs((Q - lastQ) / lastQ)
+    # diff = math.fabs(Q / initialQ)
 
-    # if (diff < THRESHOLD):
-    if diff < 0.8:
+    # if diff < 0.8:
+    if (diff < THRESHOLD):
      break
 
     lastQ = Q
