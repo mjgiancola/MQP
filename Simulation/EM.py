@@ -6,13 +6,15 @@ from util.sinkhorn import *
 from util.softmax import *
 from util.gradient import *
 
-THRESHOLD = 1e-3
+THRESHOLD = 1e-5
 
 def EM(data):
 
   EStep(data) # Estimate P(Z_j | L, S) given priors on S
   MStep(data) # Maximize Q to find optimal values of S
   lastQ = computeQ(data) # Compute initial Q value
+
+  initialQ = lastQ
 
   # Iterate until the threshold is reached
   i = 0
@@ -21,8 +23,11 @@ def EM(data):
     MStep(data)
     Q = computeQ(data)
 
-    diff = math.fabs((Q - lastQ) / lastQ)
-    if (diff < THRESHOLD):
+    # diff = math.fabs((Q - lastQ) / lastQ)
+    diff = math.fabs(Q / initialQ)
+
+    # if (diff < THRESHOLD):
+    if diff < 0.8:
      break
 
     lastQ = Q

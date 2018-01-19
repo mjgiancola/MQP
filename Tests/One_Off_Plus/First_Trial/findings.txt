@@ -1,0 +1,1 @@
+With more data, it "converged" even more quickly only 2 iterations. This tells me that maybe its taking a while to make improvements and maybe I should do the fraction of the original idea.

@@ -26,7 +26,7 @@ if __name__ == '__main__':
   parser.add_argument('-d', help='Filename to write description of dataset to (optional)')
   args = parser.parse_args()
 
-  ground_truths = ["a"] * 25 + ["b"] * 25 + ["c"] * 25 # + ["d"] * 10
+  ground_truths = ["a"] * 100 + ["b"] * 100 + ["c"] * 100 # + ["d"] * 10
 
 
   path = "out/" + args.data_file_name
