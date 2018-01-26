@@ -2,8 +2,7 @@ from scipy.optimize import check_grad
 from time import time
 import sys, argparse
 
-from TrainDataset import *
-from TestDataset import *
+from Dataset import *
 from EM import *
 
 # Verifies the correctness of Q and gradQ
@@ -16,14 +15,15 @@ def check_gradient(data):
 if __name__=='__main__':
 
   parser = argparse.ArgumentParser(description='Infer data labels and style matrices.')
-  parser.add_argument('-r', action='store_true', help='Runs in right stochastic mode (SinkProp disabled)')
   parser.add_argument('train_data', help='Filename of dataset file (formatting information in README)')
-  parser.add_argument('-t', help='Filename of test dataset')
+  parser.add_argument('-r', action='store_true', help='Runs in right stochastic mode (SinkProp disabled)')
+  parser.add_argument('-t', action='store_true', help='Indicates if dataset file contains ground truth labels')
+  parser.add_argument('-p', action='store_true', help='Checks all permutations of labels when computing accuracy (useful for clustering problems')
   parser.add_argument('-v', action='store_true', help='Verbose mode')
 
   args = parser.parse_args()
   
-  data = TrainDataset(args.train_data, 1, not args.r)
+  data = Dataset(args.train_data, 1, not args.r, args.t)
   
   # Uncomment to confirm correctness of Q and gradQ
   # check_gradient(data)
@@ -36,12 +36,7 @@ if __name__=='__main__':
   print "Completed training in %d minutes and %d seconds\n" % (elapsed / 60, elapsed % 60)
   if args.v: data.outputResults()
 
-  if args.t != None:
-  	test_data = TestDataset(args.t, data, not args.r)
-
-  	EStep(test_data)
-
-  	if args.v: test_data.outputResults()
-
-  	acc = test_data.percent_correct()
+  if args.t:
+  	if args.p: acc = data.best_percent_correct()
+	else:      acc = data.percent_correct()
   	print "Percent Correct on Test Data: " + str(acc * 100) + "%"
