@@ -1,1 +1,0 @@
-Labels were generated only with ABC ground truths (ie. no D ground truths)

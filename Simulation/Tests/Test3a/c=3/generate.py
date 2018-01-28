@@ -5,7 +5,7 @@ from numpy.random import choice, uniform, permutation
 from Labeler import *
 from Label import *
 
-NUM_LETTERS = 7 # Size of alphabet
+NUM_LETTERS = 3 # Size of alphabet
 
 def getLabel(ground_truth, labeler):
   return labeler.answerQuestion(ground_truth)
@@ -29,17 +29,17 @@ if __name__ == '__main__':
   parser.add_argument('-d', help='Filename to write description of dataset to (optional)')
   args = parser.parse_args()
 
-  types = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
+  types = ['a', 'b', 'c']
   ground_truths = [choice(types) for i in range(100)]
 
   Labelers = []
   for i in range(80):
     acc = uniform(.75, 1)
-    Labelers.append(Labeler(acc, np.identity(NUM_LETTERS)))
+    Labelers.append(Labeler(acc, np.identity(3)))
 
   for i in range(20):
     acc = uniform(.75, 1)
-    Labelers.append(Labeler(acc, permutation(np.identity(NUM_LETTERS))))
+    Labelers.append(Labeler(acc, permutation(np.identity(3))))
 
   for i in range(100):
     for j in range(len(ground_truths)):
@@ -68,28 +68,14 @@ if __name__ == '__main__':
   labels = []
   for n in range(10, 110, 10):
     numLabels = numLabelers * n
-    fp = open("../Simulation/Tests/Test3a/c=7/data/data_%d.txt" % n, 'w')
+    fp = open("../Simulation/Tests/Test3a/data/data_%d" % n, 'w')
     fp.write("%d %d %d %d\n" % ( numLabels, numLabelers, numImages, NUM_LETTERS ) )
-    
-    # Write character set to file
-    for c in types: fp.write("%s " % c)
-    fp.write("\n")
-    
-    # Write priors to file
-    prior = 1. / len(types) # Equal for all letters in character set
-    for c in types: fp.write("%.2f " % prior)
-    fp.write("\n")
+    fp.write("a b c\n")         # Character set
+    fp.write("0.33 0.33 0.33\n")# Equal prior for all letters in character set
 
     for i in range(100):
       labels = choice(Labelers[i].labels, (n,), replace=False)
       for lbl in labels: fp.write(str(lbl))
-
-    fp.write("\n")
-    for i in range(len(ground_truths)):
-      fp.write("%d %d\n" % (i, ord(ground_truths[i]) - 97) )
-
-    fp.close()
-
 
   # for i in range(len(ground_truths)):
   #   gt = ground_truths[i]
@@ -97,6 +83,13 @@ if __name__ == '__main__':
 
   #   for j in range(len(labels)): # Number of labels may not equal the numLabelers if everyone didn't label it
   #     fp.write("%d %d %d\n" % (i, j, ord(labels[j]) - 97) )
+
+  fp.write("\n")
+  for i in range(len(ground_truths)):
+    fp.write("%d %d\n" % (i, ord(ground_truths[i]) - 97) )
+
+  fp.close()
+
 
 
 # Old stuff

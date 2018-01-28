@@ -1,0 +1,601 @@
+
+Labeler 0
+Accuracy: 0.962172
+Style:
+[[1. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 1.]]
+Labeler 1
+Accuracy: 0.880628
+Style:
+[[1. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 1.]]
+Labeler 2
+Accuracy: 0.805312
+Style:
+[[1. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 1.]]
+Labeler 3
+Accuracy: 0.973986
+Style:
+[[1. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 1.]]
+Labeler 4
+Accuracy: 0.871512
+Style:
+[[1. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 1.]]
+Labeler 5
+Accuracy: 0.856557
+Style:
+[[1. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 1.]]
+Labeler 6
+Accuracy: 0.758061
+Style:
+[[1. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 1.]]
+Labeler 7
+Accuracy: 0.831285
+Style:
+[[1. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 1.]]
+Labeler 8
+Accuracy: 0.904001
+Style:
+[[1. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 1.]]
+Labeler 9
+Accuracy: 0.877487
+Style:
+[[1. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 1.]]
+Labeler 10
+Accuracy: 0.930720
+Style:
+[[1. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 1.]]
+Labeler 11
+Accuracy: 0.923015
+Style:
+[[1. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 1.]]
+Labeler 12
+Accuracy: 0.868657
+Style:
+[[1. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 1.]]
+Labeler 13
+Accuracy: 0.966226
+Style:
+[[1. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 1.]]
+Labeler 14
+Accuracy: 0.805801
+Style:
+[[1. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 1.]]
+Labeler 15
+Accuracy: 0.818169
+Style:
+[[1. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 1.]]
+Labeler 16
+Accuracy: 0.920484
+Style:
+[[1. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 1.]]
+Labeler 17
+Accuracy: 0.964737
+Style:
+[[1. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 1.]]
+Labeler 18
+Accuracy: 0.820540
+Style:
+[[1. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 1.]]
+Labeler 19
+Accuracy: 0.889624
+Style:
+[[1. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 1.]]
+Labeler 20
+Accuracy: 0.778789
+Style:
+[[1. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 1.]]
+Labeler 21
+Accuracy: 0.935853
+Style:
+[[1. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 1.]]
+Labeler 22
+Accuracy: 0.857763
+Style:
+[[1. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 1.]]
+Labeler 23
+Accuracy: 0.847146
+Style:
+[[1. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 1.]]
+Labeler 24
+Accuracy: 0.825744
+Style:
+[[1. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 1.]]
+Labeler 25
+Accuracy: 0.916875
+Style:
+[[1. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 1.]]
+Labeler 26
+Accuracy: 0.777844
+Style:
+[[1. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 1.]]
+Labeler 27
+Accuracy: 0.824182
+Style:
+[[1. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 1.]]
+Labeler 28
+Accuracy: 0.760390
+Style:
+[[1. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 1.]]
+Labeler 29
+Accuracy: 0.859484
+Style:
+[[1. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 1.]]
+Labeler 30
+Accuracy: 0.996712
+Style:
+[[1. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 1.]]
+Labeler 31
+Accuracy: 0.903979
+Style:
+[[1. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 1.]]
+Labeler 32
+Accuracy: 0.947497
+Style:
+[[1. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 1.]]
+Labeler 33
+Accuracy: 0.985895
+Style:
+[[1. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 1.]]
+Labeler 34
+Accuracy: 0.984647
+Style:
+[[1. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 1.]]
+Labeler 35
+Accuracy: 0.971942
+Style:
+[[1. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 1.]]
+Labeler 36
+Accuracy: 0.835016
+Style:
+[[1. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 1.]]
+Labeler 37
+Accuracy: 0.977380
+Style:
+[[1. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 1.]]
+Labeler 38
+Accuracy: 0.880090
+Style:
+[[1. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 1.]]
+Labeler 39
+Accuracy: 0.820488
+Style:
+[[1. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 1.]]
+Labeler 40
+Accuracy: 0.980658
+Style:
+[[1. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 1.]]
+Labeler 41
+Accuracy: 0.780581
+Style:
+[[1. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 1.]]
+Labeler 42
+Accuracy: 0.926517
+Style:
+[[1. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 1.]]
+Labeler 43
+Accuracy: 0.979052
+Style:
+[[1. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 1.]]
+Labeler 44
+Accuracy: 0.900700
+Style:
+[[1. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 1.]]
+Labeler 45
+Accuracy: 0.811021
+Style:
+[[1. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 1.]]
+Labeler 46
+Accuracy: 0.953095
+Style:
+[[1. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 1.]]
+Labeler 47
+Accuracy: 0.807983
+Style:
+[[1. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 1.]]
+Labeler 48
+Accuracy: 0.890089
+Style:
+[[1. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 1.]]
+Labeler 49
+Accuracy: 0.891092
+Style:
+[[1. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 1.]]
+Labeler 50
+Accuracy: 0.856093
+Style:
+[[1. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 1.]]
+Labeler 51
+Accuracy: 0.954057
+Style:
+[[1. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 1.]]
+Labeler 52
+Accuracy: 0.932577
+Style:
+[[1. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 1.]]
+Labeler 53
+Accuracy: 0.914235
+Style:
+[[1. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 1.]]
+Labeler 54
+Accuracy: 0.797418
+Style:
+[[1. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 1.]]
+Labeler 55
+Accuracy: 0.961698
+Style:
+[[1. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 1.]]
+Labeler 56
+Accuracy: 0.869219
+Style:
+[[1. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 1.]]
+Labeler 57
+Accuracy: 0.912541
+Style:
+[[1. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 1.]]
+Labeler 58
+Accuracy: 0.988196
+Style:
+[[1. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 1.]]
+Labeler 59
+Accuracy: 0.863184
+Style:
+[[1. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 1.]]
+Labeler 60
+Accuracy: 0.797599
+Style:
+[[1. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 1.]]
+Labeler 61
+Accuracy: 0.923804
+Style:
+[[1. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 1.]]
+Labeler 62
+Accuracy: 0.891927
+Style:
+[[1. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 1.]]
+Labeler 63
+Accuracy: 0.882039
+Style:
+[[1. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 1.]]
+Labeler 64
+Accuracy: 0.877325
+Style:
+[[1. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 1.]]
+Labeler 65
+Accuracy: 0.901901
+Style:
+[[1. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 1.]]
+Labeler 66
+Accuracy: 0.981732
+Style:
+[[1. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 1.]]
+Labeler 67
+Accuracy: 0.961687
+Style:
+[[1. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 1.]]
+Labeler 68
+Accuracy: 0.929004
+Style:
+[[1. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 1.]]
+Labeler 69
+Accuracy: 0.905980
+Style:
+[[1. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 1.]]
+Labeler 70
+Accuracy: 0.823247
+Style:
+[[1. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 1.]]
+Labeler 71
+Accuracy: 0.779695
+Style:
+[[1. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 1.]]
+Labeler 72
+Accuracy: 0.950813
+Style:
+[[1. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 1.]]
+Labeler 73
+Accuracy: 0.787927
+Style:
+[[1. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 1.]]
+Labeler 74
+Accuracy: 0.810439
+Style:
+[[1. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 1.]]
+Labeler 75
+Accuracy: 0.835979
+Style:
+[[1. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 1.]]
+Labeler 76
+Accuracy: 0.902112
+Style:
+[[1. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 1.]]
+Labeler 77
+Accuracy: 0.942617
+Style:
+[[1. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 1.]]
+Labeler 78
+Accuracy: 0.971384
+Style:
+[[1. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 1.]]
+Labeler 79
+Accuracy: 0.993780
+Style:
+[[1. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 1.]]
+Labeler 80
+Accuracy: 0.769024
+Style:
+[[0. 1. 0.]
+ [1. 0. 0.]
+ [0. 0. 1.]]
+Labeler 81
+Accuracy: 0.824439
+Style:
+[[0. 1. 0.]
+ [1. 0. 0.]
+ [0. 0. 1.]]
+Labeler 82
+Accuracy: 0.854317
+Style:
+[[0. 0. 1.]
+ [0. 1. 0.]
+ [1. 0. 0.]]
+Labeler 83
+Accuracy: 0.993947
+Style:
+[[0. 0. 1.]
+ [1. 0. 0.]
+ [0. 1. 0.]]
+Labeler 84
+Accuracy: 0.876443
+Style:
+[[0. 1. 0.]
+ [0. 0. 1.]
+ [1. 0. 0.]]
+Labeler 85
+Accuracy: 0.768110
+Style:
+[[0. 0. 1.]
+ [1. 0. 0.]
+ [0. 1. 0.]]
+Labeler 86
+Accuracy: 0.913828
+Style:
+[[1. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 1.]]
+Labeler 87
+Accuracy: 0.810143
+Style:
+[[1. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 1.]]
+Labeler 88
+Accuracy: 0.770200
+Style:
+[[0. 0. 1.]
+ [0. 1. 0.]
+ [1. 0. 0.]]
+Labeler 89
+Accuracy: 0.874553
+Style:
+[[0. 1. 0.]
+ [0. 0. 1.]
+ [1. 0. 0.]]
+Labeler 90
+Accuracy: 0.929506
+Style:
+[[0. 1. 0.]
+ [1. 0. 0.]
+ [0. 0. 1.]]
+Labeler 91
+Accuracy: 0.896280
+Style:
+[[0. 1. 0.]
+ [0. 0. 1.]
+ [1. 0. 0.]]
+Labeler 92
+Accuracy: 0.957444
+Style:
+[[0. 1. 0.]
+ [1. 0. 0.]
+ [0. 0. 1.]]
+Labeler 93
+Accuracy: 0.883559
+Style:
+[[0. 1. 0.]
+ [0. 0. 1.]
+ [1. 0. 0.]]
+Labeler 94
+Accuracy: 0.930244
+Style:
+[[1. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 1.]]
+Labeler 95
+Accuracy: 0.817780
+Style:
+[[0. 1. 0.]
+ [0. 0. 1.]
+ [1. 0. 0.]]
+Labeler 96
+Accuracy: 0.824100
+Style:
+[[1. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 1.]]
+Labeler 97
+Accuracy: 0.932245
+Style:
+[[0. 1. 0.]
+ [1. 0. 0.]
+ [0. 0. 1.]]
+Labeler 98
+Accuracy: 0.836731
+Style:
+[[0. 0. 1.]
+ [1. 0. 0.]
+ [0. 1. 0.]]
+Labeler 99
+Accuracy: 0.974581
+Style:
+[[1. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 1.]]

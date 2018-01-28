@@ -1,1 +1,0 @@
-In this test, both models perform relatively poorly (32% vs 28%), but the SinkProp models at least performs better than the right stochastic model. 

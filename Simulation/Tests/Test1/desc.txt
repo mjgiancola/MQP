@@ -1,0 +1,61 @@
+Labeler 9 only labeled data with ground truth 'a' or 'b' (not 'c')
+Labeler 0
+Accuracy: 1.000000
+Style:
+[[1. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 1.]]
+Labeler 1
+Accuracy: 1.000000
+Style:
+[[1. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 1.]]
+Labeler 2
+Accuracy: 1.000000
+Style:
+[[1. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 1.]]
+Labeler 3
+Accuracy: 1.000000
+Style:
+[[1. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 1.]]
+Labeler 4
+Accuracy: 1.000000
+Style:
+[[1. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 1.]]
+Labeler 5
+Accuracy: 1.000000
+Style:
+[[1. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 1.]]
+Labeler 6
+Accuracy: 1.000000
+Style:
+[[1. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 1.]]
+Labeler 7
+Accuracy: 1.000000
+Style:
+[[1. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 1.]]
+Labeler 8
+Accuracy: 1.000000
+Style:
+[[1. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 1.]]
+Labeler 9
+Accuracy: 1.000000
+Style:
+[[1. 0. 0.]
+ [0. 0. 1.]
+ [0. 1. 0.]]

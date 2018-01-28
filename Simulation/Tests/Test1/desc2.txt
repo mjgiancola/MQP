@@ -1,0 +1,13 @@
+Same as before except only two labelers, Labeler 1 is the diferent labeler.
+Labeler 0
+Accuracy: 1.000000
+Style:
+[[1. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 1.]]
+Labeler 1
+Accuracy: 1.000000
+Style:
+[[1. 0. 0.]
+ [0. 0. 1.]
+ [0. 1. 0.]]

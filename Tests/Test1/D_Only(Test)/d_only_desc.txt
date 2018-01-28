@@ -1,1 +1,0 @@
-All labels have D as ground truth.

@@ -6,7 +6,7 @@ from util.sinkhorn import *
 from util.softmax import *
 from util.gradient import *
 
-THRESHOLD = 1e-4
+THRESHOLD = 1e-3
 
 def EM(data):
 
@@ -24,14 +24,11 @@ def EM(data):
     Q = computeQ(data)
 
     diff = math.fabs((Q - lastQ) / lastQ)
-    # diff = math.fabs(Q / initialQ)
-
-    # if diff < 0.8:
+    print "Iteration " + str(i) + ": " + str(diff)
     if (diff < THRESHOLD):
      break
 
     lastQ = Q
-    print "Iteration " + str(i) + ": " + str(diff)
     i += 1
   print ""
 

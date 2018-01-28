@@ -1,1 +1,0 @@
-Trained on A,B,C, tested on just D. Expected DSM to be able to infer D labels, but for some reason the reverse was true. Going to generate new datasets to see if this continues.
