@@ -89,11 +89,6 @@ class Dataset():
       A = self.Labelers[i].A
       self.Labelers[i].style = softmax(A)
 
-  def percent_correct(self):
-    # Compute given labels based on greatest probability
-    given = np.argmax(self.probZ, axis=0)
-    return self.acc(given)
-
   # Computes the highest possible percent correct by considering all possible
   # permutations of cluster names
   def best_percent_correct(self):
@@ -114,7 +109,7 @@ class Dataset():
           labels[i] = perm[lbl]
           i += 1
 
-        new_acc = self.acc(labels)
+        new_acc = self.percent_correct(labels)
         if new_acc > acc:
           acc = new_acc
           best_perm = perm
@@ -122,8 +117,13 @@ class Dataset():
       print "Transformation of labels: " + str(best_perm)
       return acc
 
+  def std_percent_correct(self):
+      # Compute given labels based on greatest probability
+      given = np.argmax(self.probZ, axis=0)
+      return self.percent_correct(given)
+
   # Compute percent correct by comapring values in given array to gt (ground truth)
-  def acc(self, given):
+  def percent_correct(self, given):
     correct = 0.
     total = 0.
 
@@ -134,11 +134,38 @@ class Dataset():
 
     return correct / total
 
-  def cross_entropy(self):
+  # Finds best cross_entropy value over all permutations of labels
+  def best_cross_entropy(self):
+    # Generate list of permutations of character set
+    permutations = list(itertools.permutations(range(self.numCharacters)))
+    
+    ce = 100 # Dummy large value
+    best_perm = 0
+
+    y_actuals = self.gt_to_onehot()
+
+    for perm in permutations:
+      y_hats = self.probZ[np.array(perm)] # Permute rows of probZ  
+      new_ce = self.cross_entropy(y_hats, y_actuals)
+      
+      if new_ce < ce:
+        ce = new_ce
+        best_perm = perm
+
+    print "Transformation of labels: " + str(best_perm)
+    print "(Transformations should match)"
+    return ce
+
+  # Standard cross_entropy
+  def std_cross_entropy():
     y_hats = self.probZ
+    y_actuals = self.gt_to_onehot()
+    return self.cross_entropy(y_hats, y_actuals)
+
+  # Computes cross_entropy
+  def cross_entropy(self, y_hats, y_actuals):
     y_hats[y_hats == 0] = EPSILON # Model has ability to achieve probZ 0 and 1
     y_hats[y_hats == 1] = 1 - EPSILON
-    y_actuals = self.gt_to_onehot()
 
     m = self.numImages
     ones = np.ones(y_actuals.shape)
