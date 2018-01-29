@@ -41,7 +41,7 @@ if __name__ == '__main__':
     for img in range(len(labels[labeler])):
       lbl = labels[labeler][img]
       if lbl == '': continue
-      fp.write("%d %d %s\n" % (img, labeler, lbl))
+      fp.write("%d %d %d\n" % (img, labeler, clusters.index(lbl)))
 
 
   fp.close()

@@ -6,6 +6,8 @@ from util.Label import *
 from util.sinkhorn import *
 from util.softmax import *
 
+EPSILON = 1e-5
+
 # DATA FILE FORMAT for DATA #
 
 # numLabels numLabelers numImages numCharacters
@@ -131,6 +133,25 @@ class Dataset():
       total += 1
 
     return correct / total
+
+  def cross_entropy(self):
+    y_hats = self.probZ
+    y_hats[y_hats == 0] = EPSILON # Model has ability to achieve probZ 0 and 1
+    y_hats[y_hats == 1] = 1 - EPSILON
+    y_actuals = self.gt_to_onehot()
+
+    m = self.numImages
+    ones = np.ones(y_actuals.shape)
+
+    positives = y_actuals * np.log(y_hats)
+    negatives = (ones - y_actuals) * np.log(ones - y_hats)
+
+    return -1./m * np.sum(positives + negatives)
+
+  def gt_to_onehot(self):
+    onehot = np.zeros((self.numImages, self.numCharacters))
+    onehot[np.arange(self.numImages), self.gt] = 1
+    return np.transpose(onehot)
 
   # For a large alphabet this will print a lot - consider piping to a file
   def outputResults(self):

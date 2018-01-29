@@ -40,3 +40,5 @@ if __name__=='__main__':
   	if args.p: acc = data.best_percent_correct()
 	else:      acc = data.percent_correct()
   	print "Percent Correct on Test Data: " + str(acc * 100) + "%"
+  	print "Cross Entropy: " + str(data.cross_entropy())
+  	
