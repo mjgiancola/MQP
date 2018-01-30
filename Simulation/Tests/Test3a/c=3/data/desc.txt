@@ -1,601 +1,601 @@
 
 Labeler 0
-Accuracy: 0.962172
+Accuracy: 0.983045
 Style:
 [[1. 0. 0.]
  [0. 1. 0.]
  [0. 0. 1.]]
 Labeler 1
-Accuracy: 0.880628
+Accuracy: 0.782231
 Style:
 [[1. 0. 0.]
  [0. 1. 0.]
  [0. 0. 1.]]
 Labeler 2
-Accuracy: 0.805312
+Accuracy: 0.939222
 Style:
 [[1. 0. 0.]
  [0. 1. 0.]
  [0. 0. 1.]]
 Labeler 3
-Accuracy: 0.973986
+Accuracy: 0.857386
 Style:
 [[1. 0. 0.]
  [0. 1. 0.]
  [0. 0. 1.]]
 Labeler 4
-Accuracy: 0.871512
+Accuracy: 0.842054
 Style:
 [[1. 0. 0.]
  [0. 1. 0.]
  [0. 0. 1.]]
 Labeler 5
-Accuracy: 0.856557
+Accuracy: 0.820285
 Style:
 [[1. 0. 0.]
  [0. 1. 0.]
  [0. 0. 1.]]
 Labeler 6
-Accuracy: 0.758061
+Accuracy: 0.941131
 Style:
 [[1. 0. 0.]
  [0. 1. 0.]
  [0. 0. 1.]]
 Labeler 7
-Accuracy: 0.831285
+Accuracy: 0.859670
 Style:
 [[1. 0. 0.]
  [0. 1. 0.]
  [0. 0. 1.]]
 Labeler 8
-Accuracy: 0.904001
+Accuracy: 0.939782
 Style:
 [[1. 0. 0.]
  [0. 1. 0.]
  [0. 0. 1.]]
 Labeler 9
-Accuracy: 0.877487
+Accuracy: 0.754198
 Style:
 [[1. 0. 0.]
  [0. 1. 0.]
  [0. 0. 1.]]
 Labeler 10
-Accuracy: 0.930720
+Accuracy: 0.933612
 Style:
-[[1. 0. 0.]
- [0. 1. 0.]
+[[0. 1. 0.]
+ [1. 0. 0.]
  [0. 0. 1.]]
 Labeler 11
-Accuracy: 0.923015
+Accuracy: 0.913785
 Style:
-[[1. 0. 0.]
- [0. 1. 0.]
- [0. 0. 1.]]
+[[0. 0. 1.]
+ [1. 0. 0.]
+ [0. 1. 0.]]
 Labeler 12
-Accuracy: 0.868657
+Accuracy: 0.959845
 Style:
-[[1. 0. 0.]
- [0. 1. 0.]
- [0. 0. 1.]]
+[[0. 0. 1.]
+ [1. 0. 0.]
+ [0. 1. 0.]]
 Labeler 13
-Accuracy: 0.966226
+Accuracy: 0.950989
 Style:
 [[1. 0. 0.]
  [0. 1. 0.]
  [0. 0. 1.]]
 Labeler 14
-Accuracy: 0.805801
+Accuracy: 0.772078
 Style:
 [[1. 0. 0.]
- [0. 1. 0.]
- [0. 0. 1.]]
+ [0. 0. 1.]
+ [0. 1. 0.]]
 Labeler 15
-Accuracy: 0.818169
+Accuracy: 0.790614
 Style:
-[[1. 0. 0.]
- [0. 1. 0.]
+[[0. 1. 0.]
+ [1. 0. 0.]
  [0. 0. 1.]]
 Labeler 16
-Accuracy: 0.920484
+Accuracy: 0.917819
 Style:
-[[1. 0. 0.]
- [0. 1. 0.]
+[[0. 1. 0.]
+ [1. 0. 0.]
  [0. 0. 1.]]
 Labeler 17
-Accuracy: 0.964737
+Accuracy: 0.872424
 Style:
 [[1. 0. 0.]
- [0. 1. 0.]
- [0. 0. 1.]]
+ [0. 0. 1.]
+ [0. 1. 0.]]
 Labeler 18
-Accuracy: 0.820540
+Accuracy: 0.783489
 Style:
-[[1. 0. 0.]
- [0. 1. 0.]
+[[0. 1. 0.]
+ [1. 0. 0.]
  [0. 0. 1.]]
 Labeler 19
-Accuracy: 0.889624
+Accuracy: 0.755336
 Style:
-[[1. 0. 0.]
- [0. 1. 0.]
+[[0. 1. 0.]
+ [1. 0. 0.]
  [0. 0. 1.]]
 Labeler 20
-Accuracy: 0.778789
+Accuracy: 0.975624
 Style:
-[[1. 0. 0.]
- [0. 1. 0.]
+[[0. 1. 0.]
+ [1. 0. 0.]
  [0. 0. 1.]]
 Labeler 21
-Accuracy: 0.935853
+Accuracy: 0.967534
 Style:
-[[1. 0. 0.]
- [0. 1. 0.]
- [0. 0. 1.]]
+[[0. 1. 0.]
+ [0. 0. 1.]
+ [1. 0. 0.]]
 Labeler 22
-Accuracy: 0.857763
+Accuracy: 0.786185
 Style:
-[[1. 0. 0.]
+[[0. 0. 1.]
  [0. 1. 0.]
- [0. 0. 1.]]
+ [1. 0. 0.]]
 Labeler 23
-Accuracy: 0.847146
+Accuracy: 0.820423
 Style:
 [[1. 0. 0.]
  [0. 1. 0.]
  [0. 0. 1.]]
 Labeler 24
-Accuracy: 0.825744
+Accuracy: 0.906781
 Style:
-[[1. 0. 0.]
- [0. 1. 0.]
- [0. 0. 1.]]
+[[0. 0. 1.]
+ [1. 0. 0.]
+ [0. 1. 0.]]
 Labeler 25
-Accuracy: 0.916875
+Accuracy: 0.967230
 Style:
 [[1. 0. 0.]
- [0. 1. 0.]
- [0. 0. 1.]]
+ [0. 0. 1.]
+ [0. 1. 0.]]
 Labeler 26
-Accuracy: 0.777844
+Accuracy: 0.768850
 Style:
-[[1. 0. 0.]
+[[0. 0. 1.]
  [0. 1. 0.]
- [0. 0. 1.]]
+ [1. 0. 0.]]
 Labeler 27
-Accuracy: 0.824182
+Accuracy: 0.822271
 Style:
-[[1. 0. 0.]
- [0. 1. 0.]
- [0. 0. 1.]]
+[[0. 1. 0.]
+ [0. 0. 1.]
+ [1. 0. 0.]]
 Labeler 28
-Accuracy: 0.760390
+Accuracy: 0.766027
 Style:
-[[1. 0. 0.]
- [0. 1. 0.]
- [0. 0. 1.]]
+[[0. 0. 1.]
+ [1. 0. 0.]
+ [0. 1. 0.]]
 Labeler 29
-Accuracy: 0.859484
+Accuracy: 0.921334
 Style:
-[[1. 0. 0.]
+[[0. 0. 1.]
  [0. 1. 0.]
- [0. 0. 1.]]
+ [1. 0. 0.]]
 Labeler 30
-Accuracy: 0.996712
+Accuracy: 0.879972
 Style:
-[[1. 0. 0.]
+[[0. 0. 1.]
  [0. 1. 0.]
- [0. 0. 1.]]
+ [1. 0. 0.]]
 Labeler 31
-Accuracy: 0.903979
+Accuracy: 0.954196
 Style:
-[[1. 0. 0.]
- [0. 1. 0.]
- [0. 0. 1.]]
+[[0. 1. 0.]
+ [0. 0. 1.]
+ [1. 0. 0.]]
 Labeler 32
-Accuracy: 0.947497
+Accuracy: 0.822120
 Style:
-[[1. 0. 0.]
+[[0. 0. 1.]
  [0. 1. 0.]
- [0. 0. 1.]]
+ [1. 0. 0.]]
 Labeler 33
-Accuracy: 0.985895
+Accuracy: 0.770527
 Style:
-[[1. 0. 0.]
- [0. 1. 0.]
- [0. 0. 1.]]
+[[0. 1. 0.]
+ [0. 0. 1.]
+ [1. 0. 0.]]
 Labeler 34
-Accuracy: 0.984647
+Accuracy: 0.814487
 Style:
 [[1. 0. 0.]
  [0. 1. 0.]
  [0. 0. 1.]]
 Labeler 35
-Accuracy: 0.971942
+Accuracy: 0.953927
 Style:
 [[1. 0. 0.]
- [0. 1. 0.]
- [0. 0. 1.]]
+ [0. 0. 1.]
+ [0. 1. 0.]]
 Labeler 36
-Accuracy: 0.835016
+Accuracy: 0.855909
 Style:
 [[1. 0. 0.]
  [0. 1. 0.]
  [0. 0. 1.]]
 Labeler 37
-Accuracy: 0.977380
+Accuracy: 0.967326
 Style:
 [[1. 0. 0.]
  [0. 1. 0.]
  [0. 0. 1.]]
 Labeler 38
-Accuracy: 0.880090
+Accuracy: 0.755048
 Style:
 [[1. 0. 0.]
- [0. 1. 0.]
- [0. 0. 1.]]
+ [0. 0. 1.]
+ [0. 1. 0.]]
 Labeler 39
-Accuracy: 0.820488
+Accuracy: 0.792750
 Style:
 [[1. 0. 0.]
  [0. 1. 0.]
  [0. 0. 1.]]
 Labeler 40
-Accuracy: 0.980658
+Accuracy: 0.762940
 Style:
 [[1. 0. 0.]
- [0. 1. 0.]
- [0. 0. 1.]]
+ [0. 0. 1.]
+ [0. 1. 0.]]
 Labeler 41
-Accuracy: 0.780581
+Accuracy: 0.857446
 Style:
-[[1. 0. 0.]
- [0. 1. 0.]
- [0. 0. 1.]]
+[[0. 1. 0.]
+ [0. 0. 1.]
+ [1. 0. 0.]]
 Labeler 42
-Accuracy: 0.926517
+Accuracy: 0.900277
 Style:
 [[1. 0. 0.]
- [0. 1. 0.]
- [0. 0. 1.]]
+ [0. 0. 1.]
+ [0. 1. 0.]]
 Labeler 43
-Accuracy: 0.979052
+Accuracy: 0.830097
 Style:
-[[1. 0. 0.]
- [0. 1. 0.]
- [0. 0. 1.]]
+[[0. 0. 1.]
+ [1. 0. 0.]
+ [0. 1. 0.]]
 Labeler 44
-Accuracy: 0.900700
+Accuracy: 0.807514
 Style:
-[[1. 0. 0.]
+[[0. 0. 1.]
  [0. 1. 0.]
- [0. 0. 1.]]
+ [1. 0. 0.]]
 Labeler 45
-Accuracy: 0.811021
+Accuracy: 0.793040
 Style:
-[[1. 0. 0.]
+[[0. 0. 1.]
  [0. 1. 0.]
- [0. 0. 1.]]
+ [1. 0. 0.]]
 Labeler 46
-Accuracy: 0.953095
+Accuracy: 0.880976
 Style:
-[[1. 0. 0.]
- [0. 1. 0.]
+[[0. 1. 0.]
+ [1. 0. 0.]
  [0. 0. 1.]]
 Labeler 47
-Accuracy: 0.807983
+Accuracy: 0.991710
 Style:
 [[1. 0. 0.]
- [0. 1. 0.]
- [0. 0. 1.]]
+ [0. 0. 1.]
+ [0. 1. 0.]]
 Labeler 48
-Accuracy: 0.890089
+Accuracy: 0.927414
 Style:
-[[1. 0. 0.]
- [0. 1. 0.]
+[[0. 1. 0.]
+ [1. 0. 0.]
  [0. 0. 1.]]
 Labeler 49
-Accuracy: 0.891092
+Accuracy: 0.849918
 Style:
 [[1. 0. 0.]
  [0. 1. 0.]
  [0. 0. 1.]]
 Labeler 50
-Accuracy: 0.856093
+Accuracy: 0.886082
 Style:
-[[1. 0. 0.]
- [0. 1. 0.]
- [0. 0. 1.]]
+[[0. 1. 0.]
+ [0. 0. 1.]
+ [1. 0. 0.]]
 Labeler 51
-Accuracy: 0.954057
+Accuracy: 0.796942
 Style:
-[[1. 0. 0.]
- [0. 1. 0.]
- [0. 0. 1.]]
+[[0. 0. 1.]
+ [1. 0. 0.]
+ [0. 1. 0.]]
 Labeler 52
-Accuracy: 0.932577
+Accuracy: 0.970040
 Style:
-[[1. 0. 0.]
+[[0. 0. 1.]
  [0. 1. 0.]
- [0. 0. 1.]]
+ [1. 0. 0.]]
 Labeler 53
-Accuracy: 0.914235
+Accuracy: 0.995730
 Style:
 [[1. 0. 0.]
- [0. 1. 0.]
- [0. 0. 1.]]
+ [0. 0. 1.]
+ [0. 1. 0.]]
 Labeler 54
-Accuracy: 0.797418
+Accuracy: 0.796647
 Style:
 [[1. 0. 0.]
  [0. 1. 0.]
  [0. 0. 1.]]
 Labeler 55
-Accuracy: 0.961698
+Accuracy: 0.989975
 Style:
-[[1. 0. 0.]
- [0. 1. 0.]
- [0. 0. 1.]]
+[[0. 1. 0.]
+ [0. 0. 1.]
+ [1. 0. 0.]]
 Labeler 56
-Accuracy: 0.869219
+Accuracy: 0.805146
 Style:
-[[1. 0. 0.]
- [0. 1. 0.]
- [0. 0. 1.]]
+[[0. 1. 0.]
+ [0. 0. 1.]
+ [1. 0. 0.]]
 Labeler 57
-Accuracy: 0.912541
+Accuracy: 0.762634
 Style:
 [[1. 0. 0.]
- [0. 1. 0.]
- [0. 0. 1.]]
+ [0. 0. 1.]
+ [0. 1. 0.]]
 Labeler 58
-Accuracy: 0.988196
+Accuracy: 0.938618
 Style:
 [[1. 0. 0.]
- [0. 1. 0.]
- [0. 0. 1.]]
+ [0. 0. 1.]
+ [0. 1. 0.]]
 Labeler 59
-Accuracy: 0.863184
+Accuracy: 0.796906
 Style:
-[[1. 0. 0.]
- [0. 1. 0.]
+[[0. 1. 0.]
+ [1. 0. 0.]
  [0. 0. 1.]]
 Labeler 60
-Accuracy: 0.797599
+Accuracy: 0.898268
 Style:
-[[1. 0. 0.]
- [0. 1. 0.]
- [0. 0. 1.]]
+[[0. 1. 0.]
+ [0. 0. 1.]
+ [1. 0. 0.]]
 Labeler 61
-Accuracy: 0.923804
+Accuracy: 0.768548
 Style:
-[[1. 0. 0.]
- [0. 1. 0.]
- [0. 0. 1.]]
+[[0. 0. 1.]
+ [1. 0. 0.]
+ [0. 1. 0.]]
 Labeler 62
-Accuracy: 0.891927
+Accuracy: 0.803944
 Style:
-[[1. 0. 0.]
- [0. 1. 0.]
+[[0. 1. 0.]
+ [1. 0. 0.]
  [0. 0. 1.]]
 Labeler 63
-Accuracy: 0.882039
+Accuracy: 0.811766
 Style:
-[[1. 0. 0.]
+[[0. 0. 1.]
  [0. 1. 0.]
- [0. 0. 1.]]
+ [1. 0. 0.]]
 Labeler 64
-Accuracy: 0.877325
+Accuracy: 0.841466
 Style:
-[[1. 0. 0.]
- [0. 1. 0.]
- [0. 0. 1.]]
+[[0. 1. 0.]
+ [0. 0. 1.]
+ [1. 0. 0.]]
 Labeler 65
-Accuracy: 0.901901
+Accuracy: 0.785565
 Style:
-[[1. 0. 0.]
- [0. 1. 0.]
- [0. 0. 1.]]
+[[0. 1. 0.]
+ [0. 0. 1.]
+ [1. 0. 0.]]
 Labeler 66
-Accuracy: 0.981732
+Accuracy: 0.987809
 Style:
-[[1. 0. 0.]
- [0. 1. 0.]
- [0. 0. 1.]]
+[[0. 0. 1.]
+ [1. 0. 0.]
+ [0. 1. 0.]]
 Labeler 67
-Accuracy: 0.961687
+Accuracy: 0.822122
 Style:
 [[1. 0. 0.]
- [0. 1. 0.]
- [0. 0. 1.]]
+ [0. 0. 1.]
+ [0. 1. 0.]]
 Labeler 68
-Accuracy: 0.929004
+Accuracy: 0.956548
 Style:
-[[1. 0. 0.]
- [0. 1. 0.]
+[[0. 1. 0.]
+ [1. 0. 0.]
  [0. 0. 1.]]
 Labeler 69
-Accuracy: 0.905980
+Accuracy: 0.967454
 Style:
-[[1. 0. 0.]
+[[0. 0. 1.]
  [0. 1. 0.]
- [0. 0. 1.]]
+ [1. 0. 0.]]
 Labeler 70
-Accuracy: 0.823247
+Accuracy: 0.765775
 Style:
 [[1. 0. 0.]
  [0. 1. 0.]
  [0. 0. 1.]]
 Labeler 71
-Accuracy: 0.779695
+Accuracy: 0.951449
 Style:
 [[1. 0. 0.]
- [0. 1. 0.]
- [0. 0. 1.]]
+ [0. 0. 1.]
+ [0. 1. 0.]]
 Labeler 72
-Accuracy: 0.950813
+Accuracy: 0.984455
 Style:
 [[1. 0. 0.]
- [0. 1. 0.]
- [0. 0. 1.]]
+ [0. 0. 1.]
+ [0. 1. 0.]]
 Labeler 73
-Accuracy: 0.787927
+Accuracy: 0.755884
 Style:
 [[1. 0. 0.]
- [0. 1. 0.]
- [0. 0. 1.]]
+ [0. 0. 1.]
+ [0. 1. 0.]]
 Labeler 74
-Accuracy: 0.810439
+Accuracy: 0.870272
 Style:
 [[1. 0. 0.]
- [0. 1. 0.]
- [0. 0. 1.]]
+ [0. 0. 1.]
+ [0. 1. 0.]]
 Labeler 75
-Accuracy: 0.835979
-Style:
-[[1. 0. 0.]
- [0. 1. 0.]
- [0. 0. 1.]]
-Labeler 76
-Accuracy: 0.902112
-Style:
-[[1. 0. 0.]
- [0. 1. 0.]
- [0. 0. 1.]]
-Labeler 77
-Accuracy: 0.942617
-Style:
-[[1. 0. 0.]
- [0. 1. 0.]
- [0. 0. 1.]]
-Labeler 78
-Accuracy: 0.971384
-Style:
-[[1. 0. 0.]
- [0. 1. 0.]
- [0. 0. 1.]]
-Labeler 79
-Accuracy: 0.993780
-Style:
-[[1. 0. 0.]
- [0. 1. 0.]
- [0. 0. 1.]]
-Labeler 80
-Accuracy: 0.769024
-Style:
-[[0. 1. 0.]
- [1. 0. 0.]
- [0. 0. 1.]]
-Labeler 81
-Accuracy: 0.824439
-Style:
-[[0. 1. 0.]
- [1. 0. 0.]
- [0. 0. 1.]]
-Labeler 82
-Accuracy: 0.854317
-Style:
-[[0. 0. 1.]
- [0. 1. 0.]
- [1. 0. 0.]]
-Labeler 83
-Accuracy: 0.993947
+Accuracy: 0.854427
 Style:
 [[0. 0. 1.]
  [1. 0. 0.]
  [0. 1. 0.]]
-Labeler 84
-Accuracy: 0.876443
+Labeler 76
+Accuracy: 0.815915
+Style:
+[[1. 0. 0.]
+ [0. 0. 1.]
+ [0. 1. 0.]]
+Labeler 77
+Accuracy: 0.809299
+Style:
+[[1. 0. 0.]
+ [0. 0. 1.]
+ [0. 1. 0.]]
+Labeler 78
+Accuracy: 0.966483
+Style:
+[[1. 0. 0.]
+ [0. 0. 1.]
+ [0. 1. 0.]]
+Labeler 79
+Accuracy: 0.877052
+Style:
+[[1. 0. 0.]
+ [0. 0. 1.]
+ [0. 1. 0.]]
+Labeler 80
+Accuracy: 0.821852
 Style:
 [[0. 1. 0.]
  [0. 0. 1.]
  [1. 0. 0.]]
-Labeler 85
-Accuracy: 0.768110
-Style:
-[[0. 0. 1.]
- [1. 0. 0.]
- [0. 1. 0.]]
-Labeler 86
-Accuracy: 0.913828
+Labeler 81
+Accuracy: 0.896224
 Style:
 [[1. 0. 0.]
  [0. 1. 0.]
  [0. 0. 1.]]
+Labeler 82
+Accuracy: 0.918663
+Style:
+[[0. 0. 1.]
+ [1. 0. 0.]
+ [0. 1. 0.]]
+Labeler 83
+Accuracy: 0.926499
+Style:
+[[0. 1. 0.]
+ [0. 0. 1.]
+ [1. 0. 0.]]
+Labeler 84
+Accuracy: 0.903821
+Style:
+[[0. 1. 0.]
+ [1. 0. 0.]
+ [0. 0. 1.]]
+Labeler 85
+Accuracy: 0.995039
+Style:
+[[0. 1. 0.]
+ [0. 0. 1.]
+ [1. 0. 0.]]
+Labeler 86
+Accuracy: 0.943898
+Style:
+[[0. 1. 0.]
+ [0. 0. 1.]
+ [1. 0. 0.]]
 Labeler 87
-Accuracy: 0.810143
+Accuracy: 0.845437
 Style:
 [[1. 0. 0.]
  [0. 1. 0.]
  [0. 0. 1.]]
 Labeler 88
-Accuracy: 0.770200
+Accuracy: 0.778735
 Style:
 [[0. 0. 1.]
- [0. 1. 0.]
- [1. 0. 0.]]
-Labeler 89
-Accuracy: 0.874553
-Style:
-[[0. 1. 0.]
- [0. 0. 1.]
- [1. 0. 0.]]
-Labeler 90
-Accuracy: 0.929506
-Style:
-[[0. 1. 0.]
  [1. 0. 0.]
+ [0. 1. 0.]]
+Labeler 89
+Accuracy: 0.901152
+Style:
+[[0. 0. 1.]
+ [1. 0. 0.]
+ [0. 1. 0.]]
+Labeler 90
+Accuracy: 0.908390
+Style:
+[[1. 0. 0.]
+ [0. 1. 0.]
  [0. 0. 1.]]
 Labeler 91
-Accuracy: 0.896280
+Accuracy: 0.956047
 Style:
 [[0. 1. 0.]
  [0. 0. 1.]
  [1. 0. 0.]]
 Labeler 92
-Accuracy: 0.957444
+Accuracy: 0.994761
 Style:
-[[0. 1. 0.]
- [1. 0. 0.]
- [0. 0. 1.]]
-Labeler 93
-Accuracy: 0.883559
-Style:
-[[0. 1. 0.]
+[[1. 0. 0.]
  [0. 0. 1.]
- [1. 0. 0.]]
+ [0. 1. 0.]]
+Labeler 93
+Accuracy: 0.826730
+Style:
+[[0. 0. 1.]
+ [1. 0. 0.]
+ [0. 1. 0.]]
 Labeler 94
-Accuracy: 0.930244
+Accuracy: 0.898598
 Style:
 [[1. 0. 0.]
  [0. 1. 0.]
  [0. 0. 1.]]
 Labeler 95
-Accuracy: 0.817780
+Accuracy: 0.955254
 Style:
 [[0. 1. 0.]
- [0. 0. 1.]
- [1. 0. 0.]]
+ [1. 0. 0.]
+ [0. 0. 1.]]
 Labeler 96
-Accuracy: 0.824100
+Accuracy: 0.814993
 Style:
 [[1. 0. 0.]
  [0. 1. 0.]
  [0. 0. 1.]]
 Labeler 97
-Accuracy: 0.932245
+Accuracy: 0.884457
 Style:
 [[0. 1. 0.]
- [1. 0. 0.]
- [0. 0. 1.]]
+ [0. 0. 1.]
+ [1. 0. 0.]]
 Labeler 98
-Accuracy: 0.836731
+Accuracy: 0.953549
 Style:
 [[0. 0. 1.]
  [1. 0. 0.]
  [0. 1. 0.]]
 Labeler 99
-Accuracy: 0.974581
+Accuracy: 0.954561
 Style:
-[[1. 0. 0.]
- [0. 1. 0.]
+[[0. 1. 0.]
+ [1. 0. 0.]
  [0. 0. 1.]]

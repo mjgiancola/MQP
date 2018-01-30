@@ -33,11 +33,11 @@ if __name__ == '__main__':
   ground_truths = [choice(types) for i in range(100)]
 
   Labelers = []
-  for i in range(80):
-    acc = uniform(.75, 1)
-    Labelers.append(Labeler(acc, np.identity(NUM_LETTERS)))
+  # for i in range(10):
+  #   acc = uniform(.75, 1)
+  #   Labelers.append(Labeler(acc, np.identity(NUM_LETTERS)))
 
-  for i in range(20):
+  for i in range(100):
     acc = uniform(.75, 1)
     Labelers.append(Labeler(acc, permutation(np.identity(NUM_LETTERS))))
 
@@ -59,8 +59,6 @@ if __name__ == '__main__':
       desc_fp.write( str(Labelers[l]) )
     desc_fp.close()
 
-  # TODO Set these things before generating
-
   numLabelers = len(Labelers)
   numImages = len(ground_truths)
   # numLabels = numLabelers * numImages
@@ -68,7 +66,7 @@ if __name__ == '__main__':
   labels = []
   for n in range(10, 110, 10):
     numLabels = numLabelers * n
-    fp = open("../Simulation/Tests/Test3a/c=7/data/data_%d.txt" % n, 'w')
+    fp = open("../Simulation/Tests/Test3b/c=%d/data/data_%d.txt" % (NUM_LETTERS, n), 'w')
     fp.write("%d %d %d %d\n" % ( numLabels, numLabelers, numImages, NUM_LETTERS ) )
     
     # Write character set to file

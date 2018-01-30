@@ -147,7 +147,7 @@ class Dataset():
     for perm in permutations:
       y_hats = self.probZ[np.array(perm)] # Permute rows of probZ  
       new_ce = self.cross_entropy(y_hats, y_actuals)
-      
+
       if new_ce < ce:
         ce = new_ce
         best_perm = perm
@@ -157,7 +157,7 @@ class Dataset():
     return ce
 
   # Standard cross_entropy
-  def std_cross_entropy():
+  def std_cross_entropy(self):
     y_hats = self.probZ
     y_actuals = self.gt_to_onehot()
     return self.cross_entropy(y_hats, y_actuals)
