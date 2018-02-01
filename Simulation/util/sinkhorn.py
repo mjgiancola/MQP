@@ -1,6 +1,6 @@
 import numpy as np
 
-SINK_ITER = 10
+SINK_ITER = 5
 
 # Perform Sinkhorn Normalization
 # Assumes m is strictly positive (so in practice, generally pass exp(A) as m)
