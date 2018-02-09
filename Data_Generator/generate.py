@@ -5,7 +5,7 @@ from numpy.random import choice, uniform, permutation
 from Labeler import *
 from Label import *
 
-NUM_LETTERS = 7 # Size of alphabet
+NUM_LETTERS = 3 # Size of alphabet
 
 def getLabel(ground_truth, labeler):
   return labeler.answerQuestion(ground_truth)
@@ -29,8 +29,8 @@ if __name__ == '__main__':
   parser.add_argument('-d', help='Filename to write description of dataset to (optional)')
   args = parser.parse_args()
 
-  types = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
-  ground_truths = [choice(types) for i in range(100)]
+  types = ['a', 'b', 'c']
+  ground_truths = [choice(types, p=[.5, .45, .05]) for i in range(100)]
 
   Labelers = []
   # for i in range(10):
@@ -64,9 +64,10 @@ if __name__ == '__main__':
   # numLabels = numLabelers * numImages
 
   labels = []
-  for n in range(10, 110, 10):
+  n = 10
+  for sim in range(100):
     numLabels = numLabelers * n
-    fp = open("../Simulation/Tests/Test3b/c=%d/data/data_%d.txt" % (NUM_LETTERS, n), 'w')
+    fp = open("../Simulation/Tests/Test5_100Trials/data/%d.txt" % sim, 'w')
     fp.write("%d %d %d %d\n" % ( numLabels, numLabelers, numImages, NUM_LETTERS ) )
     
     # Write character set to file

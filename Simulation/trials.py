@@ -13,17 +13,16 @@ if __name__=='__main__':
   parser.add_argument('-r', action='store_true', help='Runs in right stochastic mode (SinkProp disabled)')
   args = parser.parse_args()
 
-  alphabet = "a b c"
-  types = alphabet.split()
-  numCharacters = len(types)
-
   accuracies = []
   cross_entropies = []  
 
-  fp = open("Tests/Test5_100Trials/DSM_results.txt", 'w')
+  if not args.r:
+    fp = open("Tests/Test4/3labelers_100trials/DSM_results.txt", 'w')
+  else:
+    fp = open("Tests/Test4/3labelers_100trials/RSM_results.txt", 'w')
 
   for sim in range(100): # Run 100 simulations
-    data = init_from_file("Tests/Test5_100Trials/data/%d.txt" % sim, 1, not args.r, True)
+    data = init_from_file("Tests/Test4/3labelers_100trials/data/%d.txt" % sim, 1, not args.r, True)
   
     EM(data)
 

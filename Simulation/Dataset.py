@@ -23,53 +23,21 @@ EPSILON = 1e-5
 # isDSM: True if running SinkProp, False if running Softmax
 # hasGT: True if datafile contains ground truth labels
 class Dataset():
-  def __init__(self, filename, gamma, isDSM, hasGT):
-
-    self.isDSM = isDSM
-    if isDSM: from SinkProp.Labeler import Labeler
-    else:     from Stochastic.Labeler import Labeler
-
-    fp = open(filename, 'r')
-
-    # Read metadata
-    line = fp.readline().strip().split()
-
-    self.numLabels = int(line[0])
-    self.numLabelers = int(line[1])
-    self.numImages = int(line[2])
-    self.numCharacters = int(line[3]) # The number of characters in the alphabet
+  def __init__(self, numLabels, numLabelers, numImages, numCharacters, gamma,
+               alphabet, priorZ, labels, probZ, Labelers, hasGT, gt, isDSM):
+    self.numLabels = numLabels
+    self.numLabelers = numLabelers
+    self.numImages = numImages
+    self.numCharacters = numCharacters
     self.gamma = gamma
-    self.alphabet = fp.readline().strip().split()
-
-    # Read Z priors
-    line = fp.readline().strip().split()
-    self.priorZ = np.empty((self.numCharacters, self.numImages))
-    for x in range(self.numCharacters):
-      self.priorZ[x][:] = line[x]
-
-    # Read in labels
-    self.labels = []
-    line = fp.readline()
-    while line != "" and line != "\n":
-      line = line.strip().split()
-      
-      # Image ID, Labeler ID, Label
-      lbl = Label(int(line[0]), int(line[1]), int(line[2]))
-      self.labels.append(lbl)
-
-      line = fp.readline()
-
-    self.probZ = np.empty((self.numCharacters, self.numImages))
-    priorA = np.identity(self.numCharacters)
-    self.Labelers = [ Labeler(priorA) for i in range(self.numLabelers) ]
-
-    if hasGT:
-      self.gt = []
-      line = fp.readline()
-      while line != "" and line != "\n":
-        line = line.strip().split()
-        self.gt.append(int(line[1])) # Only store label
-        line = fp.readline()
+    self.alphabet = alphabet
+    self.priorZ = priorZ
+    self.labels = labels
+    self.probZ = probZ
+    self.Labelers = Labelers
+    self.hasGT = hasGT
+    self.gt = gt
+    self.isDSM = isDSM
 
   # For each labeler, compute style matrix S given parameterizing matrix A
   def computeStyle(self):
@@ -114,7 +82,7 @@ class Dataset():
           acc = new_acc
           best_perm = perm
 
-      print "Transformation of labels: " + str(best_perm)
+      # print "Transformation of labels: " + str(best_perm)
       return acc
 
   def std_percent_correct(self):
@@ -152,8 +120,8 @@ class Dataset():
         ce = new_ce
         best_perm = perm
 
-    print "Transformation of labels: " + str(best_perm)
-    print "(Transformations should match)"
+    # print "Transformation of labels: " + str(best_perm)
+    # print "(Transformations should match)"
     return ce
 
   # Standard cross_entropy
@@ -198,3 +166,71 @@ class Dataset():
         x += 1
       print ""
       
+def init_from_file(filename, gamma, isDSM, hasGT):
+
+  if isDSM: from SinkProp.Labeler import Labeler
+  else:     from Stochastic.Labeler import Labeler
+
+  fp = open(filename, 'r')
+
+  # Read metadata
+  line = fp.readline().strip().split()
+
+  numLabels = int(line[0])
+  numLabelers = int(line[1])
+  numImages = int(line[2])
+  numCharacters = int(line[3]) # The number of characters in the alphabet
+  gamma = gamma
+  alphabet = fp.readline().strip().split()
+
+  # Read Z priors
+  line = fp.readline().strip().split()
+  priorZ = np.empty((numCharacters, numImages))
+  for x in range(numCharacters):
+    priorZ[x][:] = line[x]
+
+  # Read in labels
+  labels = []
+  line = fp.readline()
+  while line != "" and line != "\n":
+    line = line.strip().split()
+    
+    # Image ID, Labeler ID, Label
+    lbl = Label(int(line[0]), int(line[1]), int(line[2]))
+    labels.append(lbl)
+
+    line = fp.readline()
+
+  probZ = np.empty((numCharacters, numImages))
+  priorA = np.identity(numCharacters)
+  Labelers = [ Labeler(priorA) for i in range(numLabelers) ]
+
+  gt = []
+  if hasGT:
+    line = fp.readline()
+    while line != "" and line != "\n":
+      line = line.strip().split()
+      gt.append(int(line[1])) # Only store label
+      line = fp.readline()
+
+  # Initialize Dataset object
+  return Dataset(numLabels, numLabelers, numImages, numCharacters, gamma,
+                 alphabet, priorZ, labels, probZ, Labelers, hasGT, gt, isDSM)
+
+# This is old, not being used currenlty but kept around incase useful
+# NOTE: prior here is a float (assumed to be same over all images/characters)
+def init_for_trials(numLabels, numLabelers, numImages, numCharacters, gamma, alphabet, prior, labels, isDSM):
+
+  if isDSM: from SinkProp.Labeler import Labeler
+  else:     from Stochastic.Labeler import Labeler
+
+  priorZ = np.ones((numCharacters, numImages)) * prior
+
+  probZ = np.empty((numCharacters, numImages))
+  priorA = np.identity(numCharacters)
+  Labelers = [ Labeler(priorA) for i in range(numLabelers) ]
+
+  # Labels and gt are initialized to empty lists (filled later)
+  # Assumed we have ground truth labels if running trials
+  return Dataset(numLabels, numLabelers, numImages, numCharacters, gamma,
+                 alphabet, priorZ, labels, probZ, Labelers, True, [], isDSM)

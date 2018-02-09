@@ -1,6 +1,5 @@
 from scipy.optimize import check_grad
-from time import time
-import sys, argparse
+import argparse
 
 from Dataset import *
 from EM import *
@@ -23,21 +22,22 @@ if __name__=='__main__':
 
   args = parser.parse_args()
   
-  data = Dataset(args.train_data, 1, not args.r, args.t)
-  
+  data = init_from_file(args.train_data, 1, not args.r, args.t)
+
   # Uncomment to confirm correctness of Q and gradQ
   # check_gradient(data)
 
   # Train the model
-  start = time()
-  EM(data)
-  elapsed = time() - start
-  
-  print "Completed training in %d minutes and %d seconds\n" % (elapsed / 60, elapsed % 60)
-  if args.v: data.outputResults()
+  if 0:
+    start = time()
+    EM(data)
+    elapsed = time() - start
+    
+    print "Completed training in %d minutes and %d seconds\n" % (elapsed / 60, elapsed % 60)
+    if args.v: data.outputResults()
 
-  if args.t:
-  	if args.p: acc = data.best_percent_correct(); ce = data.best_cross_entropy()
-	else:      acc = data.std_percent_correct();  ce = data.std_cross_entropy()
-  	print "Percent Correct on Test Data: " + str(acc * 100) + "%"
-  	print "Cross Entropy: " + str(ce)
+    if args.t:
+      if args.p: acc = data.best_percent_correct(); ce = data.best_cross_entropy()
+      else:      acc = data.std_percent_correct();  ce = data.std_cross_entropy()
+      print "Percent Correct on Test Data: " + str(acc * 100) + "%"
+      print "Cross Entropy: " + str(ce)
