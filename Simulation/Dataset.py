@@ -8,7 +8,7 @@ from util.softmax import *
 
 EPSILON = 1e-5
 
-# DATA FILE FORMAT for DATA #
+# DATA FILE FORMAT #
 
 # numLabels numLabelers numImages numCharacters
 # c1 c2 .. cZ (characters in alphabet)

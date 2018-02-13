@@ -1,3 +1,4 @@
+from time import time
 from scipy.optimize import check_grad
 import argparse
 
@@ -28,7 +29,7 @@ if __name__=='__main__':
   # check_gradient(data)
 
   # Train the model
-  if 0:
+  if 1:
     start = time()
     EM(data)
     elapsed = time() - start
