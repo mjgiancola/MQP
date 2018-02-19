@@ -61,8 +61,8 @@ class Dataset():
   # permutations of cluster names
   def best_percent_correct(self):
 
-      # Compute given labels based on greatest probability
-      given = np.argmax(self.probZ, axis=0)
+      # Compute observed labels based on greatest probability
+      observed = np.argmax(self.probZ, axis=0)
 
       # Generate list of permutations of character set
       permutations = list(itertools.permutations(range(self.numCharacters)))
@@ -71,9 +71,9 @@ class Dataset():
       best_perm = 0
 
       for perm in permutations:
-        labels = np.empty(given.shape)
+        labels = np.empty(observed.shape)
         i = 0
-        for lbl in given:
+        for lbl in observed:
           labels[i] = perm[lbl]
           i += 1
 
