@@ -5,7 +5,7 @@ clear; close all; clc % clear out environment
 
 load('index_ade20k.mat');
 
-outfile = fopen('labels.txt', 'w');
+outfile = fopen('toy_labels.txt', 'w');
 
 %% Read in image data
 
@@ -60,7 +60,7 @@ fprintf(outfile, '%.3f %.3f %.3f %.3f %.3f %.3f\r\n', prior, prior, prior, prior
 
 %% Read labels for image 1
 
-labelerIdx = 1;
+labelerIdx = 0;
 xdim = size(Om1, 1);
 ydim = size(Om1, 2);
     
@@ -76,7 +76,7 @@ end
 
 %% Read labels from image 2
 
-labelerIdx = 2;
+labelerIdx = 1;
     
 for i = 1:xdim
     for j = 1:ydim
@@ -90,7 +90,7 @@ end
 
 %% Read labels from image 3
 
-labelerIdx = 3;
+labelerIdx = 2;
     
 for i = 1:xdim
     for j = 1:ydim
@@ -104,7 +104,7 @@ end
 
 %% Read labels from image 4
 
-labelerIdx = 4;
+labelerIdx = 3;
     
 for i = 1:xdim
     for j = 1:ydim
