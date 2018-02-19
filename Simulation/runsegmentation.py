@@ -33,7 +33,7 @@ if __name__=='__main__':
 
   args = parser.parse_args()
   
-  data = init_from_file(args.train_data, 1, not args.r, args.t)
+  data = init_from_file(args.train_data, 1, not args.r, False)
 
   start = time()
   EM(data)
