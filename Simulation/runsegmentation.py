@@ -14,9 +14,13 @@ PURPLE = [131, 111, 255]
 TAN    = [205, 186, 150]
 WHITE  = [255, 255, 255]
 
+from time import time
 import numpy as np
 from PIL import Image
 import argparse
+
+from Dataset import *
+from EM import *
 
 if __name__=='__main__':
 

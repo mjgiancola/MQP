@@ -8,3 +8,5 @@ Contains code for generating simulation data
 Contains scripts and data from the ADE20K project that were used in simulations.
 - Archive
 Graveyard of old code/results
+
+If you have issues with the requirements.txt, try installing Pillow manually (sudo pip install Pillow)
