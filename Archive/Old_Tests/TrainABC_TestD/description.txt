@@ -1,0 +1,4 @@
+Data is generated from 8 labelers with varying (non-permutation) style matrices.
+
+train.txt: Only A,B,C ground truths
+test.txt: Only D ground truth

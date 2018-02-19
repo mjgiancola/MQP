@@ -1,12 +1,10 @@
 For an idea of what's what..
 
 - Simulation
-Contains the current version of the simulation code for EM
+Contains all files related to running our model, including scripts, the model implementation, and test data and results.
 - Data Generator
 Contains code for generating simulation data
-- Toy_Optimization
-Contains the code for running SinkProp to optimize sum of squares
-- Toy_Simulation
-Contains code for generating given labels based on the ground truth and the labeler's accuracy and style
-- GLAD_Port
-Contains code I wrote when trying to understand GLAD. Not super useful, more of a learning tool
+- ADE20K
+Contains scripts and data from the ADE20K project that were used in simulations.
+- Archive
+Graveyard of old code/results

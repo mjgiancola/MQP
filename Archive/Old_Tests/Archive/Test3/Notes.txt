@@ -1,0 +1,2 @@
+Train on everything, test on everything
+SinkProp narrowly outperforms Right Stochastic (65% to 60%)

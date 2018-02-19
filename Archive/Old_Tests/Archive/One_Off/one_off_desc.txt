@@ -1,0 +1,1 @@
+First 9 labelers have identity style, while labeler 10 has the last two rows permuted. The first 9 labelers labeled all data, while labeler 10 only saw classes 'a' and 'b'. The idea is that the DSM should be able to recover labeler 10's style matrix but the RSM should not.
