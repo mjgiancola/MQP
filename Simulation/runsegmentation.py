@@ -42,7 +42,7 @@ if __name__=='__main__':
   print "Completed training in %d minutes and %d seconds\n" % (elapsed / 60, elapsed % 60)
   if args.v: data.outputResults()
 
-  observed = np.argmax(self.probZ, axis=0)
+  observed = np.argmax(data.probZ, axis=0)
 
   w, h = args.xdim, args.ydim
   img  = np.zeros((h,w,3), dtype=np.uint8)
