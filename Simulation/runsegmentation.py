@@ -1,17 +1,30 @@
 BLACK  = [0,     0,   0]
 PINK   = [238, 130, 238]
 DPINK  = [208,  32, 144]
+MAGENTA= [255,   0, 255]
 RED    = [255,   0,   0]
+SIENNA = [138,  54,  15]
+SEPIA  = [94,   38,  18]
 ORANGE = [255,  97,   3]
 YELLOW = [255, 255,   0]
+LIME   = [202, 255, 112]
+OLIVE  = [142, 142,  56]
 GREEN  = [0,   255,   0]
 DGREEN = [69,  139,   0]
 AQUA   = [0,   255, 255]
+MARINE = [127, 255, 212]
+SKYBLUE= [198, 226, 255]
+VLBLUE = [240, 248, 255]
 LBLUE  = [152, 245, 255]
 BLUE   = [0,     0, 255]
 DBLUE  = [61,   89, 171]
 PURPLE = [131, 111, 255]
+DPURPLE= [85,   26, 139]
+SAND   = [250, 235, 215]
 TAN    = [205, 186, 150]
+BROWN  = [139, 131, 120]
+YBROWN = [139, 139,   0]
+GREY   = [128, 138, 135]
 WHITE  = [255, 255, 255]
 
 from time import time
@@ -34,6 +47,9 @@ if __name__=='__main__':
   args = parser.parse_args()
   
   data = init_from_file(args.train_data, 1, not args.r, False)
+
+  w, h = args.xdim, args.ydim
+  img  = np.zeros((h,w,3), dtype=np.uint8)
 
   start = time()
   EM(data)
@@ -63,28 +79,14 @@ if __name__=='__main__':
         img[i,j] = AQUA
       elif lbl == 5:
         img[i,j] = TAN
+      elif lbl == 6:
+        img[i,j] = MARINE
+      elif lbl == 7:
+        img[i,j] = SEPIA
+      elif lbl == 8:
+        img[i,j] = BROWN
       else:
         print "Uh oh. I didn't plan for this"
 
   output = Image.fromarray(img, 'RGB')
-  output.save('out.png')
-
-# w, h = 512, 512
-# data = np.zeros((h,w,3), dtype=np.uint8)
-# data[256,:] = RED
-# data[257,:] = PINK
-# data[258,:]=DPINK
-# data[259,:]=RED
-# data[260,:]=ORANGE
-# data[261,:]=YELLOW
-# data[262,:]=GREEN 
-# data[263,:]=DGREEN
-# data[264,:]=AQUA  
-# data[265,:]=LBLUE 
-# data[266,:]=BLUE  
-# data[267,:]=DBLUE 
-# data[268,:]=PURPLE
-# data[269,:]=TAN  
-# data[270,:] = WHITE
-# img = Image.fromarray(data, 'RGB')
-# img.save('my.png')
+  output.save('out_new.png')
