@@ -71,19 +71,19 @@ if __name__=='__main__':
       lbl = observed[w*i + j]
 
       if   lbl ==  0: img[i,j] = BLACK  
-      elif lbl ==  1: img[i,j] = PINK    
+      elif lbl ==  1: img[i,j] = RED
       elif lbl ==  2: img[i,j] = DPINK   
-      elif lbl ==  3: img[i,j] = MAGENTA 
-      elif lbl ==  4: img[i,j] = RED     
-      elif lbl ==  5: img[i,j] = SIENNA 
-      elif lbl ==  6: img[i,j] = SEPIA  
-      elif lbl ==  7: img[i,j] = ORANGE 
-      elif lbl ==  8: img[i,j] = YELLOW 
+      elif lbl ==  3: img[i,j] = ORANGE
+      elif lbl ==  4: img[i,j] = YELLOW
+      elif lbl ==  5: img[i,j] = GREEN
+      elif lbl ==  6: img[i,j] = AQUA
+      elif lbl ==  7: img[i,j] = SAND
+      elif lbl ==  8: img[i,j] = GREY 
       elif lbl ==  9: img[i,j] = LIME   
       elif lbl == 10: img[i,j] = OLIVE  
-      elif lbl == 11: img[i,j] = GREEN  
+      elif lbl == 11: img[i,j] = SIENNA
       elif lbl == 12: img[i,j] = DGREEN 
-      elif lbl == 13: img[i,j] = AQUA   
+      elif lbl == 13: img[i,j] = SEPIA
       elif lbl == 14: img[i,j] = CYAN   
       elif lbl == 15: img[i,j] = MARINE 
       elif lbl == 16: img[i,j] = SKYBLUE
@@ -93,12 +93,12 @@ if __name__=='__main__':
       elif lbl == 20: img[i,j] = DBLUE  
       elif lbl == 21: img[i,j] = PURPLE 
       elif lbl == 22: img[i,j] = DPURPLE
-      elif lbl == 23: img[i,j] = SAND   
+      elif lbl == 23: img[i,j] = MAGENTA 
       elif lbl == 24: img[i,j] = TAN    
       elif lbl == 25: img[i,j] = BROWN  
       elif lbl == 26: img[i,j] = YBROWN 
       elif lbl == 27: img[i,j] = KHAKI  
-      elif lbl == 28: img[i,j] = GREY   
+      elif lbl == 28: img[i,j] = PINK 
       elif lbl == 29: img[i,j] = LGREY  
       elif lbl == 30: img[i,j] = WHITE
       else:
