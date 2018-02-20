@@ -5,7 +5,7 @@ clear; close all; clc % clear out environment
 
 load('index_ade20k.mat');
 
-outfile = fopen('toy_labels_final.txt', 'w');
+outfile = fopen('couple.txt', 'w');
 
 %% Read in image data
 
@@ -34,6 +34,12 @@ labels3 = unique(Om3);
 labels4 = unique(Om4);
 labels = unique([labels1; labels2; labels3; labels4]);
 
+%% Optional: Print label types
+
+%for i=2:size(labels)
+%    index.objectnames{labels(i)}
+%end
+%return
 
 %% Compute metadata
 
@@ -52,14 +58,13 @@ numCharacters = size(labels, 1);
 prior = 1 / numCharacters;
 
 % Gross, I know. Outputs metadata to file
+% Easiest way to include character set is to write manually
+% It is stored in a variable but most labels have several names,
+% so I looked at it manually and picked one
 fprintf(outfile, '%d %d %d %d\r\n', numLabels, numLabelers, numImages, numCharacters);
-fprintf(outfile, '0 1 2 3 4 5 6 7 8\r\n');
+fprintf(outfile, 'Missing Purse Building Person Road Sidewalk Stoplight Umbrella Pavement\r\n');
 fprintf(outfile, '%.3f %.3f %.3f %.3f %.3f %.3f %.3f %.3f %.3f\r\n', ...
         prior, prior, prior, prior, prior, prior, prior, prior, prior);
-
-%fprintf(outfile, '0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30\r\n');
-%fprintf(outfile, '%.3f %.3f %.3f %.3f %.3f %.3f %.3f %.3f %.3f %.3f %.3f %.3f %.3f %.3f %.3f %.3f %.3f %.3f %.3f %.3f %.3f %.3f %.3f %.3f %.3f %.3f %.3f %.3f %.3f %.3f\r\n', ...
-%        prior, prior, prior, prior, prior, prior, prior, prior, prior, prior, prior, prior, prior, prior, prior, prior, prior, prior, prior, prior, prior, prior, prior, prior, prior, prior, prior, prior, prior, prior);
 
 %% Read labels for image 1
 
