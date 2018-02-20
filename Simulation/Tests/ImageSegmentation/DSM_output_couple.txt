@@ -4,7 +4,7 @@ Iteration 2: 0.0144576755826
 Iteration 3: 0.0203410790133
 Iteration 4: 0.000687133670602
 
-Completed training in 14 minutes and 13 seconds
+Completed training in 14 minutes and 38 seconds
 
 Style[0]:
 [[8.44025025e-01 5.96034081e-03 2.21640138e-04 1.39737142e-04
