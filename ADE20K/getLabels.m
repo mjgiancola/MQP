@@ -1,10 +1,11 @@
 % Script to create labels dataset from images in ADE20K dataset
+% This generates a small subset used for initial testing purposes
 
 clear; close all; clc % clear out environment
 
 load('index_ade20k.mat');
 
-outfile = fopen('labels.txt', 'w');
+outfile = fopen('labels_final.txt', 'w');
 
 %% Read in image data
 
@@ -19,12 +20,6 @@ filename4 = 'Annotator4.jpg';
 [Om3, Oi3, Pm3, Pi3, objects3, parts3] = loadAde20K(filename3);
 [Om4, Oi4, Pm4, Pi4, objects4, parts4] = loadAde20K(filename4);
 % Om is a matrix where Om(i,j) contains the label of pixel i,j
-
-% For first experiment, take a slice of images
-Om1 = Om1(990:1120, 785:990);
-Om2 = Om2(990:1120, 785:990);
-Om3 = Om3(990:1120, 785:990);
-Om4 = Om4(990:1120, 785:990);
 
 %% Generate list of unique label types in all images
 labels1 = unique(Om1);
@@ -51,15 +46,13 @@ prior = 1 / numCharacters;
 
 % Gross, I know. Outputs metadata to file
 fprintf(outfile, '%d %d %d %d\r\n', numLabels, numLabelers, numImages, numCharacters);
-fprintf(outfile, '0 1 2 3 4 5\r\n');
-fprintf(outfile, '%.3f %.3f %.3f %.3f %.3f %.3f\r\n', prior, prior, prior, prior, prior, prior);
-%fprintf(outfile, '0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30\r\n');
-%fprintf(outfile, '%.3f %.3f %.3f %.3f %.3f %.3f %.3f %.3f %.3f %.3f %.3f %.3f %.3f %.3f %.3f %.3f %.3f %.3f %.3f %.3f %.3f %.3f %.3f %.3f %.3f %.3f %.3f %.3f %.3f %.3f\r\n', ...
-%        prior, prior, prior, prior, prior, prior, prior, prior, prior, prior, prior, prior, prior, prior, prior, prior, prior, prior, prior, prior, prior, prior, prior, prior, prior, prior, prior, prior, prior, prior);
+fprintf(outfile, '0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30\r\n');
+fprintf(outfile, '%.3f %.3f %.3f %.3f %.3f %.3f %.3f %.3f %.3f %.3f %.3f %.3f %.3f %.3f %.3f %.3f %.3f %.3f %.3f %.3f %.3f %.3f %.3f %.3f %.3f %.3f %.3f %.3f %.3f %.3f\r\n', ...
+        prior, prior, prior, prior, prior, prior, prior, prior, prior, prior, prior, prior, prior, prior, prior, prior, prior, prior, prior, prior, prior, prior, prior, prior, prior, prior, prior, prior, prior, prior);
 
 %% Read labels for image 1
 
-labelerIdx = 1;
+labelerIdx = 0;
 xdim = size(Om1, 1);
 ydim = size(Om1, 2);
     
@@ -75,7 +68,7 @@ end
 
 %% Read labels from image 2
 
-labelerIdx = 2;
+labelerIdx = 1;
     
 for i = 1:xdim
     for j = 1:ydim
@@ -89,7 +82,7 @@ end
 
 %% Read labels from image 3
 
-labelerIdx = 3;
+labelerIdx = 2;
     
 for i = 1:xdim
     for j = 1:ydim
@@ -103,7 +96,7 @@ end
 
 %% Read labels from image 4
 
-labelerIdx = 4;
+labelerIdx = 3;
     
 for i = 1:xdim
     for j = 1:ydim
