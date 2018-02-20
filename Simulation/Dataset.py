@@ -166,6 +166,17 @@ class Dataset():
         x += 1
       print ""
       
+  # Outputs just styles
+  # Helpful when you have lots of examples/labels but small number of annotators / small alphabet
+  def outputStyles(self):
+    
+    self.computeStyle()
+
+    for i in range(self.numLabelers): 
+      print "Style[%d]:" % i
+      print self.Labelers[i].style
+      print ""
+      
 def init_from_file(filename, gamma, isDSM, hasGT):
 
   if isDSM: from SinkProp.Labeler import Labeler

@@ -59,7 +59,7 @@ if __name__=='__main__':
   elapsed = time() - start
   
   print "Completed training in %d minutes and %d seconds\n" % (elapsed / 60, elapsed % 60)
-  if args.v: data.outputResults()
+  if args.v: data.outputStyles()
 
   observed = np.argmax(data.probZ, axis=0)
 
