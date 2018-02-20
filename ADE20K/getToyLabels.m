@@ -5,7 +5,7 @@ clear; close all; clc % clear out environment
 
 load('index_ade20k.mat');
 
-outfile = fopen('toy_labels.txt', 'w');
+outfile = fopen('toy_labels_final.txt', 'w');
 
 %% Read in image data
 
@@ -22,10 +22,10 @@ filename4 = 'Annotator4.jpg';
 % Om is a matrix where Om(i,j) contains the label of pixel i,j
 
 % For first experiment, take a slice of images
-Om1 = Om1(990:1120, 785:990);
-Om2 = Om2(990:1120, 785:990);
-Om3 = Om3(990:1120, 785:990);
-Om4 = Om4(990:1120, 785:990);
+Om1 = Om1(785:990, 990:1120);
+Om2 = Om2(785:990, 990:1120);
+Om3 = Om3(785:990, 990:1120);
+Om4 = Om4(785:990, 990:1120);
 
 %% Generate list of unique label types in all images
 labels1 = unique(Om1);
@@ -33,6 +33,7 @@ labels2 = unique(Om2);
 labels3 = unique(Om3);
 labels4 = unique(Om4);
 labels = unique([labels1; labels2; labels3; labels4]);
+
 
 %% Compute metadata
 
@@ -52,8 +53,10 @@ prior = 1 / numCharacters;
 
 % Gross, I know. Outputs metadata to file
 fprintf(outfile, '%d %d %d %d\r\n', numLabels, numLabelers, numImages, numCharacters);
-fprintf(outfile, '0 1 2 3 4 5\r\n');
-fprintf(outfile, '%.3f %.3f %.3f %.3f %.3f %.3f\r\n', prior, prior, prior, prior, prior, prior);
+fprintf(outfile, '0 1 2 3 4 5 6 7 8\r\n');
+fprintf(outfile, '%.3f %.3f %.3f %.3f %.3f %.3f %.3f %.3f %.3f\r\n', ...
+        prior, prior, prior, prior, prior, prior, prior, prior, prior);
+
 %fprintf(outfile, '0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30\r\n');
 %fprintf(outfile, '%.3f %.3f %.3f %.3f %.3f %.3f %.3f %.3f %.3f %.3f %.3f %.3f %.3f %.3f %.3f %.3f %.3f %.3f %.3f %.3f %.3f %.3f %.3f %.3f %.3f %.3f %.3f %.3f %.3f %.3f\r\n', ...
 %        prior, prior, prior, prior, prior, prior, prior, prior, prior, prior, prior, prior, prior, prior, prior, prior, prior, prior, prior, prior, prior, prior, prior, prior, prior, prior, prior, prior, prior, prior);
