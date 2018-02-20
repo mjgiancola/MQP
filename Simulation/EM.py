@@ -18,7 +18,7 @@ def EM(data):
 
   # Iterate until the threshold is reached
   i = 0
-  while i < 10:
+  while True:
     EStep(data)
     MStep(data)
     Q = computeQ(data)
