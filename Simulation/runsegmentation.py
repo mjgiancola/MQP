@@ -105,4 +105,4 @@ if __name__=='__main__':
         print "Uh oh. I didn't plan for this"
 
   output = Image.fromarray(img, 'RGB')
-  output.save('out_new.png')
+  output.save('out_final.png')
