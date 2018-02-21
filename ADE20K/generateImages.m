@@ -4,11 +4,11 @@ clear; close all; clc % clear out environment
 
 %% Create cropped image, segmentation
 
-img      = imread('Scene.jpg');
+img      = imread('Original_Data/Scene.jpg');
 img_crop = imcrop(img, [990 785 130 205]);
-imwrite(img_crop, 'couple.png');
+imwrite(img_crop, 'Generated/couple.png');
 
-seg      = imread('Annotator1_seg.png');
+seg      = imread('Original_Data/Annotator1_seg.png');
 seg_crop = imcrop(seg, [990 785 130 205]);
 
 % Set black (unlabeled) pixels to background color
@@ -23,4 +23,4 @@ for i=1:size(seg_crop, 1)
     end
 end
 
-imwrite(seg_crop, 'gt_seg.png');
+imwrite(seg_crop, 'Generated/gt_seg.png');
