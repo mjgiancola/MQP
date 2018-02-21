@@ -41,16 +41,10 @@ if __name__=='__main__':
     for j in range(w):
       lbl = observed[w*i + j]
 
-      if   lbl ==  0: img[i,j] = TAN
-      elif lbl ==  1: img[i,j] = GREY
-      elif lbl ==  2: img[i,j] = RED   
-      elif lbl ==  3: img[i,j] = ORANGE
-      elif lbl ==  4: img[i,j] = YELLOW
-      elif lbl ==  5: img[i,j] = GREEN
-      elif lbl ==  6: img[i,j] = AQUA
-      elif lbl ==  7: img[i,j] = PURPLE
-      elif lbl ==  8: img[i,j] = BLACK 
-      elif lbl ==  9: img[i,j] = PINK
+      if   lbl ==  0: img[i,j] = AQUA
+      elif lbl ==  1: img[i,j] = GREEN
+      elif lbl ==  2: img[i,j] = YELLOW
+      elif lbl ==  3: img[i,j] = PURPLE
       else:
         print "Uh oh. I didn't plan for this"
 
