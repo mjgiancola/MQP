@@ -24,9 +24,9 @@ if __name__=='__main__':
   start = time()
   EM(data)
   elapsed = time() - start
-  
+
   print "Completed training in %d minutes and %d seconds\n" % (elapsed / 60, elapsed % 60)
-  acc = data.best_percent_correct(); ce = data.best_cross_entropy()
+  acc, ce = data.permutedAcc();
   print "Percent Correct: " + str(acc * 100) + "%"
   print "Cross Entropy: " + str(ce)
 

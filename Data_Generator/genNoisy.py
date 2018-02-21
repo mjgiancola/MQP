@@ -1,10 +1,10 @@
 import numpy as np
 import skimage.io
-import matplotlib.pyplot as plt
+import itertools
 from PIL import Image
-from random import randint
+from random import shuffle
 
-from util.colors import *
+from colors import *
 
 # im is r x c; each element im[r,c] represents the class 
 # index assigned to that location by a particular labeler.
@@ -29,17 +29,18 @@ def saveImage(A, filename):
     for j in range(w):
       lbl = A[i][j]
 
-      if   lbl ==  0: img[i,j] = TAN
-      elif lbl ==  1: img[i,j] = GREY
-      elif lbl ==  2: img[i,j] = RED   
-      elif lbl ==  3: img[i,j] = ORANGE
-      elif lbl ==  4: img[i,j] = YELLOW
-      elif lbl ==  5: img[i,j] = GREEN
-      elif lbl ==  6: img[i,j] = AQUA
-      elif lbl ==  7: img[i,j] = PURPLE
-      elif lbl ==  8: img[i,j] = BLACK 
-      elif lbl ==  9: img[i,j] = PINK
+      if   lbl ==  0: img[i,j] = AQUA
+      elif lbl ==  1: img[i,j] = GREEN
+      elif lbl ==  2: img[i,j] = YELLOW
+      elif lbl ==  3: img[i,j] = PURPLE
+      # elif lbl ==  4: img[i,j] = YELLOW
+      # elif lbl ==  5: img[i,j] = GREEN
+      # elif lbl ==  6: img[i,j] = AQUA
+      # elif lbl ==  7: img[i,j] = PURPLE
+      # elif lbl ==  8: img[i,j] = BLACK 
+      # elif lbl ==  9: img[i,j] = PINK
       else:
+        print lbl
         print "Uh oh. I didn't plan for this"
 
   output = Image.fromarray(img, 'RGB')
@@ -49,12 +50,32 @@ def saveImage(A, filename):
 if __name__ == "__main__":
     im = skimage.io.imread("../ADE20K/Generated/gt_seg.png", as_grey=True)
     _, classIm = np.unique(im, return_inverse=True)
-    classIm = classIm.reshape(im.shape)
-    saveImage(classIm, 'Tests/ImageSegmentation/Images/gt_seg.png')
+
+    # Map classes to reduce 10 classes to 4
+    classIm[classIm==1] = 0
+    classIm[classIm==2] = 0
+    classIm[classIm==3] = 0
+    classIm[classIm==4] = 1
+    classIm[classIm==5] = 2
+    classIm[classIm==6] = 3
+    classIm[classIm==7] = 3
+    classIm[classIm==8] = 3
+    classIm[classIm==9] = 3
+    img = classIm.reshape(im.shape)
+    saveImage(img, '../Simulation/Tests/ImageSegmentation/Images/gt_seg.png')
+
+    # Generate set of random permutations of <numCharacters> elements
+    perms = list(itertools.permutations(range(4)))
+    shuffle(perms)
 
     for i in range(10):
-      # For truly random permutations
-      #permuted = (((classIm+1) + randint(2, 8)) % 10)
-      permuted = ((classIm + i) % 10)
+      permuted = np.empty(classIm.shape)
+      perm = perms[i]
+      j = 0
+      for lbl in classIm:
+        permuted[j] = perm[lbl]
+        j += 1
+      permuted = permuted.reshape(im.shape)
+      
       modifiedIm = bleed(permuted, numBleeds = 128)
-      saveImage(modifiedIm, 'Tests/ImageSegmentation/Images/noisy%d.png' % i)
+      saveImage(modifiedIm, '../Simulation/Tests/ImageSegmentation/Images/noisy%d.png' % i)

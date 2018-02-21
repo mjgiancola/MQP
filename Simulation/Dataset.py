@@ -57,34 +57,42 @@ class Dataset():
       A = self.Labelers[i].A
       self.Labelers[i].style = softmax(A)
 
-  # Computes the highest possible percent correct by considering all possible
-  # permutations of cluster names
-  def best_percent_correct(self):
+  # Computes the highest possible percent correct and cross-entropy 
+  # by considering all permutations of cluster names
+  def permutedAcc(self):
+    # Compute observed labels based on greatest probability
+    observed = np.argmax(self.probZ, axis=0)
 
-      # Compute observed labels based on greatest probability
-      observed = np.argmax(self.probZ, axis=0)
+    # Generate list of permutations of character set
+    permutations = list(itertools.permutations(range(self.numCharacters)))
+    
+    acc = 0; ce = -1
+    best_perm = 0
 
-      # Generate list of permutations of character set
-      permutations = list(itertools.permutations(range(self.numCharacters)))
+    for perm in permutations:
       
-      acc = 0
-      best_perm = 0
+      # Compute accuracy
+      labels = np.empty(observed.shape)
+      i = 0
+      for lbl in observed:
+        labels[i] = perm[lbl]
+        i += 1
+      new_acc = self.percent_correct(labels)
 
-      for perm in permutations:
-        labels = np.empty(observed.shape)
-        i = 0
-        for lbl in observed:
-          labels[i] = perm[lbl]
-          i += 1
+      # Compute cross-entropy
+      y_hats = self.probZ[np.array(perm)]
+      y_actuals = self.gt_to_onehot()
+      new_ce  = self.cross_entropy(y_hats, y_actuals)
+      
+      if new_acc > acc:
+        acc = new_acc
+        ce  = new_ce
+        best_perm = perm
 
-        new_acc = self.percent_correct(labels)
-        if new_acc > acc:
-          acc = new_acc
-          best_perm = perm
+    print "Transformation of labels: " + str(best_perm)
+    return acc, ce
 
-      # print "Transformation of labels: " + str(best_perm)
-      return acc
-
+  # Computed without permuting labels
   def std_percent_correct(self):
       # Compute given labels based on greatest probability
       given = np.argmax(self.probZ, axis=0)
@@ -102,29 +110,7 @@ class Dataset():
 
     return correct / total
 
-  # Finds best cross_entropy value over all permutations of labels
-  def best_cross_entropy(self):
-    # Generate list of permutations of character set
-    permutations = list(itertools.permutations(range(self.numCharacters)))
-    
-    ce = 100 # Dummy large value
-    best_perm = 0
-
-    y_actuals = self.gt_to_onehot()
-
-    for perm in permutations:
-      y_hats = self.probZ[np.array(perm)] # Permute rows of probZ  
-      new_ce = self.cross_entropy(y_hats, y_actuals)
-
-      if new_ce < ce:
-        ce = new_ce
-        best_perm = perm
-
-    # print "Transformation of labels: " + str(best_perm)
-    # print "(Transformations should match)"
-    return ce
-
-  # Standard cross_entropy
+  # Computed without permuting labels
   def std_cross_entropy(self):
     y_hats = self.probZ
     y_actuals = self.gt_to_onehot()
@@ -176,7 +162,7 @@ class Dataset():
       print "Style[%d]:" % i
       print self.Labelers[i].style
       print ""
-      
+
 def init_from_file(filename, gamma, isDSM, hasGT):
 
   if isDSM: from SinkProp.Labeler import Labeler
@@ -228,7 +214,7 @@ def init_from_file(filename, gamma, isDSM, hasGT):
   return Dataset(numLabels, numLabelers, numImages, numCharacters, gamma,
                  alphabet, priorZ, labels, probZ, Labelers, hasGT, gt, isDSM)
 
-# This is old, not being used currenlty but kept around incase useful
+# This is old, not being used currenlty but kept around in case useful
 # NOTE: prior here is a float (assumed to be same over all images/characters)
 def init_for_trials(numLabels, numLabelers, numImages, numCharacters, gamma, alphabet, prior, labels, isDSM):
 

@@ -38,7 +38,7 @@ if __name__=='__main__':
     if args.v: data.outputResults()
 
     if args.t:
-      if args.p: acc = data.best_percent_correct(); ce = data.best_cross_entropy()
+      if args.p: acc, ce = data.permutedAcc();
       else:      acc = data.std_percent_correct();  ce = data.std_cross_entropy()
       print "Percent Correct: " + str(acc * 100) + "%"
       print "Cross Entropy: " + str(ce)

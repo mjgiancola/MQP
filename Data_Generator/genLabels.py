@@ -10,13 +10,13 @@ if __name__=='__main__':
   numLabelers = 10
   numImages = len(classIm)
   numLabels = numLabelers * numImages
-  numCharacters = 10
+  numCharacters = 4
 
   fp = open("../Simulation/Tests/ImageSegmentation/labels.txt", 'w')
   fp.write("%d %d %d %d\n" % ( numLabels, numLabelers, numImages, numCharacters ) )
   
-  fp.write("0 1 2 3 4 5 6 7 8 9\n") # Write character set to file
-  fp.write("0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1\n") # Write priors to file
+  fp.write("Sky Man Woman Ground\n") # Write character set to file
+  fp.write("0.1 0.1 0.1 0.1\n")      # Write priors to file
   
   for i in range(10):
     new_im = skimage.io.imread("../Simulation/Tests/ImageSegmentation/Images/noisy%d.png" % i, as_grey=True)
