@@ -10,7 +10,7 @@ if __name__=='__main__':
   numLabelers = 10
   numImages = len(classIm)
   numLabels = numLabelers * numImages
-  numCharacters = 9
+  numCharacters = 10
 
   fp = open("../Simulation/Tests/ImageSegmentation/labels.txt", 'w')
   fp.write("%d %d %d %d\n" % ( numLabels, numLabelers, numImages, numCharacters ) )
