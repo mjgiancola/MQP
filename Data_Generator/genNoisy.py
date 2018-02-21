@@ -1,5 +1,4 @@
 import numpy as np
-from numpy.random import permutation
 import skimage.io
 import matplotlib.pyplot as plt
 from PIL import Image
@@ -41,8 +40,6 @@ def saveImage(A, filename):
       elif lbl ==  8: img[i,j] = BLACK 
       elif lbl ==  9: img[i,j] = PINK
       else:
-        print lbl
-        exit()
         print "Uh oh. I didn't plan for this"
 
   output = Image.fromarray(img, 'RGB')
@@ -60,4 +57,3 @@ if __name__ == "__main__":
       permuted = ((classIm + i) % 10)
       modifiedIm = bleed(permuted, numBleeds = 128)
       saveImage(modifiedIm, 'Tests/ImageSegmentation/Images/noisy%d.png' % i)
-

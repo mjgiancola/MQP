@@ -19,7 +19,7 @@ if __name__=='__main__':
   parser.add_argument('-r', action='store_true', help='Runs in right stochastic mode (SinkProp disabled)')
   parser.add_argument('-t', action='store_true', help='Indicates if dataset file contains ground truth labels')
   parser.add_argument('-p', action='store_true', help='Checks all permutations of labels when computing accuracy (useful for clustering problems')
-  parser.add_argument('-v', action='store_true', help='Verbose mode')
+  parser.add_argument('-v', action='store_true', help='Verbose mode (Styles Matrices + probZ)')
 
   args = parser.parse_args()
   
@@ -40,5 +40,5 @@ if __name__=='__main__':
     if args.t:
       if args.p: acc = data.best_percent_correct(); ce = data.best_cross_entropy()
       else:      acc = data.std_percent_correct();  ce = data.std_cross_entropy()
-      print "Percent Correct on Test Data: " + str(acc * 100) + "%"
+      print "Percent Correct: " + str(acc * 100) + "%"
       print "Cross Entropy: " + str(ce)
