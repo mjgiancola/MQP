@@ -45,6 +45,7 @@ def saveImage(A, filename):
   output = Image.fromarray(img, 'RGB')
   output.save(filename)
 
+# This script generates randomly permuted noisy versions of an image
 if __name__ == "__main__":
     im = skimage.io.imread("../ADE20K/Generated/gt_seg.png", as_grey=True)
     _, classIm = np.unique(im, return_inverse=True)
