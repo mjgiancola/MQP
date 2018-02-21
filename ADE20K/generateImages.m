@@ -10,4 +10,17 @@ imwrite(img_crop, 'couple.png');
 
 seg      = imread('Annotator1_seg.png');
 seg_crop = imcrop(seg, [990 785 130 205]);
+
+% Set black (unlabeled) pixels to background color
+% They're all close enough in the image we're using, so this is reasonable
+for i=1:size(seg_crop, 1)
+    for j=1:size(seg_crop, 2)
+        if seg_crop(i, j, 1) == 0 && seg_crop(i, j, 2) == 0 && seg_crop(i, j, 3) == 0
+            seg_crop(i,j,1) = 10;
+            seg_crop(i,j,2) = 56;
+            seg_crop(i,j,3) = 112;
+        end
+    end
+end
+
 imwrite(seg_crop, 'gt_seg.png');
