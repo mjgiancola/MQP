@@ -6,7 +6,7 @@ from util.sinkhorn import *
 from util.softmax import *
 from util.gradient import *
 
-THRESHOLD = 1e-3
+THRESHOLD = 1e-4
 
 def EM(data):
 
