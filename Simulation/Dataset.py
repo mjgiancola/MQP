@@ -94,9 +94,9 @@ class Dataset():
 
   # Computed without permuting labels
   def std_percent_correct(self):
-      # Compute given labels based on greatest probability
-      given = np.argmax(self.probZ, axis=0)
-      return self.percent_correct(given)
+      # Compute observed labels based on greatest probability
+      observed = np.argmax(self.probZ, axis=0)
+      return self.percent_correct(observed)
 
   # Compute percent correct by comapring values in given array to gt (ground truth)
   def percent_correct(self, given):
@@ -198,7 +198,7 @@ def init_from_file(filename, gamma, isDSM, hasGT):
 
     line = fp.readline()
 
-  probZ = np.empty((numCharacters, numImages))
+  probZ = np.zeros((numCharacters, numImages))
   priorA = np.identity(numCharacters)
   Labelers = [ Labeler(priorA) for i in range(numLabelers) ]
 

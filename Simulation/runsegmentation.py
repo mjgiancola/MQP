@@ -5,6 +5,7 @@ import argparse
 
 from Dataset import *
 from EM import *
+from MV import *
 from util.colors import *
 
 if __name__=='__main__':
@@ -14,6 +15,7 @@ if __name__=='__main__':
   parser.add_argument('xdim', type=int, help='x dimension of image')
   parser.add_argument('ydim', type=int, help='y dimension of image')
   parser.add_argument('-r', action='store_true', help='Runs in right stochastic mode (SinkProp disabled)')
+  parser.add_argument('-m', action='store_true', help='Computes Majority Vote')
   parser.add_argument('-t', action='store_true', help='Indicates if dataset file contains ground truth labels')
   parser.add_argument('-v', action='store_true', help='Verbose mode (Style Matrices)')
   # NOTE: Verbose mode works different in this script than in simulation.py
@@ -21,16 +23,20 @@ if __name__=='__main__':
   args = parser.parse_args()
   data = init_from_file(args.train_data, 0, not args.r, args.t)
 
-  start = time()
-  EM(data)
-  elapsed = time() - start
+  # Compute majority vote
+  if args.m: MV(data)
+  else:
+    # Run our model
+    start = time()
+    EM(data)
+    elapsed = time() - start
 
-  print "Completed training in %d minutes and %d seconds\n" % (elapsed / 60, elapsed % 60)
-  acc, ce = data.permutedAcc();
-  print "Percent Correct: " + str(acc * 100) + "%"
-  print "Cross Entropy: " + str(ce)
+    print "Completed training in %d minutes and %d seconds\n" % (elapsed / 60, elapsed % 60)
+    acc, ce = data.permutedAcc();
+    print "Percent Correct: " + str(acc * 100) + "%"
+    print "Cross Entropy: " + str(ce)
 
-  if args.v: data.outputStyles()
+    if args.v: data.outputStyles()
 
   observed = np.argmax(data.probZ, axis=0)
 
@@ -49,7 +55,9 @@ if __name__=='__main__':
         print "Uh oh. I didn't plan for this"
 
   output = Image.fromarray(img, 'RGB')
-  if args.r:
+  if args.m:
+    output.save('MV_output.png')
+  elif args.r:
     output.save('RSM_output.png')
   else:
     output.save('DSM_output.png')

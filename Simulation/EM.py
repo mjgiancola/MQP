@@ -47,7 +47,7 @@ def EStep(data):
   for idx in range(data.numLabels):
     i = data.labels[idx].labelerId
     j = data.labels[idx].imageIdx
-    lij = data.labels[idx].label    
+    lij = data.labels[idx].label
 
     # Compute log probabilities
     for z in range(data.numCharacters):
