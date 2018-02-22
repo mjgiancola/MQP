@@ -15,6 +15,7 @@ def bleed (im, kernelSize = 7, numBleeds = 64):
 
     return im
 
+# This script illustrates the bleed function to generate noise in image segmentations
 if __name__ == "__main__":
     im = skimage.io.imread("../ADE20K/gt_seg.png", as_grey=True)
     _, classIm = np.unique(im, return_inverse=True)

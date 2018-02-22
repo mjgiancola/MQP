@@ -59,7 +59,8 @@ class Dataset():
 
   # Computes the highest possible percent correct and cross-entropy 
   # by considering all permutations of cluster names
-  def permutedAcc(self):
+  # ce is a boolean which, if True, indicates to compute cross-entropy
+  def permutedAcc(self, crossEntropy=True):
     # Compute observed labels based on greatest probability
     observed = np.argmax(self.probZ, axis=0)
 
@@ -79,14 +80,15 @@ class Dataset():
         i += 1
       new_acc = self.percent_correct(labels)
 
-      # Compute cross-entropy
-      y_hats = self.probZ[np.array(perm)]
-      y_actuals = self.gt_to_onehot()
-      new_ce  = self.cross_entropy(y_hats, y_actuals)
-      
+      if crossEntropy:
+        # Compute cross-entropy
+        y_hats = self.probZ[np.array(perm)]
+        y_actuals = self.gt_to_onehot()
+        new_ce  = self.cross_entropy(y_hats, y_actuals)
+        
       if new_acc > acc:
         acc = new_acc
-        ce  = new_ce
+        if crossEntropy: ce  = new_ce
         best_perm = perm
 
     print "Transformation of labels: " + str(best_perm)

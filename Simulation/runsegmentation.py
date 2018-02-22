@@ -24,7 +24,7 @@ if __name__=='__main__':
   data = init_from_file(args.train_data, 0, not args.r, args.t)
 
   # Compute majority vote
-  if args.m: MV(data)
+  if args.m: acc = MV(data); print "Percent Correct: " + str(acc * 100) + "%";
   else:
     # Run our model
     start = time()

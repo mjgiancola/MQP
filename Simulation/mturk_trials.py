@@ -1,0 +1,56 @@
+import argparse
+import numpy as np
+from numpy.random import choice, uniform, permutation
+
+from Dataset import *
+from EM import *
+from MV import *
+
+# Run multiple trials of a test
+if __name__=='__main__':
+  np.random.seed()
+
+  parser = argparse.ArgumentParser(description='Run trials of a test.')
+  parser.add_argument('-r', action='store_true', help='Runs in right stochastic mode (SinkProp disabled)')
+  parser.add_argument('-m', action='store_true', help='Computes Majority Vote')
+  args = parser.parse_args()
+
+  accuracies = []
+  cross_entropies = []
+
+  if args.m:
+    fp = open("Tests/MechanicalTurk/3labelers_100trials/MV_results.txt", 'w')
+  elif args.r:
+    fp = open("Tests/MechanicalTurk/3labelers_100trials/RSM_results.txt", 'w')
+  else:
+    fp = open("Tests/MechanicalTurk/3labelers_100trials/DSM_results.txt", 'w')
+
+  for sim in range(100): # Run 100 simulations
+    data = init_from_file("Tests/MechanicalTurk/3labelers_100trials/data/%d.txt" % sim, 1, not args.r, True)
+
+    if args.m:
+      acc = MV(data)
+      result = "Simulation %d: %.2f\n" % (sim, acc*100)
+      
+    else:
+      EM(data)
+      acc, ce = data.permutedAcc()
+      result = "Simulation %d: %.2f %% | %.2f CE\n" % (sim, acc*100, ce)
+      cross_entropies.append(ce)
+    
+    print result
+    fp.write(result)
+    accuracies.append(acc)
+
+  average_acc = sum(accuracies) / len(accuracies)
+  
+  if args.m:
+    result = "\nAverage: %.2f\n" % average_acc
+
+  else:
+    average_ce = sum(cross_entropies) / len(cross_entropies)
+    result = "\nAverage: %.2f %% | %.2f CE\n" % (average_acc, average_ce)
+  
+  print result
+  fp.write(result)
+  fp.close()

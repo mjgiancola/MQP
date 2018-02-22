@@ -1,0 +1,202 @@
+Transformation of labels: 0
+Simulation 0: 0.00
+Transformation of labels: 0
+Simulation 1: 0.00
+Transformation of labels: 0
+Simulation 2: 0.00
+Transformation of labels: 0
+Simulation 3: 0.00
+Transformation of labels: 0
+Simulation 4: 0.00
+Transformation of labels: 0
+Simulation 5: 0.00
+Transformation of labels: 0
+Simulation 6: 0.00
+Transformation of labels: 0
+Simulation 7: 0.00
+Transformation of labels: 0
+Simulation 8: 0.00
+Transformation of labels: 0
+Simulation 9: 0.00
+Transformation of labels: 0
+Simulation 10: 0.00
+Transformation of labels: 0
+Simulation 11: 0.00
+Transformation of labels: 0
+Simulation 12: 0.00
+Transformation of labels: 0
+Simulation 13: 0.00
+Transformation of labels: 0
+Simulation 14: 0.00
+Transformation of labels: 0
+Simulation 15: 0.00
+Transformation of labels: 0
+Simulation 16: 0.00
+Transformation of labels: 0
+Simulation 17: 0.00
+Transformation of labels: 0
+Simulation 18: 0.00
+Transformation of labels: 0
+Simulation 19: 0.00
+Transformation of labels: 0
+Simulation 20: 0.00
+Transformation of labels: 0
+Simulation 21: 0.00
+Transformation of labels: 0
+Simulation 22: 0.00
+Transformation of labels: 0
+Simulation 23: 0.00
+Transformation of labels: 0
+Simulation 24: 0.00
+Transformation of labels: 0
+Simulation 25: 0.00
+Transformation of labels: 0
+Simulation 26: 0.00
+Transformation of labels: 0
+Simulation 27: 0.00
+Transformation of labels: 0
+Simulation 28: 0.00
+Transformation of labels: 0
+Simulation 29: 0.00
+Transformation of labels: 0
+Simulation 30: 0.00
+Transformation of labels: 0
+Simulation 31: 0.00
+Transformation of labels: 0
+Simulation 32: 0.00
+Transformation of labels: 0
+Simulation 33: 0.00
+Transformation of labels: 0
+Simulation 34: 0.00
+Transformation of labels: 0
+Simulation 35: 0.00
+Transformation of labels: 0
+Simulation 36: 0.00
+Transformation of labels: 0
+Simulation 37: 0.00
+Transformation of labels: 0
+Simulation 38: 0.00
+Transformation of labels: 0
+Simulation 39: 0.00
+Transformation of labels: 0
+Simulation 40: 0.00
+Transformation of labels: 0
+Simulation 41: 0.00
+Transformation of labels: 0
+Simulation 42: 0.00
+Transformation of labels: 0
+Simulation 43: 0.00
+Transformation of labels: 0
+Simulation 44: 0.00
+Transformation of labels: 0
+Simulation 45: 0.00
+Transformation of labels: 0
+Simulation 46: 0.00
+Transformation of labels: 0
+Simulation 47: 0.00
+Transformation of labels: 0
+Simulation 48: 0.00
+Transformation of labels: 0
+Simulation 49: 0.00
+Transformation of labels: 0
+Simulation 50: 0.00
+Transformation of labels: 0
+Simulation 51: 0.00
+Transformation of labels: 0
+Simulation 52: 0.00
+Transformation of labels: 0
+Simulation 53: 0.00
+Transformation of labels: 0
+Simulation 54: 0.00
+Transformation of labels: 0
+Simulation 55: 0.00
+Transformation of labels: 0
+Simulation 56: 0.00
+Transformation of labels: 0
+Simulation 57: 0.00
+Transformation of labels: 0
+Simulation 58: 0.00
+Transformation of labels: 0
+Simulation 59: 0.00
+Transformation of labels: 0
+Simulation 60: 0.00
+Transformation of labels: 0
+Simulation 61: 0.00
+Transformation of labels: 0
+Simulation 62: 0.00
+Transformation of labels: 0
+Simulation 63: 0.00
+Transformation of labels: 0
+Simulation 64: 0.00
+Transformation of labels: 0
+Simulation 65: 0.00
+Transformation of labels: 0
+Simulation 66: 0.00
+Transformation of labels: 0
+Simulation 67: 0.00
+Transformation of labels: 0
+Simulation 68: 0.00
+Transformation of labels: 0
+Simulation 69: 0.00
+Transformation of labels: 0
+Simulation 70: 0.00
+Transformation of labels: 0
+Simulation 71: 0.00
+Transformation of labels: 0
+Simulation 72: 0.00
+Transformation of labels: 0
+Simulation 73: 0.00
+Transformation of labels: 0
+Simulation 74: 0.00
+Transformation of labels: 0
+Simulation 75: 0.00
+Transformation of labels: 0
+Simulation 76: 0.00
+Transformation of labels: 0
+Simulation 77: 0.00
+Transformation of labels: 0
+Simulation 78: 0.00
+Transformation of labels: 0
+Simulation 79: 0.00
+Transformation of labels: 0
+Simulation 80: 0.00
+Transformation of labels: 0
+Simulation 81: 0.00
+Transformation of labels: 0
+Simulation 82: 0.00
+Transformation of labels: 0
+Simulation 83: 0.00
+Transformation of labels: 0
+Simulation 84: 0.00
+Transformation of labels: 0
+Simulation 85: 0.00
+Transformation of labels: 0
+Simulation 86: 0.00
+Transformation of labels: 0
+Simulation 87: 0.00
+Transformation of labels: 0
+Simulation 88: 0.00
+Transformation of labels: 0
+Simulation 89: 0.00
+Transformation of labels: 0
+Simulation 90: 0.00
+Transformation of labels: 0
+Simulation 91: 0.00
+Transformation of labels: 0
+Simulation 92: 0.00
+Transformation of labels: 0
+Simulation 93: 0.00
+Transformation of labels: 0
+Simulation 94: 0.00
+Transformation of labels: 0
+Simulation 95: 0.00
+Transformation of labels: 0
+Simulation 96: 0.00
+Transformation of labels: 0
+Simulation 97: 0.00
+Transformation of labels: 0
+Simulation 98: 0.00
+Transformation of labels: 0
+Simulation 99: 0.00
+---
+Average: 0.00
