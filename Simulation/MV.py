@@ -9,5 +9,5 @@ def MV(data):
     data.probZ[lij][j] += 1
 
   # Compute percent correct
-  acc, _ = data.permutedAcc()
-  print "Percent Correct: " + str(acc * 100) + "%"
+  acc, _ = data.permutedAcc(crossEntropy=False)
+  return acc
