@@ -48,8 +48,8 @@ if __name__=='__main__':
       lbl = observed[w*i + j]
 
       if   lbl ==  0: img[i,j] = AQUA
-      elif lbl ==  1: img[i,j] = GREEN
-      elif lbl ==  2: img[i,j] = YELLOW
+      elif lbl ==  1: img[i,j] = BLACK
+      elif lbl ==  2: img[i,j] = RED
       elif lbl ==  3: img[i,j] = PURPLE
       else:
         print "Uh oh. I didn't plan for this"
