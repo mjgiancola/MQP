@@ -24,7 +24,7 @@ def EM(data):
     Q = computeQ(data)
 
     diff = math.fabs((Q - lastQ) / lastQ)
-    print "Iteration " + str(i) + ": " + str(diff)
+    print "Iteration " + str(i) + ": " + str(diff) + " (Q=%f)" % Q
     if (diff < THRESHOLD):
      break
 
