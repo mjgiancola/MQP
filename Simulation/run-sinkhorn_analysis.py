@@ -25,7 +25,7 @@ if __name__=='__main__':
     times.append(elapsed)
     steps.append(num_steps)
 
-    print("Simulation 1:")
+    print("Simulation %d:" % sim)
     print("Elapsed Time: %d minutes, %d seconds" % (elapsed / 60, elapsed % 60))
     
     acc, ce = data.permutedAcc()
