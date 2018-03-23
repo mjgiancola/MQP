@@ -1,6 +1,6 @@
 import numpy as np
 
-from util.softmax import *
+from Normalization.softmax import *
 
 class Labeler:
 

@@ -4,7 +4,7 @@ SINK_ITER = 50
 
 # Perform Sinkhorn Normalization
 # Assumes m is strictly positive (so in practice, generally pass exp(A) as m)
-def sink_norm(m, num_iter=SINK_ITER):
+def sink_norm(m, num_iter=SINK_ITER, iter_list=True):
   iterations = [m]
 
   for i in range(num_iter):
@@ -14,7 +14,10 @@ def sink_norm(m, num_iter=SINK_ITER):
     m = col_norm(m)
     iterations.append(m)
 
-  return iterations
+  if iter_list:
+    return iterations
+  else:
+    return iterations[len(iterations)-1]
 
 def row_norm(m):
   row_sums = m.sum(axis=1)

@@ -1,0 +1,2 @@
+- I've been moving things / making new packages to enable usage of simulation files in generation stuff and vice versa
+	Many paths are definitely broken. Should fix that.

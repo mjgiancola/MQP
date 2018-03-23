@@ -1,7 +1,7 @@
 import numpy as np
 from numpy.random import randint
 
-from generate import * # To access NUM_LETTERS
+NUM_LETTERS = 3
 
 # Given an alphabetic LOWER-CASE character c, returns
 # the equivalent one-hot column vector

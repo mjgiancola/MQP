@@ -3,8 +3,8 @@ import itertools
 
 from Dataset import *
 from util.Label import *
-from util.sinkhorn import *
-from util.softmax import *
+from Normalization.sinkhorn import *
+from Normalization.softmax import *
 
 EPSILON = 1e-5
 
@@ -47,7 +47,7 @@ class Dataset():
   def computeStyle_DSM(self):
     for i in range(self.numLabelers):
       A = self.Labelers[i].A # Current parameterizing matrix
-      self.Labelers[i].iterations = sink_norm( np.exp(A) )
+      self.Labelers[i].iterations = sink_norm( np.exp(A), num_iter=5 )
 
       I = self.Labelers[i].iterations
       self.Labelers[i].style = I[len(I)-1] # Set style matrix

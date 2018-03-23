@@ -2,11 +2,11 @@ from scipy.optimize import minimize
 import numpy as np
 import math
 
-from util.sinkhorn import *
-from util.softmax import *
+from Normalization.sinkhorn import *
+from Normalization.softmax import *
 from util.gradient import *
 
-THRESHOLD = 1e-4
+THRESHOLD = 1e-3
 
 def EM(data):
 
@@ -31,6 +31,7 @@ def EM(data):
     lastQ = Q
     i += 1
   print ""
+  return i
 
 # Compute P(Z_j | L, S) given S computed in the last MStep
 def EStep(data):
