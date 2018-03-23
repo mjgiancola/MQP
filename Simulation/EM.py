@@ -31,7 +31,7 @@ def EM(data):
     lastQ = Q
     i += 1
   print ""
-  return i
+  return i+1
 
 # Compute P(Z_j | L, S) given S computed in the last MStep
 def EStep(data):

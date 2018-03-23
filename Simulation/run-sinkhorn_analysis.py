@@ -34,12 +34,12 @@ if __name__=='__main__':
     accuracies.append(acc)
     cross_entropies.append(ce)
 
-  average_acc = sum(accuracies) / len(accuracies)
+  average_acc = 100 * sum(accuracies) / len(accuracies)
   average_ce  = sum(cross_entropies) / len(cross_entropies)
   average_time = sum(times) / len(times)
   average_steps = sum(steps) / len(steps)
 
-  print "Average Accuracy: %.2f %%" % average_acc * 100
+  print "Average Accuracy: %.2f %%" % average_acc
   print "Average Cross-Entropy: %.2f" % average_ce
   print "Average Time: %d minutes, %d seconds" % (average_time / 60, average_time % 60)
   print "Average Steps: %d" % average_steps
