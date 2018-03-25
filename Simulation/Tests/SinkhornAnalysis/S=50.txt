@@ -1,0 +1,831 @@
+Iteration 0: 0.00620913802201 (Q=-6709.317373)
+Iteration 1: 0.0015696962969 (Q=-6698.785783)
+Iteration 2: 0.0037218592987 (Q=-6673.853844)
+Iteration 3: 0.0039980554462 (Q=-6647.171407)
+Iteration 4: 0.00350620938441 (Q=-6623.865032)
+Iteration 5: 0.00284962085599 (Q=-6604.989528)
+Iteration 6: 0.00226288554848 (Q=-6590.043193)
+Iteration 7: 0.00179805253883 (Q=-6578.193949)
+Iteration 8: 0.00145919468184 (Q=-6568.595083)
+Iteration 9: 0.00124957249235 (Q=-6560.387147)
+Iteration 10: 0.00117779027736 (Q=-6552.660387)
+Iteration 11: 0.00123448338792 (Q=-6544.571237)
+Iteration 12: 0.00135615810155 (Q=-6535.695763)
+Iteration 13: 0.00143896293218 (Q=-6526.291140)
+Iteration 14: 0.00143848009531 (Q=-6516.903200)
+Iteration 15: 0.00142368231242 (Q=-6507.625200)
+Iteration 16: 0.00148255684645 (Q=-6497.977276)
+Iteration 17: 0.00161945021896 (Q=-6487.454125)
+Iteration 18: 0.00176419553131 (Q=-6476.008987)
+Iteration 19: 0.00180830003504 (Q=-6464.298420)
+Iteration 20: 0.00165364096044 (Q=-6453.608791)
+Iteration 21: 0.00132377620563 (Q=-6445.065658)
+Iteration 22: 0.000959275594356 (Q=-6438.883063)
+
+Simulation 0:
+Number of EM Steps: 23
+Elapsed Time: 8 minutes, 46 seconds
+Transformation of labels: (1, 0, 2)
+Accuracy: 48.60 % | 2.70 CE
+
+Iteration 0: 0.00721346249529 (Q=-6708.617414)
+Iteration 1: 0.000901812183982 (Q=-6702.567501)
+
+Simulation 1:
+Number of EM Steps: 2
+Elapsed Time: 0 minutes, 35 seconds
+Transformation of labels: (0, 1, 2)
+Accuracy: 39.60 % | 2.20 CE
+
+Iteration 0: 0.00490506575951 (Q=-6696.283756)
+Iteration 1: 0.00464725360868 (Q=-6665.164428)
+Iteration 2: 0.00693386982536 (Q=-6618.949045)
+Iteration 3: 0.00606840355592 (Q=-6578.782591)
+Iteration 4: 0.00462073972503 (Q=-6548.383749)
+Iteration 5: 0.00357210753735 (Q=-6524.992218)
+Iteration 6: 0.00288900791433 (Q=-6506.141464)
+Iteration 7: 0.00245923659417 (Q=-6490.141323)
+Iteration 8: 0.00212962891687 (Q=-6476.319730)
+Iteration 9: 0.00181185624048 (Q=-6464.585570)
+Iteration 10: 0.00152474235859 (Q=-6454.728742)
+Iteration 11: 0.00125934739622 (Q=-6446.599997)
+Iteration 12: 0.0010124122541 (Q=-6440.073380)
+Iteration 13: 0.000832205476574 (Q=-6434.713915)
+
+Simulation 2:
+Number of EM Steps: 14
+Elapsed Time: 4 minutes, 39 seconds
+Transformation of labels: (0, 2, 1)
+Accuracy: 56.20 % | 2.14 CE
+
+Iteration 0: 0.00720465683445 (Q=-6706.198032)
+Iteration 1: 0.000980622441498 (Q=-6699.621783)
+
+Simulation 3:
+Number of EM Steps: 2
+Elapsed Time: 0 minutes, 36 seconds
+Transformation of labels: (0, 2, 1)
+Accuracy: 39.20 % | 2.22 CE
+
+Iteration 0: 0.00524614552924 (Q=-6687.215529)
+Iteration 1: 0.00329453341 (Q=-6665.184274)
+Iteration 2: 0.00551484307209 (Q=-6628.426828)
+Iteration 3: 0.00515478939551 (Q=-6594.258684)
+Iteration 4: 0.00401060432431 (Q=-6567.811722)
+Iteration 5: 0.00312738872368 (Q=-6547.271621)
+Iteration 6: 0.00260536509004 (Q=-6530.213588)
+Iteration 7: 0.00227668728803 (Q=-6515.346334)
+Iteration 8: 0.00205108552472 (Q=-6501.982802)
+Iteration 9: 0.00189405948176 (Q=-6489.667659)
+Iteration 10: 0.00177766781534 (Q=-6478.131186)
+Iteration 11: 0.00168858067921 (Q=-6467.192339)
+Iteration 12: 0.00166234538562 (Q=-6456.441632)
+Iteration 13: 0.00174010467934 (Q=-6445.206747)
+Iteration 14: 0.00186498730984 (Q=-6433.186519)
+Iteration 15: 0.00190489586248 (Q=-6420.931968)
+Iteration 16: 0.00179868818678 (Q=-6409.382714)
+Iteration 17: 0.00160502188917 (Q=-6399.095514)
+Iteration 18: 0.00144156408127 (Q=-6389.870808)
+Iteration 19: 0.00135230447022 (Q=-6381.229757)
+Iteration 20: 0.00128127811587 (Q=-6373.053627)
+Iteration 21: 0.00116872431425 (Q=-6365.605284)
+Iteration 22: 0.00101427787631 (Q=-6359.148792)
+Iteration 23: 0.000844007389642 (Q=-6353.781623)
+
+Simulation 4:
+Number of EM Steps: 24
+Elapsed Time: 9 minutes, 56 seconds
+Transformation of labels: (0, 2, 1)
+Accuracy: 75.40 % | 1.13 CE
+
+Iteration 0: 0.00532268853284 (Q=-6680.188440)
+Iteration 1: 0.00361878355513 (Q=-6656.014283)
+Iteration 2: 0.00833337170951 (Q=-6600.547242)
+Iteration 3: 0.0110084979215 (Q=-6527.885132)
+Iteration 4: 0.0101864626203 (Q=-6461.389074)
+Iteration 5: 0.00643704874035 (Q=-6419.796797)
+Iteration 6: 0.00336521443711 (Q=-6398.192805)
+Iteration 7: 0.00182125633568 (Q=-6386.540055)
+Iteration 8: 0.00105533037406 (Q=-6379.800146)
+Iteration 9: 0.000637890973835 (Q=-6375.730529)
+
+Simulation 5:
+Number of EM Steps: 10
+Elapsed Time: 3 minutes, 12 seconds
+Transformation of labels: (0, 1, 2)
+Accuracy: 67.40 % | 1.53 CE
+
+Iteration 0: 0.00698574067899 (Q=-6711.371194)
+Iteration 1: 0.000637541624129 (Q=-6707.092415)
+
+Simulation 6:
+Number of EM Steps: 2
+Elapsed Time: 0 minutes, 35 seconds
+Transformation of labels: (0, 2, 1)
+Accuracy: 41.40 % | 2.21 CE
+
+Iteration 0: 0.0074910465829 (Q=-6698.801490)
+Iteration 1: 0.000101898231872 (Q=-6698.118894)
+
+Simulation 7:
+Number of EM Steps: 2
+Elapsed Time: 0 minutes, 36 seconds
+Transformation of labels: (0, 2, 1)
+Accuracy: 40.80 % | 2.28 CE
+
+Iteration 0: 0.00646990826942 (Q=-6678.618852)
+Iteration 1: 0.00216758226795 (Q=-6664.142397)
+Iteration 2: 0.00589246478698 (Q=-6624.874172)
+Iteration 3: 0.00814754612995 (Q=-6570.897704)
+Iteration 4: 0.00880797796544 (Q=-6513.021382)
+Iteration 5: 0.0074942954291 (Q=-6464.210876)
+Iteration 6: 0.00536793705646 (Q=-6429.511399)
+Iteration 7: 0.00347140659589 (Q=-6407.191950)
+Iteration 8: 0.00218928521452 (Q=-6393.164780)
+Iteration 9: 0.00146174709279 (Q=-6383.819590)
+Iteration 10: 0.00105893086012 (Q=-6377.059566)
+Iteration 11: 0.000814127769122 (Q=-6371.867825)
+
+Simulation 8:
+Number of EM Steps: 12
+Elapsed Time: 4 minutes, 27 seconds
+Transformation of labels: (0, 2, 1)
+Accuracy: 72.80 % | 1.29 CE
+
+Iteration 0: 0.00642841625567 (Q=-6706.989960)
+Iteration 1: 0.00206430344567 (Q=-6693.144697)
+Iteration 2: 0.00515252973992 (Q=-6658.658070)
+Iteration 3: 0.00604844127441 (Q=-6618.383568)
+Iteration 4: 0.00558244700538 (Q=-6581.436792)
+Iteration 5: 0.00473421287853 (Q=-6550.278869)
+Iteration 6: 0.00400047834639 (Q=-6524.074621)
+Iteration 7: 0.00334210951664 (Q=-6502.270449)
+Iteration 8: 0.00271667853012 (Q=-6484.605870)
+Iteration 9: 0.00226146743919 (Q=-6469.941145)
+Iteration 10: 0.00202654395623 (Q=-6456.829525)
+Iteration 11: 0.00179443251402 (Q=-6445.243180)
+Iteration 12: 0.00141017024565 (Q=-6436.154290)
+Iteration 13: 0.000978980844164 (Q=-6429.853418)
+
+Simulation 9:
+Number of EM Steps: 14
+Elapsed Time: 5 minutes, 38 seconds
+Transformation of labels: (0, 1, 2)
+Accuracy: 61.00 % | 1.77 CE
+
+Iteration 0: 0.00834484008511 (Q=-6742.383466)
+Iteration 1: 5.90487695003e-05 (Q=-6742.781596)
+
+Simulation 10:
+Number of EM Steps: 2
+Elapsed Time: 0 minutes, 34 seconds
+Transformation of labels: (0, 2, 1)
+Accuracy: 40.40 % | 2.11 CE
+
+Iteration 0: 0.00724985005325 (Q=-6696.452265)
+Iteration 1: 0.00137788400738 (Q=-6687.225331)
+Iteration 2: 0.00574513641865 (Q=-6648.806309)
+Iteration 3: 0.0092101567237 (Q=-6587.569761)
+Iteration 4: 0.0109943870047 (Q=-6515.143470)
+Iteration 5: 0.0100797538393 (Q=-6449.472427)
+Iteration 6: 0.0071700234242 (Q=-6403.229559)
+Iteration 7: 0.00432759839511 (Q=-6375.518953)
+Iteration 8: 0.00239761904035 (Q=-6360.232887)
+Iteration 9: 0.00129042761518 (Q=-6352.025467)
+Iteration 10: 0.00071963525711 (Q=-6347.454326)
+
+Simulation 11:
+Number of EM Steps: 11
+Elapsed Time: 3 minutes, 52 seconds
+Transformation of labels: (0, 2, 1)
+Accuracy: 71.40 % | 1.38 CE
+
+Iteration 0: 0.00672404861766 (Q=-6705.581755)
+Iteration 1: 0.00192210593205 (Q=-6692.692916)
+Iteration 2: 0.00591260792888 (Q=-6653.121647)
+Iteration 3: 0.00846547213702 (Q=-6596.799831)
+Iteration 4: 0.00889466845951 (Q=-6538.123484)
+Iteration 5: 0.00705233651021 (Q=-6492.014437)
+Iteration 6: 0.0043886842993 (Q=-6463.523035)
+Iteration 7: 0.00237822537092 (Q=-6448.151320)
+Iteration 8: 0.0012998879147 (Q=-6439.769446)
+Iteration 9: 0.000820501310168 (Q=-6434.485607)
+
+Simulation 12:
+Number of EM Steps: 10
+Elapsed Time: 3 minutes, 20 seconds
+Transformation of labels: (0, 2, 1)
+Accuracy: 64.40 % | 1.74 CE
+
+Iteration 0: 0.00751170103833 (Q=-6717.313375)
+Iteration 1: 0.00139017894804 (Q=-6707.975108)
+Iteration 2: 0.00521865471694 (Q=-6672.968502)
+Iteration 3: 0.00771340445814 (Q=-6621.497197)
+Iteration 4: 0.00868783815437 (Q=-6563.970701)
+Iteration 5: 0.0071883536753 (Q=-6516.786558)
+Iteration 6: 0.00459886737782 (Q=-6486.816721)
+Iteration 7: 0.00283163513275 (Q=-6468.448423)
+Iteration 8: 0.00191697599666 (Q=-6456.048562)
+Iteration 9: 0.0014104303565 (Q=-6446.942756)
+Iteration 10: 0.0010750162327 (Q=-6440.012187)
+Iteration 11: 0.000828422921718 (Q=-6434.677134)
+
+Simulation 13:
+Number of EM Steps: 12
+Elapsed Time: 4 minutes, 35 seconds
+Transformation of labels: (1, 2, 0)
+Accuracy: 54.40 % | 4.07 CE
+
+Iteration 0: 0.00525593219152 (Q=-6685.655953)
+Iteration 1: 0.00458876998383 (Q=-6654.977016)
+Iteration 2: 0.00918688287769 (Q=-6593.838522)
+Iteration 3: 0.0105067240599 (Q=-6524.558880)
+Iteration 4: 0.00824609293317 (Q=-6470.756761)
+Iteration 5: 0.00536166761545 (Q=-6436.062714)
+Iteration 6: 0.00385115160973 (Q=-6411.276461)
+Iteration 7: 0.00313337339696 (Q=-6391.187538)
+Iteration 8: 0.00251752268057 (Q=-6375.097578)
+Iteration 9: 0.00193176652237 (Q=-6362.782378)
+Iteration 10: 0.00143212420402 (Q=-6353.670083)
+Iteration 11: 0.00101302941283 (Q=-6347.233629)
+Iteration 12: 0.000682824599554 (Q=-6342.899581)
+
+Simulation 14:
+Number of EM Steps: 13
+Elapsed Time: 4 minutes, 20 seconds
+Transformation of labels: (0, 2, 1)
+Accuracy: 73.00 % | 1.31 CE
+
+Iteration 0: 0.00589295460195 (Q=-6695.434745)
+Iteration 1: 0.00240366391152 (Q=-6679.341171)
+Iteration 2: 0.0049812611631 (Q=-6646.069628)
+Iteration 3: 0.00522531353287 (Q=-6611.341830)
+Iteration 4: 0.00436923563976 (Q=-6582.455320)
+Iteration 5: 0.00341509051167 (Q=-6559.975639)
+Iteration 6: 0.00266878524755 (Q=-6542.468473)
+Iteration 7: 0.00209765914711 (Q=-6528.744604)
+Iteration 8: 0.00168817616445 (Q=-6517.722933)
+Iteration 9: 0.00139573101682 (Q=-6508.625945)
+Iteration 10: 0.00114762014284 (Q=-6501.156515)
+Iteration 11: 0.000909580186909 (Q=-6495.243192)
+
+Simulation 15:
+Number of EM Steps: 12
+Elapsed Time: 3 minutes, 6 seconds
+Transformation of labels: (1, 2, 0)
+Accuracy: 43.60 % | 4.88 CE
+
+Iteration 0: 0.00806933691383 (Q=-6713.259745)
+Iteration 1: 0.000366603166165 (Q=-6715.720848)
+
+Simulation 16:
+Number of EM Steps: 2
+Elapsed Time: 0 minutes, 35 seconds
+Transformation of labels: (2, 1, 0)
+Accuracy: 37.00 % | 2.32 CE
+
+Iteration 0: 0.00669463204692 (Q=-6704.599855)
+Iteration 1: 0.000993228194814 (Q=-6697.940657)
+
+Simulation 17:
+Number of EM Steps: 2
+Elapsed Time: 0 minutes, 37 seconds
+Transformation of labels: (0, 2, 1)
+Accuracy: 40.40 % | 2.20 CE
+
+Iteration 0: 0.00702843487948 (Q=-6694.134104)
+Iteration 1: 0.00115453139777 (Q=-6686.405516)
+Iteration 2: 0.00417135875737 (Q=-6658.514119)
+Iteration 3: 0.0053667012051 (Q=-6622.779864)
+Iteration 4: 0.00546793286615 (Q=-6586.566948)
+Iteration 5: 0.0053456495321 (Q=-6551.357469)
+Iteration 6: 0.00551812586689 (Q=-6515.206254)
+Iteration 7: 0.00539942533906 (Q=-6480.027885)
+Iteration 8: 0.00439435476485 (Q=-6451.552343)
+Iteration 9: 0.00308648527682 (Q=-6431.639722)
+Iteration 10: 0.0020703229988 (Q=-6418.324150)
+Iteration 11: 0.00147208233764 (Q=-6408.875849)
+Iteration 12: 0.00115411487886 (Q=-6401.479270)
+Iteration 13: 0.000982571263531 (Q=-6395.189360)
+
+Simulation 18:
+Number of EM Steps: 14
+Elapsed Time: 5 minutes, 40 seconds
+Transformation of labels: (1, 2, 0)
+Accuracy: 65.20 % | 6.10 CE
+
+Iteration 0: 0.00708591146255 (Q=-6704.143956)
+Iteration 1: 0.0023077806534 (Q=-6688.672262)
+Iteration 2: 0.00757286536338 (Q=-6638.019848)
+Iteration 3: 0.010811010511 (Q=-6566.256145)
+Iteration 4: 0.00946484071486 (Q=-6504.107577)
+Iteration 5: 0.00583125038371 (Q=-6466.180497)
+Iteration 6: 0.00334295209781 (Q=-6444.564365)
+Iteration 7: 0.00206862088579 (Q=-6431.233005)
+Iteration 8: 0.00140150771332 (Q=-6422.219582)
+Iteration 9: 0.00101847715452 (Q=-6415.678698)
+Iteration 10: 0.000779806891329 (Q=-6410.675708)
+
+Simulation 19:
+Number of EM Steps: 11
+Elapsed Time: 3 minutes, 27 seconds
+Transformation of labels: (1, 0, 2)
+Accuracy: 49.00 % | 2.59 CE
+
+Iteration 0: 0.00749248114295 (Q=-6724.621021)
+Iteration 1: 0.000554278705931 (Q=-6720.893707)
+
+Simulation 20:
+Number of EM Steps: 2
+Elapsed Time: 0 minutes, 38 seconds
+Transformation of labels: (0, 1, 2)
+Accuracy: 43.20 % | 2.06 CE
+
+Iteration 0: 0.00707943258919 (Q=-6694.473665)
+Iteration 1: 0.000873195304685 (Q=-6688.628082)
+
+Simulation 21:
+Number of EM Steps: 2
+Elapsed Time: 1 minutes, 29 seconds
+Transformation of labels: (0, 1, 2)
+Accuracy: 41.20 % | 2.29 CE
+
+Iteration 0: 0.00672168099581 (Q=-6715.768922)
+Iteration 1: 0.00215799028733 (Q=-6701.276358)
+Iteration 2: 0.00599217828664 (Q=-6661.121115)
+Iteration 3: 0.00803037793307 (Q=-6607.629795)
+Iteration 4: 0.00812005601848 (Q=-6553.975471)
+Iteration 5: 0.00629282500033 (Q=-6512.732451)
+Iteration 6: 0.00425303638773 (Q=-6485.033562)
+Iteration 7: 0.00288572788381 (Q=-6466.319520)
+Iteration 8: 0.00212020039523 (Q=-6452.609627)
+Iteration 9: 0.00174184049668 (Q=-6441.370210)
+Iteration 10: 0.00154291935191 (Q=-6431.431696)
+Iteration 11: 0.00136663743878 (Q=-6422.642260)
+Iteration 12: 0.00116479038844 (Q=-6415.161228)
+Iteration 13: 0.000973964719277 (Q=-6408.913088)
+
+Simulation 22:
+Number of EM Steps: 14
+Elapsed Time: 4 minutes, 26 seconds
+Transformation of labels: (1, 2, 0)
+Accuracy: 69.40 % | 5.39 CE
+
+Iteration 0: 0.00652765140472 (Q=-6704.228499)
+Iteration 1: 0.00160007041874 (Q=-6693.501261)
+Iteration 2: 0.00387981710029 (Q=-6667.531700)
+Iteration 3: 0.00435747877025 (Q=-6638.478073)
+Iteration 4: 0.00412746440357 (Q=-6611.077991)
+Iteration 5: 0.00366484726177 (Q=-6586.849400)
+Iteration 6: 0.00317397970291 (Q=-6565.942873)
+Iteration 7: 0.0027379953612 (Q=-6547.965352)
+Iteration 8: 0.00234706991074 (Q=-6532.596820)
+Iteration 9: 0.00200055932597 (Q=-6519.527972)
+Iteration 10: 0.00174748031936 (Q=-6508.135225)
+Iteration 11: 0.00161885701364 (Q=-6497.599485)
+Iteration 12: 0.00161892427201 (Q=-6487.080364)
+Iteration 13: 0.00173330138885 (Q=-6475.836298)
+Iteration 14: 0.00189017350396 (Q=-6463.595844)
+Iteration 15: 0.00190458686978 (Q=-6451.285364)
+Iteration 16: 0.00167551600333 (Q=-6440.476132)
+Iteration 17: 0.00133902355629 (Q=-6431.852183)
+Iteration 18: 0.0010096636739 (Q=-6425.358176)
+Iteration 19: 0.000729141234854 (Q=-6420.673182)
+
+Simulation 23:
+Number of EM Steps: 20
+Elapsed Time: 9 minutes, 3 seconds
+Transformation of labels: (0, 2, 1)
+Accuracy: 63.60 % | 1.95 CE
+
+Iteration 0: 0.00635719194787 (Q=-6706.984428)
+Iteration 1: 0.00278490665242 (Q=-6688.306103)
+Iteration 2: 0.00695906646339 (Q=-6641.761736)
+Iteration 3: 0.00879019114967 (Q=-6583.379381)
+Iteration 4: 0.00792502377075 (Q=-6531.205943)
+Iteration 5: 0.0057442091373 (Q=-6493.689330)
+Iteration 6: 0.00392498525543 (Q=-6468.201695)
+Iteration 7: 0.00261358902423 (Q=-6451.296474)
+Iteration 8: 0.00174402309258 (Q=-6440.045264)
+Iteration 9: 0.00122926411991 (Q=-6432.128747)
+Iteration 10: 0.000929804163845 (Q=-6426.148127)
+
+Simulation 24:
+Number of EM Steps: 11
+Elapsed Time: 3 minutes, 39 seconds
+Transformation of labels: (0, 2, 1)
+Accuracy: 56.20 % | 2.07 CE
+
+Iteration 0: 0.00657261591686 (Q=-6711.150936)
+Iteration 1: 0.00278923642078 (Q=-6692.431949)
+Iteration 2: 0.00658808853892 (Q=-6648.341615)
+Iteration 3: 0.00809981066049 (Q=-6594.491307)
+Iteration 4: 0.00799368334567 (Q=-6541.777031)
+Iteration 5: 0.00678937698694 (Q=-6497.362441)
+Iteration 6: 0.00502123738814 (Q=-6464.737642)
+Iteration 7: 0.00329344494685 (Q=-6443.446384)
+Iteration 8: 0.00200376701287 (Q=-6430.535219)
+Iteration 9: 0.00122937701318 (Q=-6422.629667)
+Iteration 10: 0.000804091035745 (Q=-6417.465288)
+
+Simulation 25:
+Number of EM Steps: 11
+Elapsed Time: 3 minutes, 9 seconds
+Transformation of labels: (0, 1, 2)
+Accuracy: 56.60 % | 2.07 CE
+
+Iteration 0: 0.00737244478895 (Q=-6703.983711)
+Iteration 1: 0.000145656735731 (Q=-6703.007230)
+
+Simulation 26:
+Number of EM Steps: 2
+Elapsed Time: 0 minutes, 36 seconds
+Transformation of labels: (2, 1, 0)
+Accuracy: 36.60 % | 2.45 CE
+
+Iteration 0: 0.00873764205001 (Q=-6726.387755)
+Iteration 1: 0.000903517767948 (Q=-6732.465166)
+
+Simulation 27:
+Number of EM Steps: 2
+Elapsed Time: 1 minutes, 1 seconds
+Transformation of labels: (0, 1, 2)
+Accuracy: 38.20 % | 2.21 CE
+
+Iteration 0: 0.00623208230571 (Q=-6689.133275)
+Iteration 1: 0.00120371601655 (Q=-6681.081459)
+Iteration 2: 0.00330603922959 (Q=-6658.993541)
+Iteration 3: 0.00389530121244 (Q=-6633.054756)
+Iteration 4: 0.00393589526442 (Q=-6606.947747)
+Iteration 5: 0.00403405291736 (Q=-6580.294970)
+Iteration 6: 0.00461153224621 (Q=-6549.949727)
+Iteration 7: 0.00538983959531 (Q=-6514.646549)
+Iteration 8: 0.00551952074883 (Q=-6478.688822)
+Iteration 9: 0.00483711803171 (Q=-6447.350640)
+Iteration 10: 0.00382909521315 (Q=-6422.663120)
+Iteration 11: 0.00282368165952 (Q=-6404.527564)
+Iteration 12: 0.00191625765735 (Q=-6392.254839)
+Iteration 13: 0.00118125491377 (Q=-6384.703957)
+Iteration 14: 0.0006916775414 (Q=-6380.287800)
+
+Simulation 28:
+Number of EM Steps: 15
+Elapsed Time: 4 minutes, 36 seconds
+Transformation of labels: (0, 2, 1)
+Accuracy: 74.60 % | 1.17 CE
+
+Iteration 0: 0.00747002649121 (Q=-6725.460806)
+Iteration 1: 0.000803659001018 (Q=-6720.055829)
+
+Simulation 29:
+Number of EM Steps: 2
+Elapsed Time: 0 minutes, 34 seconds
+Transformation of labels: (1, 2, 0)
+Accuracy: 44.20 % | 2.60 CE
+
+Iteration 0: 0.00671416746121 (Q=-6703.331054)
+Iteration 1: 0.00131523226625 (Q=-6694.514616)
+Iteration 2: 0.00413751365544 (Q=-6666.815971)
+Iteration 3: 0.005336968439 (Q=-6631.235384)
+Iteration 4: 0.00542076910761 (Q=-6595.288988)
+Iteration 5: 0.00475427462291 (Q=-6563.933173)
+Iteration 6: 0.00391192129918 (Q=-6538.255583)
+Iteration 7: 0.00317373783853 (Q=-6517.504874)
+Iteration 8: 0.00253729645924 (Q=-6500.968032)
+Iteration 9: 0.00195925830655 (Q=-6488.230957)
+Iteration 10: 0.00146385733806 (Q=-6478.733112)
+Iteration 11: 0.0011137977406 (Q=-6471.517114)
+Iteration 12: 0.000912252099695 (Q=-6465.613459)
+
+Simulation 30:
+Number of EM Steps: 13
+Elapsed Time: 4 minutes, 8 seconds
+Transformation of labels: (1, 2, 0)
+Accuracy: 47.20 % | 5.40 CE
+
+Iteration 0: 0.00647743274081 (Q=-6692.073865)
+Iteration 1: 0.00073624129045 (Q=-6687.146883)
+
+Simulation 31:
+Number of EM Steps: 2
+Elapsed Time: 0 minutes, 37 seconds
+Transformation of labels: (0, 2, 1)
+Accuracy: 36.60 % | 2.40 CE
+
+Iteration 0: 0.00609731123942 (Q=-6689.412533)
+Iteration 1: 0.00333087972155 (Q=-6667.130904)
+Iteration 2: 0.00815423683564 (Q=-6612.765540)
+Iteration 3: 0.0100389686719 (Q=-6546.380193)
+Iteration 4: 0.0082547811996 (Q=-6492.341257)
+Iteration 5: 0.00548340933547 (Q=-6456.741093)
+Iteration 6: 0.00365410877313 (Q=-6433.147458)
+Iteration 7: 0.0026024294688 (Q=-6416.405646)
+Iteration 8: 0.0018929357057 (Q=-6404.259803)
+Iteration 9: 0.00138193522797 (Q=-6395.409530)
+Iteration 10: 0.00102833749256 (Q=-6388.832891)
+Iteration 11: 0.000790222560268 (Q=-6383.784291)
+
+Simulation 32:
+Number of EM Steps: 12
+Elapsed Time: 3 minutes, 49 seconds
+Transformation of labels: (0, 2, 1)
+Accuracy: 74.20 % | 1.19 CE
+
+Iteration 0: 0.00517433651318 (Q=-6671.154768)
+Iteration 1: 0.00243971342051 (Q=-6654.879062)
+Iteration 2: 0.0051272498481 (Q=-6620.757834)
+Iteration 3: 0.00669255068679 (Q=-6576.448077)
+Iteration 4: 0.00782264995316 (Q=-6525.002825)
+Iteration 5: 0.00843194707813 (Q=-6469.984347)
+Iteration 6: 0.0074001220826 (Q=-6422.105673)
+Iteration 7: 0.00493634398193 (Q=-6390.403950)
+Iteration 8: 0.00293671086902 (Q=-6371.637181)
+Iteration 9: 0.00193098693908 (Q=-6359.333633)
+Iteration 10: 0.00155721831303 (Q=-6349.430762)
+Iteration 11: 0.00138944898774 (Q=-6340.608552)
+Iteration 12: 0.00112030610465 (Q=-6333.505130)
+Iteration 13: 0.000781147919771 (Q=-6328.557726)
+
+Simulation 33:
+Number of EM Steps: 14
+Elapsed Time: 6 minutes, 36 seconds
+Transformation of labels: (0, 2, 1)
+Accuracy: 76.40 % | 1.21 CE
+
+Iteration 0: 0.00799091476933 (Q=-6690.441359)
+Iteration 1: 5.6202343068e-05 (Q=-6690.817377)
+
+Simulation 34:
+Number of EM Steps: 2
+Elapsed Time: 0 minutes, 36 seconds
+Transformation of labels: (0, 1, 2)
+Accuracy: 38.60 % | 2.19 CE
+
+Iteration 0: 0.00528641402734 (Q=-6700.048577)
+Iteration 1: 0.00299260904792 (Q=-6679.997951)
+Iteration 2: 0.00663648046559 (Q=-6635.666275)
+Iteration 3: 0.00938138885855 (Q=-6573.414510)
+Iteration 4: 0.0101406775425 (Q=-6506.755633)
+Iteration 5: 0.00778656752751 (Q=-6456.090341)
+Iteration 6: 0.00445643835578 (Q=-6427.319172)
+Iteration 7: 0.00241864275598 (Q=-6411.773783)
+Iteration 8: 0.00153909587307 (Q=-6401.905448)
+Iteration 9: 0.00118124913353 (Q=-6394.343203)
+Iteration 10: 0.00100076742899 (Q=-6387.943953)
+Iteration 11: 0.000849339051173 (Q=-6382.518423)
+
+Simulation 35:
+Number of EM Steps: 12
+Elapsed Time: 4 minutes, 43 seconds
+Transformation of labels: (0, 2, 1)
+Accuracy: 73.20 % | 1.15 CE
+
+Iteration 0: 0.00676826886596 (Q=-6716.890484)
+Iteration 1: 0.00155495855511 (Q=-6706.445998)
+Iteration 2: 0.00498960215988 (Q=-6672.983500)
+Iteration 3: 0.00684399418996 (Q=-6627.313640)
+Iteration 4: 0.00728982927892 (Q=-6579.001655)
+Iteration 5: 0.00665513087772 (Q=-6535.217538)
+Iteration 6: 0.00588499823425 (Q=-6496.757794)
+Iteration 7: 0.00494994666286 (Q=-6464.599190)
+Iteration 8: 0.00363618677082 (Q=-6441.092700)
+Iteration 9: 0.00245427422076 (Q=-6425.284492)
+Iteration 10: 0.00175146549776 (Q=-6414.030828)
+Iteration 11: 0.00147906775744 (Q=-6404.544042)
+Iteration 12: 0.00139172834343 (Q=-6395.630656)
+Iteration 13: 0.00130336865802 (Q=-6387.294792)
+Iteration 14: 0.00116933669801 (Q=-6379.825893)
+Iteration 15: 0.00100652373804 (Q=-6373.404447)
+Iteration 16: 0.000836282615333 (Q=-6368.074480)
+
+Simulation 36:
+Number of EM Steps: 17
+Elapsed Time: 6 minutes, 49 seconds
+Transformation of labels: (0, 2, 1)
+Accuracy: 73.00 % | 1.16 CE
+
+Iteration 0: 0.00678387576458 (Q=-6717.939316)
+Iteration 1: 0.00207276727321 (Q=-6704.014591)
+Iteration 2: 0.0057013633119 (Q=-6665.792568)
+Iteration 3: 0.00691664186954 (Q=-6619.687668)
+Iteration 4: 0.00646014089607 (Q=-6576.923553)
+Iteration 5: 0.00542544048408 (Q=-6541.240846)
+Iteration 6: 0.00440838164811 (Q=-6512.404560)
+Iteration 7: 0.00339044674883 (Q=-6490.324599)
+Iteration 8: 0.00245590268745 (Q=-6474.384993)
+Iteration 9: 0.00176174466929 (Q=-6462.978780)
+Iteration 10: 0.00130710653208 (Q=-6454.530978)
+Iteration 11: 0.00102342403265 (Q=-6447.925256)
+Iteration 12: 0.000856183659353 (Q=-6442.404648)
+
+Simulation 37:
+Number of EM Steps: 13
+Elapsed Time: 4 minutes, 30 seconds
+Transformation of labels: (0, 2, 1)
+Accuracy: 67.00 % | 1.44 CE
+
+Iteration 0: 0.00529669949081 (Q=-6670.927609)
+Iteration 1: 0.00497345136834 (Q=-6637.750074)
+Iteration 2: 0.00964904482391 (Q=-6573.702126)
+Iteration 3: 0.0102974897548 (Q=-6506.009496)
+Iteration 4: 0.00898105165689 (Q=-6447.578689)
+Iteration 5: 0.00717343560959 (Q=-6401.327398)
+Iteration 6: 0.00506208773586 (Q=-6368.923317)
+Iteration 7: 0.0033484511234 (Q=-6347.597289)
+Iteration 8: 0.00222069982742 (Q=-6333.501181)
+Iteration 9: 0.00146881455908 (Q=-6324.198442)
+Iteration 10: 0.000969157825783 (Q=-6318.069296)
+
+Simulation 38:
+Number of EM Steps: 11
+Elapsed Time: 4 minutes, 33 seconds
+Transformation of labels: (0, 2, 1)
+Accuracy: 75.00 % | 1.25 CE
+
+Iteration 0: 0.00640575673556 (Q=-6709.209570)
+Iteration 1: 0.00184729284119 (Q=-6696.815695)
+Iteration 2: 0.00534678150843 (Q=-6661.009285)
+Iteration 3: 0.00815767665458 (Q=-6606.670925)
+Iteration 4: 0.0104395097111 (Q=-6537.700519)
+Iteration 5: 0.0109202745553 (Q=-6466.307035)
+Iteration 6: 0.0089707669842 (Q=-6408.299301)
+Iteration 7: 0.00576742225898 (Q=-6371.339933)
+Iteration 8: 0.00336030512019 (Q=-6349.930287)
+Iteration 9: 0.00196987844229 (Q=-6337.421696)
+Iteration 10: 0.00116320096054 (Q=-6330.050001)
+Iteration 11: 0.000706178880329 (Q=-6325.579853)
+
+Simulation 39:
+Number of EM Steps: 12
+Elapsed Time: 4 minutes, 8 seconds
+Transformation of labels: (0, 2, 1)
+Accuracy: 73.20 % | 1.34 CE
+
+Iteration 0: 0.00676280513071 (Q=-6684.038001)
+Iteration 1: 0.00101476911627 (Q=-6677.255246)
+Iteration 2: 0.00398572264087 (Q=-6650.641558)
+Iteration 3: 0.00569262346337 (Q=-6612.781960)
+Iteration 4: 0.00622189317128 (Q=-6571.637937)
+Iteration 5: 0.00546656396573 (Q=-6535.713658)
+Iteration 6: 0.00425155180501 (Q=-6507.926733)
+Iteration 7: 0.0032453403799 (Q=-6486.806295)
+Iteration 8: 0.00254053564667 (Q=-6470.326333)
+Iteration 9: 0.00216825934378 (Q=-6456.296987)
+Iteration 10: 0.0020036931056 (Q=-6443.360549)
+Iteration 11: 0.00186382880635 (Q=-6431.351228)
+Iteration 12: 0.00169236555869 (Q=-6420.467031)
+Iteration 13: 0.00152752725388 (Q=-6410.659593)
+Iteration 14: 0.00139264312956 (Q=-6401.731832)
+Iteration 15: 0.00129277182823 (Q=-6393.455853)
+Iteration 16: 0.00124502278272 (Q=-6385.495855)
+Iteration 17: 0.00124038917757 (Q=-6377.575355)
+Iteration 18: 0.00123343427745 (Q=-6369.709035)
+Iteration 19: 0.00120251127491 (Q=-6362.049388)
+Iteration 20: 0.00115399392655 (Q=-6354.707622)
+Iteration 21: 0.00106308167414 (Q=-6347.952048)
+Iteration 22: 0.000882404460074 (Q=-6342.350587)
+
+Simulation 40:
+Number of EM Steps: 23
+Elapsed Time: 10 minutes, 53 seconds
+Transformation of labels: (0, 2, 1)
+Accuracy: 66.40 % | 1.72 CE
+
+Iteration 0: 0.00702915473383 (Q=-6705.526007)
+Iteration 1: 0.000888369240389 (Q=-6699.569024)
+
+Simulation 41:
+Number of EM Steps: 2
+Elapsed Time: 0 minutes, 36 seconds
+Transformation of labels: (0, 1, 2)
+Accuracy: 44.00 % | 2.11 CE
+
+Iteration 0: 0.00628446268354 (Q=-6685.602729)
+Iteration 1: 0.00251633990841 (Q=-6668.779480)
+Iteration 2: 0.00580908738919 (Q=-6630.039958)
+Iteration 3: 0.00671420868571 (Q=-6585.524486)
+Iteration 4: 0.00665268537352 (Q=-6541.713063)
+Iteration 5: 0.00667331217488 (Q=-6498.058170)
+Iteration 6: 0.00626904414951 (Q=-6457.321556)
+Iteration 7: 0.00497484809595 (Q=-6425.197362)
+Iteration 8: 0.00338771599139 (Q=-6403.430619)
+Iteration 9: 0.00224530278469 (Q=-6389.052978)
+Iteration 10: 0.00159168961486 (Q=-6378.883589)
+Iteration 11: 0.00118004922509 (Q=-6371.356192)
+Iteration 12: 0.000870280738862 (Q=-6365.811324)
+
+Simulation 42:
+Number of EM Steps: 13
+Elapsed Time: 5 minutes, 27 seconds
+Transformation of labels: (0, 2, 1)
+Accuracy: 73.80 % | 1.25 CE
+
+Iteration 0: 0.00774599372786 (Q=-6690.860018)
+Iteration 1: 0.0002194083988 (Q=-6689.391987)
+
+Simulation 43:
+Number of EM Steps: 2
+Elapsed Time: 0 minutes, 35 seconds
+Transformation of labels: (0, 2, 1)
+Accuracy: 40.40 % | 2.18 CE
+
+Iteration 0: 0.00790303125681 (Q=-6697.731356)
+Iteration 1: 8.79628906694e-06 (Q=-6697.790271)
+
+Simulation 44:
+Number of EM Steps: 2
+Elapsed Time: 0 minutes, 36 seconds
+Transformation of labels: (0, 2, 1)
+Accuracy: 38.20 % | 2.24 CE
+
+Iteration 0: 0.00636569607186 (Q=-6693.719012)
+Iteration 1: 0.00184007386454 (Q=-6681.402074)
+Iteration 2: 0.00461496033166 (Q=-6650.567669)
+Iteration 3: 0.00545958610487 (Q=-6614.258322)
+Iteration 4: 0.00541111024149 (Q=-6578.467841)
+Iteration 5: 0.00508963027787 (Q=-6544.985872)
+Iteration 6: 0.00459923946803 (Q=-6514.883915)
+Iteration 7: 0.00396023581785 (Q=-6489.083438)
+Iteration 8: 0.00338842762978 (Q=-6467.095648)
+Iteration 9: 0.00297117059734 (Q=-6447.880804)
+Iteration 10: 0.00261911306086 (Q=-6430.993075)
+Iteration 11: 0.00226542873733 (Q=-6416.424119)
+Iteration 12: 0.00188084117899 (Q=-6404.355844)
+Iteration 13: 0.0014470403578 (Q=-6395.088483)
+Iteration 14: 0.00103170161511 (Q=-6388.490659)
+Iteration 15: 0.000709600362726 (Q=-6383.957384)
+
+Simulation 45:
+Number of EM Steps: 16
+Elapsed Time: 7 minutes, 10 seconds
+Transformation of labels: (0, 2, 1)
+Accuracy: 72.60 % | 1.34 CE
+
+Iteration 0: 0.00677464303129 (Q=-6705.445078)
+Iteration 1: 0.00205920002046 (Q=-6691.637226)
+Iteration 2: 0.00506140748294 (Q=-6657.768123)
+Iteration 3: 0.00638424687162 (Q=-6615.263288)
+Iteration 4: 0.00694812467451 (Q=-6569.299614)
+Iteration 5: 0.00680303486168 (Q=-6524.608439)
+Iteration 6: 0.00576669005702 (Q=-6486.983045)
+Iteration 7: 0.00407125916021 (Q=-6460.572856)
+Iteration 8: 0.00265829975831 (Q=-6443.398716)
+Iteration 9: 0.00188171439717 (Q=-6431.274080)
+Iteration 10: 0.00144216364229 (Q=-6421.999131)
+Iteration 11: 0.00109782281201 (Q=-6414.948913)
+Iteration 12: 0.000806921001414 (Q=-6409.772556)
+
+Simulation 46:
+Number of EM Steps: 13
+Elapsed Time: 4 minutes, 41 seconds
+Transformation of labels: (0, 1, 2)
+Accuracy: 52.60 % | 2.44 CE
+
+Iteration 0: 0.00627212337588 (Q=-6681.318479)
+Iteration 1: 0.00209622927756 (Q=-6667.312904)
+Iteration 2: 0.00436714086919 (Q=-6638.195809)
+Iteration 3: 0.00445853470135 (Q=-6608.599183)
+Iteration 4: 0.00359530268386 (Q=-6584.839268)
+Iteration 5: 0.00254165971021 (Q=-6568.102848)
+Iteration 6: 0.0017005804565 (Q=-6556.933260)
+Iteration 7: 0.00117913142571 (Q=-6549.201774)
+Iteration 8: 0.000927422745768 (Q=-6543.127895)
+
+Simulation 47:
+Number of EM Steps: 9
+Elapsed Time: 2 minutes, 57 seconds
+Transformation of labels: (0, 2, 1)
+Accuracy: 50.00 % | 2.19 CE
+
+Iteration 0: 0.00713744264178 (Q=-6716.083123)
+Iteration 1: 0.00109761506381 (Q=-6708.711449)
+Iteration 2: 0.00443383176234 (Q=-6678.966151)
+Iteration 3: 0.00683583017742 (Q=-6633.309872)
+Iteration 4: 0.00880719878054 (Q=-6574.888994)
+Iteration 5: 0.0097184063453 (Q=-6510.991551)
+Iteration 6: 0.00844530657101 (Q=-6456.004231)
+Iteration 7: 0.00564812309336 (Q=-6419.539924)
+Iteration 8: 0.00309646952492 (Q=-6399.662015)
+Iteration 9: 0.00154257479591 (Q=-6389.790057)
+Iteration 10: 0.000784020000253 (Q=-6384.780334)
+
+Simulation 48:
+Number of EM Steps: 11
+Elapsed Time: 3 minutes, 13 seconds
+Transformation of labels: (0, 2, 1)
+Accuracy: 70.20 % | 1.36 CE
+
+Iteration 0: 0.00762761925424 (Q=-6720.674904)
+Iteration 1: 0.000352889457348 (Q=-6723.046559)
+
+Simulation 49:
+Number of EM Steps: 2
+Elapsed Time: 0 minutes, 41 seconds
+Transformation of labels: (0, 2, 1)
+Accuracy: 48.60 % | 2.01 CE
+
+Average Accuracy: 55.92 %
+Average Cross-Entropy: 2.20
+Average Time: 3 minutes, 31 seconds
+Average Steps: 9
+
