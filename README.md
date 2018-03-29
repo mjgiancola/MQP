@@ -1,4 +1,4 @@
-Repository of code to supplement the submission of "Permutation-Invariant Consensus over Crowdsourced Labels" by Anonymous to HCOMP 2018.
+Repository of code for my Major Qualifying Project at Worcester Polytechnic Institute. It also serves as a supplement to the paper "Permutation-Invariant Consensus over Crowdsourced Labels" by Michael Giancola, Randy Paffenroth, and Jacob Whitehill.
 
 ## Installation
 The dependency list for our model is in requirements.txt. If you are on a system with pip, the easiest way to install the dependencies is by running "sudo pip install -r requirements.txt"
