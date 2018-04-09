@@ -48,3 +48,8 @@ def col_grad(m, i, j, x, y):
   term2 = m[x][y] / np.power(col_sum, 2)
 
   return term1 - term2
+
+#if __name__=='__main__':
+  #A = np.array([[2,5],[3,4]])
+  #dsm = sink_norm(A, num_iter=3, iter_list=False)
+  #print dsm
