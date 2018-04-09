@@ -27,7 +27,8 @@ def naive(data):
     for j in range(data.numLabelers):
       if j == leader: continue
       perm, _ = mode(labels[j][indices])
-      permutations[j][perm[0]] = k # perm[0] because mode returns a list of lists (in case of ties I think..)
+      perm = int(perm[0]) # perm[0] because mode returns a list of lists (in case of ties I think..)
+      permutations[j][perm] = k
 
   # Un-permute everyone's labels (besides the leader)
   for j in range(data.numLabelers):
@@ -52,9 +53,8 @@ def naive(data):
   total = 0.
 
   for i in range(data.numImages):
-    if majority_vote[i] == data.gt[i]:
-      correct += 1
-    total += 1
-
-  print correct / total
-  return correct / total
+    c = int(majority_vote[i])
+    data.probZ[c][i] = 1
+    
+  acc, _ = data.permutedAcc(crossEntropy=False)
+  return acc
