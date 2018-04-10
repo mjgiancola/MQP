@@ -4,9 +4,10 @@ from scipy.stats import mode
 
 def naive(data):
 
-  # -1 will represent a missing label in this function
-  labels = - np.ones((data.numLabelers, data.numImages))
-  permutations = np.empty((data.numLabelers, data.numCharacters))
+  # NaN will represent a missing label in this function
+  labels = - np.empty((data.numLabelers, data.numImages))
+  labels[:] = np.nan
+  permutations = np.zeros((data.numLabelers, data.numCharacters))
 
   # Populate labels matrix
   for idx in range(data.numLabels):
@@ -26,7 +27,8 @@ def naive(data):
     # often to represent k (based on the leader's labeling)
     for j in range(data.numLabelers):
       if j == leader: continue
-      perm, _ = mode(labels[j][indices])
+      perm, _ = mode(labels[j][indices], nan_policy='omit')
+      if len(perm) == 0: continue
       perm = int(perm[0]) # perm[0] because mode returns a list of lists (in case of ties I think..)
       permutations[j][perm] = k
 
@@ -45,16 +47,12 @@ def naive(data):
       labels[j][idx] = permutations[j][k]
 
   # Compute the majority vote based on the unpermuted labels
-  majority_vote, _ = mode(labels)
+  majority_vote, _ = mode(labels, nan_policy='omit')
   majority_vote = majority_vote[0] # mode returns a list of lists
-
-  # Compute percent correct
-  correct = 0.
-  total = 0.
 
   for i in range(data.numImages):
     c = int(majority_vote[i])
     data.probZ[c][i] = 1
-    
+
   acc, _ = data.permutedAcc(crossEntropy=False)
   return acc

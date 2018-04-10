@@ -1,1 +1,0 @@
-3labelers_100trials contains the data/results that appear in the paper

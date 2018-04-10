@@ -1,0 +1,202 @@
+Transformation of labels: (0, 2, 1)
+Simulation 0: 0.61
+Transformation of labels: (0, 2, 1)
+Simulation 1: 0.52
+Transformation of labels: (0, 2, 1)
+Simulation 2: 0.77
+Transformation of labels: (1, 2, 0)
+Simulation 3: 0.82
+Transformation of labels: (2, 0, 1)
+Simulation 4: 0.47
+Transformation of labels: (0, 2, 1)
+Simulation 5: 0.50
+Transformation of labels: (0, 2, 1)
+Simulation 6: 0.72
+Transformation of labels: (1, 2, 0)
+Simulation 7: 0.61
+Transformation of labels: (1, 2, 0)
+Simulation 8: 0.61
+Transformation of labels: (1, 2, 0)
+Simulation 9: 0.55
+Transformation of labels: (0, 2, 1)
+Simulation 10: 0.65
+Transformation of labels: (1, 2, 0)
+Simulation 11: 0.57
+Transformation of labels: (1, 2, 0)
+Simulation 12: 0.61
+Transformation of labels: (1, 2, 0)
+Simulation 13: 0.66
+Transformation of labels: (0, 1, 2)
+Simulation 14: 0.45
+Transformation of labels: (0, 2, 1)
+Simulation 15: 0.62
+Transformation of labels: (1, 2, 0)
+Simulation 16: 0.78
+Transformation of labels: (0, 2, 1)
+Simulation 17: 0.59
+Transformation of labels: (1, 0, 2)
+Simulation 18: 0.64
+Transformation of labels: (1, 2, 0)
+Simulation 19: 0.46
+Transformation of labels: (0, 2, 1)
+Simulation 20: 0.66
+Transformation of labels: (1, 2, 0)
+Simulation 21: 0.81
+Transformation of labels: (1, 2, 0)
+Simulation 22: 0.66
+Transformation of labels: (0, 2, 1)
+Simulation 23: 0.60
+Transformation of labels: (1, 0, 2)
+Simulation 24: 0.61
+Transformation of labels: (0, 1, 2)
+Simulation 25: 0.58
+Transformation of labels: (0, 2, 1)
+Simulation 26: 0.64
+Transformation of labels: (2, 0, 1)
+Simulation 27: 0.53
+Transformation of labels: (0, 2, 1)
+Simulation 28: 0.50
+Transformation of labels: (0, 2, 1)
+Simulation 29: 0.79
+Transformation of labels: (0, 2, 1)
+Simulation 30: 0.72
+Transformation of labels: (1, 2, 0)
+Simulation 31: 0.61
+Transformation of labels: (1, 2, 0)
+Simulation 32: 0.50
+Transformation of labels: (1, 2, 0)
+Simulation 33: 0.70
+Transformation of labels: (1, 0, 2)
+Simulation 34: 0.56
+Transformation of labels: (1, 0, 2)
+Simulation 35: 0.68
+Transformation of labels: (0, 2, 1)
+Simulation 36: 0.78
+Transformation of labels: (1, 0, 2)
+Simulation 37: 0.84
+Transformation of labels: (0, 2, 1)
+Simulation 38: 0.67
+Transformation of labels: (0, 2, 1)
+Simulation 39: 0.81
+Transformation of labels: (0, 2, 1)
+Simulation 40: 0.52
+Transformation of labels: (1, 2, 0)
+Simulation 41: 0.63
+Transformation of labels: (1, 2, 0)
+Simulation 42: 0.86
+Transformation of labels: (1, 2, 0)
+Simulation 43: 0.55
+Transformation of labels: (0, 2, 1)
+Simulation 44: 0.48
+Transformation of labels: (0, 2, 1)
+Simulation 45: 0.58
+Transformation of labels: (0, 1, 2)
+Simulation 46: 0.50
+Transformation of labels: (1, 2, 0)
+Simulation 47: 0.61
+Transformation of labels: (0, 1, 2)
+Simulation 48: 0.45
+Transformation of labels: (0, 2, 1)
+Simulation 49: 0.67
+Transformation of labels: (1, 2, 0)
+Simulation 50: 0.58
+Transformation of labels: (0, 2, 1)
+Simulation 51: 0.52
+Transformation of labels: (1, 2, 0)
+Simulation 52: 0.51
+Transformation of labels: (0, 2, 1)
+Simulation 53: 0.65
+Transformation of labels: (1, 2, 0)
+Simulation 54: 0.52
+Transformation of labels: (0, 2, 1)
+Simulation 55: 0.59
+Transformation of labels: (1, 2, 0)
+Simulation 56: 0.68
+Transformation of labels: (0, 2, 1)
+Simulation 57: 0.66
+Transformation of labels: (0, 2, 1)
+Simulation 58: 0.67
+Transformation of labels: (0, 2, 1)
+Simulation 59: 0.71
+Transformation of labels: (1, 2, 0)
+Simulation 60: 0.78
+Transformation of labels: (0, 2, 1)
+Simulation 61: 0.50
+Transformation of labels: (0, 2, 1)
+Simulation 62: 0.57
+Transformation of labels: (0, 1, 2)
+Simulation 63: 0.72
+Transformation of labels: (0, 2, 1)
+Simulation 64: 0.56
+Transformation of labels: (0, 2, 1)
+Simulation 65: 0.75
+Transformation of labels: (1, 2, 0)
+Simulation 66: 0.62
+Transformation of labels: (1, 0, 2)
+Simulation 67: 0.73
+Transformation of labels: (0, 2, 1)
+Simulation 68: 0.60
+Transformation of labels: (0, 2, 1)
+Simulation 69: 0.63
+Transformation of labels: (0, 2, 1)
+Simulation 70: 0.55
+Transformation of labels: (0, 2, 1)
+Simulation 71: 0.60
+Transformation of labels: (1, 2, 0)
+Simulation 72: 0.68
+Transformation of labels: (1, 2, 0)
+Simulation 73: 0.49
+Transformation of labels: (1, 2, 0)
+Simulation 74: 0.74
+Transformation of labels: (0, 2, 1)
+Simulation 75: 0.65
+Transformation of labels: (0, 2, 1)
+Simulation 76: 0.68
+Transformation of labels: (0, 1, 2)
+Simulation 77: 0.74
+Transformation of labels: (0, 2, 1)
+Simulation 78: 0.72
+Transformation of labels: (1, 2, 0)
+Simulation 79: 0.55
+Transformation of labels: (0, 2, 1)
+Simulation 80: 0.66
+Transformation of labels: (1, 2, 0)
+Simulation 81: 0.53
+Transformation of labels: (0, 2, 1)
+Simulation 82: 0.67
+Transformation of labels: (1, 2, 0)
+Simulation 83: 0.79
+Transformation of labels: (1, 2, 0)
+Simulation 84: 0.80
+Transformation of labels: (0, 2, 1)
+Simulation 85: 0.77
+Transformation of labels: (1, 2, 0)
+Simulation 86: 0.50
+Transformation of labels: (1, 2, 0)
+Simulation 87: 0.51
+Transformation of labels: (1, 2, 0)
+Simulation 88: 0.59
+Transformation of labels: (1, 2, 0)
+Simulation 89: 0.47
+Transformation of labels: (1, 2, 0)
+Simulation 90: 0.50
+Transformation of labels: (1, 2, 0)
+Simulation 91: 0.61
+Transformation of labels: (1, 2, 0)
+Simulation 92: 0.55
+Transformation of labels: (0, 2, 1)
+Simulation 93: 0.51
+Transformation of labels: (1, 0, 2)
+Simulation 94: 0.60
+Transformation of labels: (0, 2, 1)
+Simulation 95: 0.70
+Transformation of labels: (1, 2, 0)
+Simulation 96: 0.85
+Transformation of labels: (1, 2, 0)
+Simulation 97: 0.68
+Transformation of labels: (2, 0, 1)
+Simulation 98: 0.49
+Transformation of labels: (0, 2, 1)
+Simulation 99: 0.44
+---
+Average: 0.62
