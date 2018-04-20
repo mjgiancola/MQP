@@ -1,0 +1,868 @@
+Iteration 0: 0.484239613687 (Q=-4.109515)
+Iteration 1: 0.108909977947 (Q=-3.661948)
+Iteration 2: 0.000159174880494 (Q=-3.661365)
+
+Transformation of labels: (0, 1, 2)
+Simulation 0: 100.00 % | 0.00 CE
+
+Iteration 0: 0.611046361487 (Q=-4.713309)
+Iteration 1: 0.196670794277 (Q=-3.786339)
+Iteration 2: 0.00222115106218 (Q=-3.777929)
+Iteration 3: 4.99386296515e-10 (Q=-3.777929)
+
+Transformation of labels: (0, 1, 2)
+Simulation 1: 100.00 % | 0.23 CE
+
+Iteration 0: 0.397068184633 (Q=-5.069622)
+Iteration 1: 0.0663286527977 (Q=-4.733361)
+Iteration 2: 0.0162458574818 (Q=-4.656463)
+Iteration 3: 0.000174064110052 (Q=-4.655653)
+
+Transformation of labels: (0, 1, 2)
+Simulation 2: 83.33 % | 8.11 CE
+
+Iteration 0: 0.458616484263 (Q=-4.327877)
+Iteration 1: 0.178446339489 (Q=-3.555583)
+Iteration 2: 0.0306111065134 (Q=-3.446743)
+Iteration 3: 0.00220300247689 (Q=-3.439150)
+Iteration 4: 6.25631243368e-05 (Q=-3.438935)
+
+Transformation of labels: (0, 1, 2)
+Simulation 3: 100.00 % | 0.00 CE
+
+Iteration 0: 0.449703037804 (Q=-5.014361)
+Iteration 1: 0.216906506617 (Q=-3.926713)
+Iteration 2: 0.0110202638318 (Q=-3.883440)
+Iteration 3: 8.4672255584e-06 (Q=-3.883473)
+
+Transformation of labels: (0, 1, 2)
+Simulation 4: 100.00 % | 0.00 CE
+
+Iteration 0: 0.520759118582 (Q=-5.106033)
+Iteration 1: 0.135118727484 (Q=-4.416113)
+Iteration 2: 0.0199104032491 (Q=-4.328186)
+Iteration 3: 7.82011800442e-05 (Q=-4.327847)
+
+Transformation of labels: (0, 1, 2)
+Simulation 5: 100.00 % | 0.00 CE
+
+Iteration 0: 0.395286769032 (Q=-4.613583)
+Iteration 1: 0.244291724565 (Q=-3.486523)
+Iteration 2: 0.107412965584 (Q=-3.112025)
+Iteration 3: 0.000286798513503 (Q=-3.111132)
+
+Transformation of labels: (0, 1, 2)
+Simulation 6: 100.00 % | 0.00 CE
+
+Iteration 0: 0.587272073434 (Q=-4.604229)
+Iteration 1: 0.0600256191711 (Q=-4.327857)
+Iteration 2: 8.2484793877e-06 (Q=-4.327821)
+
+Transformation of labels: (0, 1, 2)
+Simulation 7: 100.00 % | 0.00 CE
+
+Iteration 0: 0.308864147553 (Q=-7.666307)
+Iteration 1: 0.201465737636 (Q=-6.121809)
+Iteration 2: 0.130539930122 (Q=-5.322669)
+Iteration 3: 4.7208820549e-05 (Q=-5.322417)
+
+Transformation of labels: (0, 1, 2)
+Simulation 8: 100.00 % | 0.00 CE
+
+Iteration 0: 0.169773582575 (Q=-6.927239)
+Iteration 1: 0.0922628982879 (Q=-6.288111)
+Iteration 2: 0.08886264942 (Q=-5.729333)
+Iteration 3: 0.118888166324 (Q=-5.048183)
+Iteration 4: 0.120401405163 (Q=-4.440375)
+Iteration 5: 0.0523609946113 (Q=-4.207873)
+Iteration 6: 0.0315711280127 (Q=-4.075025)
+Iteration 7: 0.0206102616523 (Q=-3.991038)
+Iteration 8: 0.0115481094094 (Q=-3.944949)
+Iteration 9: 0.00823878672709 (Q=-3.912447)
+Iteration 10: 0.00482643967893 (Q=-3.893564)
+Iteration 11: 0.00690465026781 (Q=-3.866680)
+Iteration 12: 0.00646272714736 (Q=-3.841691)
+Iteration 13: 0.00475279537939 (Q=-3.823432)
+Iteration 14: 0.00436618578648 (Q=-3.806739)
+Iteration 15: 0.00195226624343 (Q=-3.799307)
+Iteration 16: 0.000708870839899 (Q=-3.796614)
+
+Transformation of labels: (0, 1, 2)
+Simulation 9: 100.00 % | 0.01 CE
+
+Iteration 0: 0.585092193635 (Q=-4.204301)
+Iteration 1: 0.0234668539235 (Q=-4.105640)
+Iteration 2: 4.56018311038e-06 (Q=-4.105621)
+
+Transformation of labels: (0, 1, 2)
+Simulation 10: 100.00 % | 0.00 CE
+
+Iteration 0: 0.411140426335 (Q=-6.589008)
+Iteration 1: 0.0392346977933 (Q=-6.330490)
+Iteration 2: 0.00216055798057 (Q=-6.316813)
+Iteration 3: 2.1245643246e-06 (Q=-6.316799)
+
+Transformation of labels: (0, 1, 2)
+Simulation 11: 100.00 % | 0.00 CE
+
+Iteration 0: 0.35259547193 (Q=-7.790537)
+Iteration 1: 0.190864073451 (Q=-6.303603)
+Iteration 2: 0.0491201299356 (Q=-5.993969)
+Iteration 3: 0.000811604241258 (Q=-5.989105)
+
+Transformation of labels: (0, 1, 2)
+Simulation 12: 100.00 % | 0.00 CE
+
+Iteration 0: 0.272371161164 (Q=-7.851492)
+Iteration 1: 0.250919900293 (Q=-5.881396)
+Iteration 2: 0.0925690606491 (Q=-5.336961)
+Iteration 3: 0.00273699665719 (Q=-5.322354)
+Iteration 4: 3.1474623027e-05 (Q=-5.322521)
+
+Transformation of labels: (0, 1, 2)
+Simulation 13: 100.00 % | 0.00 CE
+
+Iteration 0: 0.569339179081 (Q=-3.586016)
+Iteration 1: 0.0156782500988 (Q=-3.529794)
+Iteration 2: 0.00680787125031 (Q=-3.553824)
+Iteration 3: 0.000529570374397 (Q=-3.555706)
+
+Transformation of labels: (0, 1, 2)
+Simulation 14: 100.00 % | 0.22 CE
+
+Iteration 0: 0.679077965357 (Q=-3.611006)
+Iteration 1: 0.0768559888856 (Q=-3.333479)
+Iteration 2: 3.73315384264e-06 (Q=-3.333466)
+
+Transformation of labels: (0, 1, 2)
+Simulation 15: 100.00 % | 0.00 CE
+
+Iteration 0: 0.538189775601 (Q=-5.331698)
+Iteration 1: 0.18597087126 (Q=-4.340158)
+Iteration 2: 0.00284299946566 (Q=-4.327819)
+Iteration 3: 2.66958820588e-05 (Q=-4.327934)
+
+Transformation of labels: (0, 1, 2)
+Simulation 16: 100.00 % | 0.00 CE
+
+Iteration 0: 0.327031204686 (Q=-6.519690)
+Iteration 1: 0.0748721773653 (Q=-6.031547)
+Iteration 2: 0.0741879777078 (Q=-5.584079)
+Iteration 3: 0.00708129751173 (Q=-5.544536)
+Iteration 4: 1.89796111405e-05 (Q=-5.544641)
+
+Transformation of labels: (0, 1, 2)
+Simulation 17: 83.33 % | 10.71 CE
+
+Iteration 0: 0.383065787415 (Q=-7.399022)
+Iteration 1: 0.0870049700516 (Q=-6.755270)
+Iteration 2: 0.0835179183227 (Q=-6.191084)
+Iteration 3: 0.0142020776621 (Q=-6.103158)
+Iteration 4: 2.49073508461e-05 (Q=-6.103006)
+
+Transformation of labels: (0, 1, 2)
+Simulation 18: 100.00 % | 0.23 CE
+
+Iteration 0: 0.589408318498 (Q=-3.470968)
+Iteration 1: 0.166827300035 (Q=-2.891915)
+Iteration 2: 0.00103964773794 (Q=-2.888909)
+Iteration 3: 7.17683900962e-09 (Q=-2.888909)
+
+Transformation of labels: (0, 1, 2)
+Simulation 19: 100.00 % | 0.00 CE
+
+Iteration 0: 0.477734672549 (Q=-6.225892)
+Iteration 1: 0.0977572996836 (Q=-5.617266)
+Iteration 2: 0.0129114824614 (Q=-5.544739)
+Iteration 3: 3.80487849817e-05 (Q=-5.544528)
+
+Transformation of labels: (0, 1, 2)
+Simulation 20: 100.00 % | 0.00 CE
+
+Iteration 0: 0.538544983638 (Q=-5.699596)
+Iteration 1: 0.0910291210526 (Q=-5.180766)
+Iteration 2: 0.0846718851673 (Q=-4.742101)
+Iteration 3: 0.0370889390939 (Q=-4.566222)
+Iteration 4: 0.00352927630558 (Q=-4.550106)
+Iteration 5: 1.43659724179e-05 (Q=-4.550041)
+
+Transformation of labels: (0, 1, 2)
+Simulation 21: 100.00 % | 0.00 CE
+
+Iteration 0: 0.429953290742 (Q=-8.708736)
+Iteration 1: 0.177009703026 (Q=-7.167206)
+Iteration 2: 0.162590168666 (Q=-6.001888)
+Iteration 3: 0.00212776876451 (Q=-5.989118)
+Iteration 4: 2.02939729147e-05 (Q=-5.988996)
+
+Transformation of labels: (0, 1, 2)
+Simulation 22: 100.00 % | 0.00 CE
+
+Iteration 0: 0.422337772942 (Q=-6.888218)
+Iteration 1: 0.123315649 (Q=-6.038793)
+Iteration 2: 0.0705137996221 (Q=-5.612975)
+Iteration 3: 0.0958915712295 (Q=-5.074738)
+Iteration 4: 0.115278596708 (Q=-4.489729)
+Iteration 5: 0.0721939499046 (Q=-4.165598)
+Iteration 6: 0.0135729845221 (Q=-4.109058)
+Iteration 7: 0.000841188908372 (Q=-4.105602)
+
+Transformation of labels: (0, 1, 2)
+Simulation 23: 66.67 % | 23.43 CE
+
+Iteration 0: 0.368639800267 (Q=-3.794771)
+Iteration 1: 0.0351905021628 (Q=-3.661231)
+Iteration 2: 1.96367211722e-05 (Q=-3.661159)
+
+Transformation of labels: (0, 1, 2)
+Simulation 24: 83.33 % | 11.42 CE
+
+Iteration 0: 0.445859769933 (Q=-7.821959)
+Iteration 1: 0.114993283682 (Q=-6.922486)
+Iteration 2: 0.127844391505 (Q=-6.037485)
+Iteration 3: 0.0785319044062 (Q=-5.563350)
+Iteration 4: 0.00338308769936 (Q=-5.544529)
+Iteration 5: 3.95950952858e-07 (Q=-5.544526)
+
+Transformation of labels: (0, 1, 2)
+Simulation 25: 100.00 % | 0.00 CE
+
+Iteration 0: 0.234536383978 (Q=-7.461584)
+Iteration 1: 0.00543776993507 (Q=-7.421009)
+Iteration 2: 0.0214168122815 (Q=-7.262075)
+Iteration 3: 0.0539981369791 (Q=-6.869936)
+Iteration 4: 0.110527986454 (Q=-6.110616)
+Iteration 5: 0.0844597044744 (Q=-5.594515)
+Iteration 6: 0.00892450266641 (Q=-5.544587)
+Iteration 7: 8.64988990663e-06 (Q=-5.544539)
+
+Transformation of labels: (0, 1, 2)
+Simulation 26: 83.33 % | 11.81 CE
+
+Iteration 0: 0.539837054873 (Q=-6.970530)
+Iteration 1: 0.0347718261322 (Q=-6.728152)
+Iteration 2: 0.000382084113925 (Q=-6.725581)
+
+Transformation of labels: (0, 1, 2)
+Simulation 27: 100.00 % | 0.23 CE
+
+Iteration 0: 0.614631282703 (Q=-4.255835)
+Iteration 1: 0.0874995243845 (Q=-3.883452)
+Iteration 2: 1.74592993941e-05 (Q=-3.883384)
+
+Transformation of labels: (0, 1, 2)
+Simulation 28: 100.00 % | 0.00 CE
+
+Iteration 0: 0.702483015081 (Q=-3.863505)
+Iteration 1: 0.194710526251 (Q=-3.111240)
+Iteration 2: 7.70739442074e-05 (Q=-3.111480)
+
+Transformation of labels: (0, 1, 2)
+Simulation 29: 100.00 % | 0.00 CE
+
+Iteration 0: 0.665088810875 (Q=-4.217787)
+Iteration 1: 0.31499400219 (Q=-2.889210)
+Iteration 2: 6.35876111365e-05 (Q=-2.889026)
+
+Transformation of labels: (0, 1, 2)
+Simulation 30: 100.00 % | 0.00 CE
+
+Iteration 0: 0.438165725494 (Q=-7.525353)
+Iteration 1: 0.160479928967 (Q=-6.317685)
+Iteration 2: 0.0167891479406 (Q=-6.211616)
+Iteration 3: 6.81244996282e-05 (Q=-6.211193)
+
+Transformation of labels: (0, 1, 2)
+Simulation 31: 100.00 % | 0.00 CE
+
+Iteration 0: 0.459400755087 (Q=-4.394338)
+Iteration 1: 0.330974170451 (Q=-2.939926)
+Iteration 2: 0.0172425078535 (Q=-2.889234)
+Iteration 3: 6.87841255816e-07 (Q=-2.889232)
+
+Transformation of labels: (0, 1, 2)
+Simulation 32: 100.00 % | 0.00 CE
+
+Iteration 0: 0.493883160015 (Q=-7.530970)
+Iteration 1: 0.0423259260344 (Q=-7.212215)
+Iteration 2: 0.000905967438462 (Q=-7.205681)
+
+Transformation of labels: (0, 1, 2)
+Simulation 33: 100.00 % | 0.00 CE
+
+Iteration 0: 0.449156243791 (Q=-4.243422)
+Iteration 1: 0.0832359002553 (Q=-3.890217)
+Iteration 2: 0.00175259235661 (Q=-3.883399)
+Iteration 3: 6.31012775409e-06 (Q=-3.883375)
+
+Transformation of labels: (0, 1, 2)
+Simulation 34: 100.00 % | 0.00 CE
+
+Iteration 0: 0.382890368847 (Q=-7.612381)
+Iteration 1: 0.221358345789 (Q=-5.927317)
+Iteration 2: 0.0270411796569 (Q=-5.767035)
+Iteration 3: 3.6739597472e-05 (Q=-5.766823)
+
+Transformation of labels: (0, 1, 2)
+Simulation 35: 100.00 % | 0.00 CE
+
+Iteration 0: 0.33715078473 (Q=-7.048030)
+Iteration 1: 0.280095949665 (Q=-5.073905)
+Iteration 2: 0.07786065488 (Q=-4.678848)
+Iteration 3: 0.00611659091814 (Q=-4.650229)
+Iteration 4: 0.00440569663831 (Q=-4.629742)
+Iteration 5: 0.00690749363596 (Q=-4.597762)
+Iteration 6: 0.0093346560551 (Q=-4.554843)
+Iteration 7: 0.0101521755813 (Q=-4.508602)
+Iteration 8: 0.0125595492041 (Q=-4.451976)
+Iteration 9: 0.0104823647129 (Q=-4.405308)
+Iteration 10: 0.0114953659125 (Q=-4.354668)
+Iteration 11: 0.00387974273352 (Q=-4.337773)
+Iteration 12: 0.0022927229393 (Q=-4.327828)
+Iteration 13: 4.42563493247e-05 (Q=-4.328019)
+
+Transformation of labels: (0, 1, 2)
+Simulation 36: 83.33 % | 11.52 CE
+
+Iteration 0: 0.437830364703 (Q=-5.323705)
+Iteration 1: 0.000263184034581 (Q=-5.322304)
+
+Transformation of labels: (0, 1, 2)
+Simulation 37: 100.00 % | 0.20 CE
+
+Iteration 0: 0.384582493816 (Q=-7.709755)
+Iteration 1: 0.00807114729889 (Q=-7.647528)
+Iteration 2: 4.61539975432e-05 (Q=-7.647881)
+
+Transformation of labels: (0, 1, 2)
+Simulation 38: 100.00 % | 0.00 CE
+
+Iteration 0: 0.32005823032 (Q=-8.560792)
+Iteration 1: 0.253601187112 (Q=-6.389765)
+Iteration 2: 0.0828897221762 (Q=-5.860119)
+Iteration 3: 0.0158161027468 (Q=-5.767435)
+Iteration 4: 0.000107542618599 (Q=-5.766815)
+
+Transformation of labels: (0, 1, 2)
+Simulation 39: 100.00 % | 0.00 CE
+
+Iteration 0: 0.471586643345 (Q=-5.192174)
+Iteration 1: 0.00829367602554 (Q=-5.149112)
+Iteration 2: 0.00127792441953 (Q=-5.155692)
+Iteration 3: 0.00621686609928 (Q=-5.123640)
+Iteration 4: 0.00235275101934 (Q=-5.135694)
+Iteration 5: 0.000482959621214 (Q=-5.133214)
+
+Transformation of labels: (0, 1, 2)
+Simulation 40: 83.33 % | 0.30 CE
+
+Iteration 0: 0.621490523216 (Q=-5.034108)
+Iteration 1: 0.00787037940194 (Q=-4.994488)
+Iteration 2: 1.85216246149e-05 (Q=-4.994580)
+
+Transformation of labels: (0, 1, 2)
+Simulation 41: 100.00 % | 0.00 CE
+
+Iteration 0: 0.411836910314 (Q=-5.273318)
+Iteration 1: 0.126061404266 (Q=-4.608556)
+Iteration 2: 0.141991317743 (Q=-3.954181)
+Iteration 3: 0.017869083163 (Q=-3.883524)
+Iteration 4: 2.42213801334e-05 (Q=-3.883618)
+
+Transformation of labels: (0, 1, 2)
+Simulation 42: 100.00 % | 0.00 CE
+
+Iteration 0: 0.455378598072 (Q=-7.515192)
+Iteration 1: 0.256108273086 (Q=-5.590489)
+Iteration 2: 0.0478429976487 (Q=-5.323023)
+Iteration 3: 0.000134864042535 (Q=-5.322305)
+
+Transformation of labels: (0, 1, 2)
+Simulation 43: 100.00 % | 0.00 CE
+
+Iteration 0: 0.506685519245 (Q=-5.714158)
+Iteration 1: 0.239500743422 (Q=-4.345613)
+Iteration 2: 0.00408918084041 (Q=-4.327843)
+Iteration 3: 5.02860477463e-06 (Q=-4.327864)
+
+Transformation of labels: (0, 1, 2)
+Simulation 44: 100.00 % | 0.00 CE
+
+Iteration 0: 0.557915439134 (Q=-3.730389)
+Iteration 1: 0.209905236383 (Q=-2.947361)
+Iteration 2: 0.127744349188 (Q=-2.570852)
+Iteration 3: 0.0467692521302 (Q=-2.450615)
+Iteration 4: 0.00246048032074 (Q=-2.444586)
+Iteration 5: 3.29811286478e-06 (Q=-2.444578)
+
+Transformation of labels: (0, 1, 2)
+Simulation 45: 100.00 % | 0.00 CE
+
+Iteration 0: 0.553385518795 (Q=-5.814590)
+Iteration 1: 0.00822731210642 (Q=-5.766751)
+Iteration 2: 1.0442934057e-05 (Q=-5.766811)
+
+Transformation of labels: (0, 1, 2)
+Simulation 46: 100.00 % | 0.00 CE
+
+Iteration 0: 0.417188419585 (Q=-6.808079)
+Iteration 1: 0.0227455800153 (Q=-6.653225)
+Iteration 2: 2.74297620018e-05 (Q=-6.653043)
+
+Transformation of labels: (0, 1, 2)
+Simulation 47: 100.00 % | 0.00 CE
+
+Iteration 0: 0.470772382109 (Q=-4.108262)
+Iteration 1: 0.00064879719028 (Q=-4.105597)
+
+Transformation of labels: (0, 1, 2)
+Simulation 48: 100.00 % | 0.00 CE
+
+Iteration 0: 0.467170693638 (Q=-5.556431)
+Iteration 1: 0.140803298439 (Q=-4.774067)
+Iteration 2: 0.000362414834001 (Q=-4.772337)
+
+Transformation of labels: (0, 1, 2)
+Simulation 49: 100.00 % | 0.23 CE
+
+Iteration 0: 0.554069249736 (Q=-4.280286)
+Iteration 1: 0.0609972163918 (Q=-4.019200)
+Iteration 2: 0.0054164952875 (Q=-3.997430)
+Iteration 3: 5.8857104101e-06 (Q=-3.997407)
+
+Transformation of labels: (0, 1, 2)
+Simulation 50: 100.00 % | 0.00 CE
+
+Iteration 0: 0.580570955283 (Q=-2.003280)
+Iteration 1: 0.00156860594932 (Q=-2.000138)
+Iteration 2: 6.11624431656e-10 (Q=-2.000138)
+
+Transformation of labels: (0, 1, 2)
+Simulation 51: 100.00 % | 0.00 CE
+
+Iteration 0: 0.495487255168 (Q=-4.520166)
+Iteration 1: 0.262180029922 (Q=-3.335069)
+Iteration 2: 0.0488052931871 (Q=-3.172300)
+Iteration 3: 0.0378208304775 (Q=-3.052321)
+Iteration 4: 0.0288778952424 (Q=-2.964176)
+Iteration 5: 0.0184706796705 (Q=-2.909426)
+Iteration 6: 0.0104253395319 (Q=-2.879094)
+Iteration 7: 0.0050492108039 (Q=-2.864557)
+Iteration 8: 0.00557084951042 (Q=-2.848599)
+Iteration 9: 0.00478436379272 (Q=-2.834970)
+Iteration 10: 0.00402385177156 (Q=-2.823563)
+Iteration 11: 0.00348866338204 (Q=-2.813712)
+Iteration 12: 0.00304302756414 (Q=-2.805150)
+Iteration 13: 0.00269820116631 (Q=-2.797581)
+Iteration 14: 0.00239372265279 (Q=-2.790885)
+Iteration 15: 0.00214962207604 (Q=-2.784885)
+Iteration 16: 0.00194724054227 (Q=-2.779462)
+Iteration 17: 0.00173015764248 (Q=-2.774653)
+Iteration 18: 0.00163437665967 (Q=-2.770119)
+Iteration 19: 0.00146774690802 (Q=-2.766053)
+Iteration 20: 0.00144008907685 (Q=-2.762069)
+Iteration 21: 0.00125458452543 (Q=-2.758604)
+Iteration 22: 0.00117776781743 (Q=-2.755355)
+Iteration 23: 0.00106385020775 (Q=-2.752424)
+Iteration 24: 0.00099952031708 (Q=-2.749673)
+
+Transformation of labels: (0, 1, 2)
+Simulation 52: 100.00 % | 0.01 CE
+
+Iteration 0: 0.44603299801 (Q=-7.540988)
+Iteration 1: 0.212279352003 (Q=-5.940192)
+Iteration 2: 0.117244581301 (Q=-5.243737)
+Iteration 3: 0.00512467964196 (Q=-5.216864)
+Iteration 4: 2.65938965473e-05 (Q=-5.216725)
+
+Transformation of labels: (0, 1, 2)
+Simulation 53: 83.33 % | 8.91 CE
+
+Iteration 0: 0.473690785683 (Q=-6.661285)
+Iteration 1: 0.0498391545849 (Q=-6.329292)
+Iteration 2: 0.00196076370124 (Q=-6.316882)
+Iteration 3: 1.88764700848e-06 (Q=-6.316894)
+
+Transformation of labels: (0, 1, 2)
+Simulation 54: 100.00 % | 0.00 CE
+
+Iteration 0: 0.309113352733 (Q=-9.892368)
+Iteration 1: 0.0182313464488 (Q=-9.712017)
+Iteration 2: 0.00231591233585 (Q=-9.689525)
+Iteration 3: 0.000618635233923 (Q=-9.695519)
+
+Transformation of labels: (0, 1, 2)
+Simulation 55: 83.33 % | 0.31 CE
+
+Iteration 0: 0.346783062913 (Q=-5.319681)
+Iteration 1: 0.0318424200921 (Q=-5.150290)
+Iteration 2: 0.0199535460875 (Q=-5.047523)
+Iteration 3: 0.0289209442581 (Q=-4.901544)
+Iteration 4: 0.0303568971732 (Q=-4.752748)
+Iteration 5: 0.016744925248 (Q=-4.673164)
+Iteration 6: 0.00339335160775 (Q=-4.657306)
+Iteration 7: 0.000329564053072 (Q=-4.655771)
+
+Transformation of labels: (0, 1, 2)
+Simulation 56: 83.33 % | 10.34 CE
+
+Iteration 0: 0.429030218124 (Q=-8.643832)
+Iteration 1: 0.148461666532 (Q=-7.360555)
+Iteration 2: 0.058711906526 (Q=-6.928402)
+Iteration 3: 0.0228299960814 (Q=-6.770227)
+Iteration 4: 0.00131795543902 (Q=-6.761304)
+Iteration 5: 7.820114164e-06 (Q=-6.761251)
+
+Transformation of labels: (0, 1, 2)
+Simulation 57: 100.00 % | 0.00 CE
+
+Iteration 0: 0.715225756127 (Q=-4.156056)
+Iteration 1: 0.144452127479 (Q=-3.555705)
+Iteration 2: 1.25298175433e-08 (Q=-3.555705)
+
+Transformation of labels: (0, 1, 2)
+Simulation 58: 100.00 % | 0.00 CE
+
+Iteration 0: 0.500003482696 (Q=-5.455650)
+Iteration 1: 0.197916352294 (Q=-4.375888)
+Iteration 2: 0.0109848446878 (Q=-4.327820)
+Iteration 3: 9.34336031351e-07 (Q=-4.327824)
+
+Transformation of labels: (0, 1, 2)
+Simulation 59: 100.00 % | 0.00 CE
+
+Iteration 0: 0.343692008993 (Q=-6.821665)
+Iteration 1: 0.2009857322 (Q=-5.450608)
+Iteration 2: 0.102496988438 (Q=-4.891937)
+Iteration 3: 0.00287285796603 (Q=-4.877883)
+Iteration 4: 1.86843136387e-06 (Q=-4.877892)
+
+Transformation of labels: (0, 1, 2)
+Simulation 60: 100.00 % | 0.00 CE
+
+Iteration 0: 0.598679996923 (Q=-4.458433)
+Iteration 1: 0.0735860908555 (Q=-4.130355)
+Iteration 2: 0.00593249731143 (Q=-4.105851)
+Iteration 3: 6.04577869721e-05 (Q=-4.105603)
+
+Transformation of labels: (0, 1, 2)
+Simulation 61: 100.00 % | 0.00 CE
+
+Iteration 0: 0.412669878706 (Q=-6.640733)
+Iteration 1: 0.0153157819877 (Q=-6.539025)
+Iteration 2: 1.35950429287e-06 (Q=-6.539016)
+
+Transformation of labels: (0, 1, 2)
+Simulation 62: 100.00 % | 0.00 CE
+
+Iteration 0: 0.539756058081 (Q=-3.925018)
+Iteration 1: 0.038174090848 (Q=-3.775184)
+Iteration 2: 3.57079775624e-08 (Q=-3.775184)
+
+Transformation of labels: (0, 1, 2)
+Simulation 63: 100.00 % | 0.00 CE
+
+Iteration 0: 0.446613023605 (Q=-5.898596)
+Iteration 1: 0.381873670472 (Q=-3.646077)
+Iteration 2: 0.204002600474 (Q=-2.902268)
+Iteration 3: 0.00450686241343 (Q=-2.889188)
+Iteration 4: 2.61954882875e-07 (Q=-2.889187)
+
+Transformation of labels: (0, 1, 2)
+Simulation 64: 100.00 % | 0.00 CE
+
+Iteration 0: 0.518688156226 (Q=-3.891330)
+Iteration 1: 0.00204274247617 (Q=-3.883381)
+Iteration 2: 1.93029625654e-07 (Q=-3.883381)
+
+Transformation of labels: (0, 1, 2)
+Simulation 65: 100.00 % | 0.00 CE
+
+Iteration 0: 0.561777558022 (Q=-5.956901)
+Iteration 1: 0.087034372866 (Q=-5.438446)
+Iteration 2: 0.000336683784549 (Q=-5.436615)
+
+Transformation of labels: (0, 1, 2)
+Simulation 66: 100.00 % | 0.00 CE
+
+Iteration 0: 0.674586265695 (Q=-3.538865)
+Iteration 1: 0.119545703591 (Q=-3.115809)
+Iteration 2: 0.00138929326979 (Q=-3.111480)
+Iteration 3: 1.03528914156e-07 (Q=-3.111480)
+
+Transformation of labels: (0, 1, 2)
+Simulation 67: 100.00 % | 0.00 CE
+
+Iteration 0: 0.269702900115 (Q=-8.408793)
+Iteration 1: 0.0698434585306 (Q=-7.821494)
+Iteration 2: 0.0458373817232 (Q=-7.462977)
+Iteration 3: 0.00502723913069 (Q=-7.425459)
+Iteration 4: 2.04890375698e-05 (Q=-7.425307)
+
+Transformation of labels: (0, 1, 2)
+Simulation 68: 100.00 % | 0.00 CE
+
+Iteration 0: 0.4354389526 (Q=-6.346982)
+Iteration 1: 0.00475695808367 (Q=-6.316789)
+Iteration 2: 1.26219876817e-05 (Q=-6.316869)
+
+Transformation of labels: (0, 1, 2)
+Simulation 69: 100.00 % | 0.00 CE
+
+Iteration 0: 0.551229660541 (Q=-5.056037)
+Iteration 1: 0.107462676493 (Q=-4.512702)
+Iteration 2: 0.0319901558334 (Q=-4.368340)
+Iteration 3: 0.00922275630391 (Q=-4.328052)
+Iteration 4: 4.90560997646e-05 (Q=-4.327839)
+
+Transformation of labels: (0, 1, 2)
+Simulation 70: 83.33 % | 12.17 CE
+
+Iteration 0: 0.39121338328 (Q=-4.614337)
+Iteration 1: 0.132844454317 (Q=-4.001348)
+Iteration 2: 0.124524563075 (Q=-3.503082)
+Iteration 3: 0.0182687681718 (Q=-3.439085)
+Iteration 4: 2.64625241767e-05 (Q=-3.438994)
+
+Transformation of labels: (0, 1, 2)
+Simulation 71: 100.00 % | 0.00 CE
+
+Iteration 0: 0.495986830891 (Q=-5.593314)
+Iteration 1: 0.143834920653 (Q=-4.788800)
+Iteration 2: 0.00343878210063 (Q=-4.772333)
+Iteration 3: 4.77727787791e-06 (Q=-4.772355)
+
+Transformation of labels: (0, 1, 2)
+Simulation 72: 100.00 % | 0.00 CE
+
+Iteration 0: 0.420802686039 (Q=-6.938683)
+Iteration 1: 0.00912742995413 (Q=-6.875350)
+Iteration 2: 1.2027549688e-05 (Q=-6.875433)
+
+Transformation of labels: (0, 1, 2)
+Simulation 73: 83.33 % | 8.51 CE
+
+Iteration 0: 0.50075926994 (Q=-5.902238)
+Iteration 1: 0.128191726267 (Q=-5.145620)
+Iteration 2: 0.109617341679 (Q=-4.581570)
+Iteration 3: 0.0298089917975 (Q=-4.444998)
+Iteration 4: 0.000708255053319 (Q=-4.441850)
+
+Transformation of labels: (0, 1, 2)
+Simulation 74: 83.33 % | 9.99 CE
+
+Iteration 0: 0.489359088555 (Q=-3.473958)
+Iteration 1: 0.141205164377 (Q=-2.983417)
+Iteration 2: 0.131281318016 (Q=-2.591750)
+Iteration 3: 0.0535885275441 (Q=-2.452862)
+Iteration 4: 0.00336903915401 (Q=-2.444598)
+Iteration 5: 6.68067477245e-06 (Q=-2.444582)
+
+Transformation of labels: (0, 1, 2)
+Simulation 75: 100.00 % | 0.00 CE
+
+Iteration 0: 0.335757069324 (Q=-10.961125)
+Iteration 1: 0.177380387042 (Q=-9.016836)
+Iteration 2: 0.0906822148015 (Q=-8.199169)
+Iteration 3: 0.110249936258 (Q=-7.295212)
+Iteration 4: 0.0122724460901 (Q=-7.205681)
+Iteration 5: 2.80708587958e-07 (Q=-7.205679)
+
+Transformation of labels: (0, 1, 2)
+Simulation 76: 100.00 % | 0.00 CE
+
+Iteration 0: 0.350427639437 (Q=-5.009881)
+Iteration 1: 0.0192001330284 (Q=-4.913691)
+Iteration 2: 0.00689025215258 (Q=-4.879834)
+Iteration 3: 0.000404173937476 (Q=-4.877862)
+
+Transformation of labels: (0, 1, 2)
+Simulation 77: 100.00 % | 0.00 CE
+
+Iteration 0: 0.293869502164 (Q=-8.240079)
+Iteration 1: 0.155556225836 (Q=-6.958283)
+Iteration 2: 0.0883628647866 (Q=-6.343429)
+Iteration 3: 0.00419655909087 (Q=-6.316809)
+Iteration 4: 2.86103932411e-06 (Q=-6.316791)
+
+Transformation of labels: (0, 1, 2)
+Simulation 78: 100.00 % | 0.00 CE
+
+Iteration 0: 0.486018237186 (Q=-4.893910)
+Iteration 1: 0.154891021449 (Q=-4.135887)
+Iteration 2: 0.0555456776617 (Q=-3.906157)
+Iteration 3: 0.00580597396893 (Q=-3.883478)
+Iteration 4: 2.65971281733e-05 (Q=-3.883374)
+
+Transformation of labels: (0, 1, 2)
+Simulation 79: 100.00 % | 0.00 CE
+
+Iteration 0: 0.485070958727 (Q=-5.624560)
+Iteration 1: 0.191885064716 (Q=-4.545291)
+Iteration 2: 0.142267108285 (Q=-3.898645)
+Iteration 3: 0.00391608609477 (Q=-3.883378)
+Iteration 4: 2.79688909074e-05 (Q=-3.883487)
+
+Transformation of labels: (0, 1, 2)
+Simulation 80: 100.00 % | 0.00 CE
+
+Iteration 0: 0.494910377162 (Q=-4.177453)
+Iteration 1: 0.300271182831 (Q=-2.923084)
+Iteration 2: 0.0116474071904 (Q=-2.889038)
+Iteration 3: 2.2926271787e-09 (Q=-2.889038)
+
+Transformation of labels: (0, 1, 2)
+Simulation 81: 100.00 % | 0.00 CE
+
+Iteration 0: 0.291832679764 (Q=-5.960493)
+Iteration 1: 0.100608550971 (Q=-5.360816)
+Iteration 2: 0.0864637862367 (Q=-4.897300)
+Iteration 3: 0.0321308581422 (Q=-4.739945)
+Iteration 4: 0.00697894194049 (Q=-4.706866)
+Iteration 5: 0.0042191542959 (Q=-4.687007)
+Iteration 6: 0.00480888821132 (Q=-4.664467)
+Iteration 7: 6.89239984285e-05 (Q=-4.664146)
+
+Transformation of labels: (0, 1, 2)
+Simulation 82: 83.33 % | 11.52 CE
+
+Iteration 0: 0.512491849388 (Q=-5.551461)
+Iteration 1: 0.0011795108301 (Q=-5.544913)
+Iteration 2: 6.98305982948e-05 (Q=-5.544526)
+
+Transformation of labels: (0, 1, 2)
+Simulation 83: 100.00 % | 0.00 CE
+
+Iteration 0: 0.42264687102 (Q=-7.469624)
+Iteration 1: 0.20268546422 (Q=-5.955640)
+Iteration 2: 0.047137338506 (Q=-5.674907)
+Iteration 3: 0.0139003395478 (Q=-5.596024)
+Iteration 4: 0.0208872021626 (Q=-5.479138)
+Iteration 5: 0.0209099188896 (Q=-5.364570)
+Iteration 6: 0.00740534591636 (Q=-5.324844)
+Iteration 7: 0.000455676490787 (Q=-5.322417)
+
+Transformation of labels: (0, 1, 2)
+Simulation 84: 83.33 % | 5.18 CE
+
+Iteration 0: 0.466879171678 (Q=-5.840001)
+Iteration 1: 0.0294928909793 (Q=-5.667762)
+Iteration 2: 0.0135648103564 (Q=-5.590880)
+Iteration 3: 0.0100395213879 (Q=-5.534751)
+Iteration 4: 0.00586585401701 (Q=-5.502285)
+Iteration 5: 0.00421777401507 (Q=-5.479077)
+Iteration 6: 0.00210374240138 (Q=-5.467551)
+Iteration 7: 0.00425136253326 (Q=-5.444306)
+Iteration 8: 0.00107065003282 (Q=-5.438477)
+Iteration 9: 2.04336929602e-05 (Q=-5.438366)
+
+Transformation of labels: (0, 1, 2)
+Simulation 85: 83.33 % | 0.23 CE
+
+Iteration 0: 0.602469015453 (Q=-4.641628)
+Iteration 1: 0.0197251284773 (Q=-4.550071)
+Iteration 2: 1.98628624587e-06 (Q=-4.550062)
+
+Transformation of labels: (0, 1, 2)
+Simulation 86: 100.00 % | 0.00 CE
+
+Iteration 0: 0.493543301273 (Q=-5.410600)
+Iteration 1: 0.0163187824348 (Q=-5.322306)
+Iteration 2: 5.32368800662e-06 (Q=-5.322334)
+
+Transformation of labels: (0, 1, 2)
+Simulation 87: 100.00 % | 0.00 CE
+
+Iteration 0: 0.677885217981 (Q=-3.785278)
+Iteration 1: 0.00190477190013 (Q=-3.778067)
+Iteration 2: 1.39160354802e-07 (Q=-3.778067)
+
+Transformation of labels: (0, 1, 2)
+Simulation 88: 100.00 % | 0.00 CE
+
+Iteration 0: 0.491729634559 (Q=-6.030432)
+Iteration 1: 0.135078570109 (Q=-5.215850)
+Iteration 2: 0.000327017183093 (Q=-5.214144)
+
+Transformation of labels: (0, 1, 2)
+Simulation 89: 100.00 % | 0.00 CE
+
+Iteration 0: 0.455794013534 (Q=-5.968682)
+Iteration 1: 0.26115541009 (Q=-4.409928)
+Iteration 2: 0.018618955517 (Q=-4.327820)
+Iteration 3: 5.63901050161e-06 (Q=-4.327844)
+
+Transformation of labels: (0, 1, 2)
+Simulation 90: 100.00 % | 0.00 CE
+
+Iteration 0: 0.481392712245 (Q=-5.921730)
+Iteration 1: 0.378838224753 (Q=-3.678353)
+Iteration 2: 0.00467281459743 (Q=-3.661164)
+Iteration 3: 3.36303275444e-06 (Q=-3.661152)
+
+Transformation of labels: (0, 1, 2)
+Simulation 91: 100.00 % | 0.00 CE
+
+Iteration 0: 0.432993441649 (Q=-5.173875)
+Iteration 1: 0.0346950702942 (Q=-4.994367)
+Iteration 2: 0.000456295666677 (Q=-4.992088)
+
+Transformation of labels: (0, 1, 2)
+Simulation 92: 100.00 % | 0.00 CE
+
+Iteration 0: 0.581142011176 (Q=-4.876663)
+Iteration 1: 0.157794066725 (Q=-4.107154)
+Iteration 2: 0.000367157676164 (Q=-4.105646)
+
+Transformation of labels: (0, 1, 2)
+Simulation 93: 100.00 % | 0.00 CE
+
+Iteration 0: 0.272811385996 (Q=-3.820758)
+Iteration 1: 0.0119486428737 (Q=-3.775105)
+Iteration 2: 2.84761254777e-05 (Q=-3.775212)
+
+Transformation of labels: (0, 1, 2)
+Simulation 94: 100.00 % | 0.23 CE
+
+Iteration 0: 0.411804863198 (Q=-7.280112)
+Iteration 1: 0.22336789044 (Q=-5.653969)
+Iteration 2: 0.0193552875175 (Q=-5.544534)
+Iteration 3: 1.32278082389e-06 (Q=-5.544527)
+
+Transformation of labels: (0, 1, 2)
+Simulation 95: 100.00 % | 0.00 CE
+
+Iteration 0: 0.507694305811 (Q=-3.892069)
+Iteration 1: 0.00223185194544 (Q=-3.883382)
+Iteration 2: 1.78130335115e-06 (Q=-3.883376)
+
+Transformation of labels: (0, 1, 2)
+Simulation 96: 100.00 % | 0.00 CE
+
+Iteration 0: 0.394333400234 (Q=-9.864477)
+Iteration 1: 0.0894534367371 (Q=-8.982065)
+Iteration 2: 0.348356696458 (Q=-5.853103)
+Iteration 3: 0.108724965861 (Q=-5.216724)
+Iteration 4: 9.6873308544e-07 (Q=-5.216719)
+
+Transformation of labels: (0, 1, 2)
+Simulation 97: 100.00 % | 0.00 CE
+
+Iteration 0: 0.392336142776 (Q=-7.849913)
+Iteration 1: 0.0402435666787 (Q=-7.534004)
+Iteration 2: 6.62863451429e-05 (Q=-7.533505)
+
+Transformation of labels: (0, 1, 2)
+Simulation 98: 100.00 % | 0.00 CE
+
+Iteration 0: 0.448588887229 (Q=-4.312133)
+Iteration 1: 0.0208405579835 (Q=-4.222266)
+Iteration 2: 0.0253039748391 (Q=-4.329106)
+Iteration 3: 0.0002955513652 (Q=-4.327827)
+
+Transformation of labels: (0, 1, 2)
+Simulation 99: 100.00 % | 0.23 CE
+
+
+Average: 0.97 % | 1.46 CE
+
